@@ -24,3 +24,35 @@ p {
 aside ul ul {
   color: green;
 }
+
+p > em {
+  text-transform: uppercase;
+  color: red;
+}
+
+/* Differences between body and * selector: * forces inheritance of all
+properties, while body only uses inheritance for some properties.
+To test this, add a red border in body, and try one for *.
+border: 1px solid red;
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p * * {
+  text-transform: lowercase;
+  font-size: 2em;
+}
+
+p a + em {
+  font-family: Georgia;
+  color: purple;
+  text-transform: uppercase;
+}
+
+p img ~ strong {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: white;
+  background-color: orange;
+}
