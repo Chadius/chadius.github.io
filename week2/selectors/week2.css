@@ -1,0 +1,26 @@
+section h1,
+section h2 {
+  color: red;
+}
+
+p {
+  /*
+  padding-left: 4em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  TRBL - stay out of TRouBLe
+  Start on top and go counter clockwise
+  */
+  padding: 1em 2em 3em 4em;
+
+  margin: 1em 2em;
+  /* Top&Bottom Left&Right
+  Easy way to horizontally center a block (and easy to remember)
+  */
+  margin: 0 auto;
+}
+
+aside ul ul {
+  color: green;
+}
