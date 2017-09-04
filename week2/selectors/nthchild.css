@@ -1,0 +1,10 @@
+/*
+li:nth-child(4n+2) {
+  color:red;
+}
+*/
+li:nth-last-child(3n+1) {
+  text-transform: uppercase;
+  background-color: blue;
+  color: white;
+}
