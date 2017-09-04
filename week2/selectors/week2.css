@@ -72,3 +72,39 @@ nav [rel] {
   padding-right: 20px;
   background: url(pdf.gif) no-repeat right;
 }
+
+/* Lord Vader, Former Handle Anakin */
+/* Link Visited, Focus Hover Active */
+aside ul li:first-child{
+  color: red;
+  font-weight: bold;
+}
+
+img:not([alt]) {
+  border: 5px dotted orange;
+}
+
+/* Only 4 pseudo elements!
+CSS3 always uses 2 colons, but CSS2 only uses 1. Both are legal.
+
+::first-letter - 1st letter
+::first-line - 1st line
+::before - before element
+::after - after element
+*/
+p::first-line {
+  font-family: Georgia, serif;
+  font-size: 2.5em;
+  color: limegreen;
+  font-style: italic;
+}
+
+ul::before {
+  content: "The following is a list.";
+}
+
+p:last-child::first-letter {
+  color: purple;
+  font-size: 5em;
+  float: left;
+}
