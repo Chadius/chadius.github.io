@@ -56,3 +56,19 @@ p img ~ strong {
   color: white;
   background-color: orange;
 }
+
+nav [rel] {
+  color: pink;
+  background-color: #333;
+}
+
+[href="#"] {
+  background-color: pink;
+  color: #333;
+  text-decoration: none;
+}
+
+[href$=".pdf"] {
+  padding-right: 20px;
+  background: url(pdf.gif) no-repeat right;
+}
