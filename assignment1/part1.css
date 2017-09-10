@@ -1,9 +1,30 @@
 * {
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
+}
+
+a[href^="http"]{
+  padding-right: 20px;
+  background: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png) no-repeat right;
+}
+
+/* Just override it with a more specific selector */
+nav a[href^="http"]{
+  padding-right: 0px;
+  background: none;
+}
+
+a[href$=".pdf"]:after{
+  padding-left: 5px;
+  content: "PDF";
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-style: italic;
+  color: orange;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+main strong+em {
+  font-weight: bold;
   color: green;
-  font-family: serif;
 }
