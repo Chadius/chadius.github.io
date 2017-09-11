@@ -28,3 +28,22 @@ main strong+em {
   font-weight: bold;
   color: green;
 }
+
+th,td {
+  padding: 0.3em 0.5em 0.1em 0.5em;
+}
+
+table {
+  border-top: 5px solid pink;
+  border-bottom: 5px solid pink;
+}
+
+th:only-of-type {
+  text-align: left;
+  text-transform: uppercase;
+  color: orange;
+}
+
+tr:nth-of-type(even) {
+  background-color: #DEDEDE
+}
