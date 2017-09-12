@@ -47,3 +47,18 @@ th:only-of-type {
 tr:nth-of-type(even) {
   background-color: #DEDEDE
 }
+
+blockquote:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) > cite{
+  background-color: purple;
+  font-style: normal;
+  color: white;
+}
+
+footer{
+  width: 100%;
+  padding: 5px;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: orange;
+  text-align: center;
+}
