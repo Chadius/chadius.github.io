@@ -1,0 +1,40 @@
+/*body div.wrapper > aside ~ aside {
+  color: red;
+  font-size: 2em;
+}
+nav ul li:nth-child(odd) a:hover {
+  color: red;
+  font-size: 2em;
+}
+#content li + li:first-letter {
+  color: red;
+  font-size: 2em;
+}
+form [id="address1"] {
+  color: red;
+  font-size: 2em;
+}
+blog > p:last-child {
+  color: red;
+  font-size: 2em;
+}
+nav ul * a.active:link {
+  color: red;
+  font-size: 2em;
+}
+:not([id="#intro"]) h3.small {
+  color: red;
+  font-size: 2em;
+}
+input#school.professor.student:checked {
+  color: red;
+  font-size: 2em;
+}
+a.special[title]:link {
+  color: red;
+  font-size: 2em;
+}*/
+a .special[title]:link {
+  color: red;
+  font-size: 2em;
+}

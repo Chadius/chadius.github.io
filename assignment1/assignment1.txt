@@ -1,0 +1,146 @@
+Part 2
+
+11. body div.wrapper > aside ~ aside
+<body>
+  <div class="wrapper">
+    <aside>
+      Unaffected
+    </aside>
+    <aside>
+      Affect me
+    </aside>
+  </div>
+</body>
+
+12. nav ul li:nth-child(odd) a:hover
+<nav>
+  <ul>
+    <li><a>Affect me when you hover</a></li>
+    <li><a>Nope</a></li>
+    <li><a>Affect me when you hover</a></li>
+    <li><a>Nope</a></li>
+  </ul>
+</nav>
+
+13. #content li + li:first-letter
+<div id="content">
+  <ul>
+    <li>Not Affected</li>
+    <li>Affected: letter a</li>
+  </ul>
+</div>
+
+14. form [id="address1"]
+<form>
+  <label for="address1">Please enter your address:</label><br>
+  <input id="address1" type="text" placeholder="Affect this!">
+</form>
+
+15. blog > p:last-child
+<blog>
+  <p>Unaffected: First child</p>
+  <p>Affect me!</p>
+</blog>
+
+16. nav ul * a.active:link
+<nav>
+  <ul>
+    <li><a class="active" href="http://affectme.example.com">The link should be affected if you haven't visited it.</a></li>
+  </ul>
+</nav>
+
+17. :not([id="#intro"]) h3.small
+<body>
+  <div id="#intro">
+    <h3 class="small">Affected, grandparent does not have id</h3>
+  </div>
+</body>
+
+18. input#school.professor.student:checked
+<form>
+  <label for="school">Click on the checkbox to affect it</label><br>
+  <input id="school" class="professor student" type="checkbox"><br>
+  <br>
+</form>
+
+19. a.special[title]:link
+<a class="special" title href="http://affected.example.com">Affect me!</a><br>
+
+20. a .special[title]:link
+This is illegal, as it requires a nested anchor tag within another anchor tag. This is illegal according to W3C standards.
+
+Part 3
+21. body div.wrapper > aside ~ aside
+22. nav ul li:nth-child(odd) a:hover
+23. #content li + li:first-letter
+24. form [id="address1"]
+25. blog > p:last-child
+26. nav ul * a.active:link
+27. :not([id="#intro"]) h3.small
+28. input#school.professor.student:checked
+29. a.special[title]:link
+30. a .special[title]:link
+
+Part 4
+31. body div.wrapper > aside ~ aside
+An aside element
+Where any sibling is an aside element
+Whose parent has a class of "wrapper"
+That is a DIV element
+Whose descendant is a BODY element
+
+32. nav ul li:nth-child(odd) a:hover
+A link that is Hovered over
+That is part of an A element
+That is the odd numbered child
+That is an LI element
+Whose descendant is a UL element
+Whose descendant is a NAV element
+
+33. #content li + li:first-letter
+The first letter
+Of an LI element
+Whose immediate sibling is an LI element
+Whose descendant has an id of "content"
+
+34. form [id="address1"]
+An element with the "id" attribute of "address1"
+Whose descendant is a FORM element
+
+35. blog > p:last-child
+The last child
+That is a P element
+Whose parent is a BLOG element
+
+36. nav ul * a.active:link
+An unvisited link
+With the class "active"
+That is part of an A element
+That has descendants besides UL or NAV
+Whose descendent is a UL element
+Whose descendent is a NAV element
+
+37. :not([id="#intro"]) h3.small
+For a given element h3
+Containing the class "small"
+Descended from an element that does not have an id attribute equal to "#intro"
+
+38. input#school.professor.student:checked
+A checked checkbox
+With the class "student"
+With the class "professor"
+With the id "school"
+That is part of a Input element
+
+39. a.special[title]:link
+An unvisited link
+With the attribute "title"
+Containing the class "special"
+That is part of an A element
+
+40. a .special[title]:link
+An unvisited link
+With the attribute "title"
+Containing the class "special"
+Descended from an a element
+Note: According to W3C, an A tag cannot be nested within another A tag, so there is no valid HTML that applies to this.
