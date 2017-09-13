@@ -34,7 +34,13 @@ a.special[title]:link {
   color: red;
   font-size: 2em;
 }*/
-a .special[title]:link {
+a .special[title]:hover  {
   color: red;
   font-size: 2em;
 }
+/*
+article.blog > p:last-child {
+  color: red;
+  font-size: 2em;
+}
+*/
