@@ -5,8 +5,8 @@ http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
   box-sizing: border-box;
 }
-*, 
-*:before, 
+*,
+*:before,
 *:after {
   box-sizing: inherit;
 }
@@ -18,6 +18,8 @@ body {
 }
 .wrapper {
 	border: 2px solid orange;
+  width: 80%;
+  margin: 0 auto;
 }
 header,
 footer {
@@ -31,26 +33,24 @@ footer {
 }
 header h1 {
 	margin: 0;
-	padding: 0.5em; 
+	padding: 0.5em;
 }
 aside {
 	font-size: 1.5em;
 	color: maroon;
 	font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+p:first-of-type img {
+  border: 10px double red;
+  float: left;
+  margin: 0 1em 1em 0;
+}
+p:last-of-type img {
+  border: 10px double red;
+  float: right;
+  margin: 0 0 1em 1em;
+}
+article {
+  overflow: auto;
+  background-color: pink;
+}
