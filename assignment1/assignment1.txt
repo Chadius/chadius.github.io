@@ -1,4 +1,5 @@
-Part 2
+/* Assignment 1, Part 2
+by Chad Serrant */
 
 11. body div.wrapper > aside ~ aside
 <body>
