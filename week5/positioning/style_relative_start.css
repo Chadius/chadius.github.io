@@ -19,25 +19,35 @@ body {
 .card {
 	width: 100px;
 	height: 100px;
+  position: relative;
 }
 #card1 {
 	background-color: red;
+  z-index: 10;
+  left: 0px;
+  top: -104px;
 }
 #card2 {
 	background-color: orange;
+  z-index: 20;
+  left: 10px;
+  top: -302px;
 	}
 #card3 {
 	background-color: yellow;
+  z-index: 30;
+  left: 20px;
+  top: 20px;
 	}
 #card4 {
 	background-color: green;
+  z-index: 40;
+  left: 30px;
+  top: -386px;
 	}
 #card5 {
 	background-color: blue;
+  z-index: 50;
+  left: 40px;
+  top: -168px;
 	}
-
-
-
-
-
-
