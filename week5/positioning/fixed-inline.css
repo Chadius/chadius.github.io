@@ -3,7 +3,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
-} 
+}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -21,10 +21,12 @@ header {
 	background-color: navy;
 	color: white;
 	width: 100%;
+  overflow: auto;
+  position: fixed;
 }
 header h1 {
 	margin: 0;
-	padding: 0.5em; 
+	padding: 0.5em;
 }
 aside {
 	font-size: 1.5em;
@@ -60,18 +62,36 @@ article {
 /* if you float, you must clear. */
 .wrapper {
 	overflow: auto;
+  padding-top: 80px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+nav {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 1.5em;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: right;
+}
+nav li {
+  display: inline-block;
+  padding-right: 1.3em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #ffc;
+}
+header h1{
+  float: left;
+  width: 30%;
+}
+header nav{
+  float: left;
+  width: 70%;
+}

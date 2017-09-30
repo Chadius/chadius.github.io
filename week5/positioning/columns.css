@@ -3,7 +3,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
-} 
+}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +28,7 @@ header {
 }
 header h1 {
 	margin: 0;
-	padding: 0.5em; 
+	padding: 0.5em;
 }
 img {
 	border: 2px solid red;
@@ -52,7 +52,18 @@ aside {
 	float: left;
 }
 article {
-
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4;
+  -webkit-column-width: 150px;
+     -moz-column-width: 150px;
+          column-width: 150px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-column-rule: 1px solid red;
+     -moz-column-rule: 1px solid red;
+          column-rule: 1px solid red;
 }
 
 header h1 {
@@ -84,16 +95,3 @@ nav a {
 nav a:hover {
 	color: #ffc;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
