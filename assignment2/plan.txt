@@ -1,0 +1,6 @@
+10/1
+Make a site about cars. The title banner will be FIXED.
+A side NAVIGATION bar contains links to Home and About.
+Include an IMAGE of a car. The image should FLOAT and have text surrounding it.
+The About page just has text in multiple COLUMNS (floating).
+The Car page has multiple COLUMNS (CSS) describing the car. It should be backwards compatible.
