@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  font-size: 2rem;
+}
+
+nav {
+  border: 0.2rem solid red;
+  float: left;
+  margin-right: 1%;
+  width: 25%;
+}
+
+p.yell {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+article.copyright {
+  border: 0.2rem solid black;
+  padding: 1rem;
+  width: 100%;
+  clear: both;
+  text-align: center;
+}
+
+article.main {
+  width: 60%;
+  float: left;
+  border: 0.2rem solid green;
+  margin-right: 1%;
+}
+
+article.highlight {
+  width: 12%;
+  float: left;
+  border: 0.2rem solid yellow;
+}
+
+aside.subscribe {
+  width: 10%;
+  border: 0.2rem solid blue;
+  position: fixed;
+  left: 0.5rem;
+  bottom: 2rem;
+}
