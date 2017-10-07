@@ -22,6 +22,12 @@ p.yell {
   font-size: 2rem;
 }
 
+p.columns {
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4;
+}
+
 article.copyright {
   border: 0.2rem solid black;
   padding: 1rem;
@@ -49,4 +55,10 @@ aside.subscribe {
   position: fixed;
   left: 0.5rem;
   bottom: 2rem;
+}
+
+article.two-column {
+  width: 70%;
+  float: left;
+  border: 0.2rem solid green;
 }
