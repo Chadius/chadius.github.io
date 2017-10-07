@@ -14,7 +14,10 @@ header {
 	color: white;
 	padding: 1em;
 }
-header h1, 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+header h1,
 header h2 {
 	margin: 0 0 0.5em 0;
 }
@@ -59,4 +62,7 @@ footer {
 	text-align: center;
 	clear: both;
 }
-
+.fa-home {
+  color: green;
+  box-shadow: 10px 10px 15px 5px rgba(102,102,102,0.51);
+}
