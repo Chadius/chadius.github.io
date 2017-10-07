@@ -62,3 +62,8 @@ article.two-column {
   float: left;
   border: 0.2rem solid green;
 }
+
+img.centered {
+  display: block;
+  margin: auto;
+}
