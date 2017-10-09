@@ -95,3 +95,30 @@ footer {
   color: green;
   box-shadow: 10px 10px 15px 5px rgba(102,102,102,0.51);
 }
+.temp {
+  #background-color: rgba(231,76,60,1);
+  padding: 0.5em 1em 1em 1em;
+  border-radius: 10px;
+  width: 35%;
+  float: left;
+  margin: 0 2em 2em 0;
+  -webkit-box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.75);
+
+  background: rgba(248,80,50,1);
+  background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 14%, rgba(241,111,92,1) 59%, rgba(241,111,92,1) 79%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(14%, rgba(248,80,50,1)), color-stop(59%, rgba(241,111,92,1)), color-stop(79%, rgba(241,111,92,1)));
+  background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 14%, rgba(241,111,92,1) 59%, rgba(241,111,92,1) 79%);
+  background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 14%, rgba(241,111,92,1) 59%, rgba(241,111,92,1) 79%);
+  background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 14%, rgba(241,111,92,1) 59%, rgba(241,111,92,1) 79%);
+  background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 14%, rgba(241,111,92,1) 59%, rgba(241,111,92,1) 79%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#f16f5c', GradientType=1 );
+}
+.temp h2 {
+  background-color: rgba(44,62,80,0.4);
+  color: white;
+  padding: 0.1em;
+  text-align: center;
+  border-radius: 10px;
+}
