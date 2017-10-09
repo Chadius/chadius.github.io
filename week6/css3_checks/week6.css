@@ -55,6 +55,10 @@ main {
 	float: left;
 	padding: 1em;
 }
+main p:nth-of-type(1) {
+  border: 50px solid red;
+  border-image: url(http://lorempixel.com/300/300/food/) 10% 20% 30% 40% repeat;
+}
 .floatright {
   float: right;
   margin: 0 0 1em 1em;
