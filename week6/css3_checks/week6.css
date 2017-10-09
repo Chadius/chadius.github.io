@@ -39,10 +39,11 @@ nav a {
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
-
+  padding: 0.5em 0.75em;
 }
 nav a:hover {
-	color: #E74C3C;
+	background-color: #E74C3C;
+  border-radius: 50px;
 }
 aside {
 	width: 25%;
@@ -52,8 +53,36 @@ aside {
 main {
 	width: 73%;
 	float: left;
-	margin-left: 2%;
 	padding: 1em;
+}
+.floatright {
+  float: right;
+  margin: 0 0 1em 1em;
+  border-radius: 100px;
+}
+blockquote {
+  padding: 1em;
+  margin-left: 0;
+  position: relative;
+}
+blockquote::after {
+  content: "";
+  background: url(http://lorempixel.com/400/200/food/);
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+}
+blockquote p {
+  font-weight: bold;
+}
+blockquote cite {
+  font-family: Georgia, serif;
+  font-size: 0.85em;
 }
 footer {
 	background-color: #2C3E50;
