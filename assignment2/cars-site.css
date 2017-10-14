@@ -94,3 +94,19 @@ img.centered {
   z-index: -1;
   border-radius: 10px;
 }
+
+fieldset {
+  margin-bottom: 2em;
+  margin-right: 1em;
+  float: left;
+  border: 2px dashed #080;
+  background-color: #cdc;
+}
+label {
+  display: block;
+}
+input:not([type="radio"]):not([type="checkbox"]) {
+  display: block;
+  margin-bottom: 1em;
+  width: 20em;
+}
