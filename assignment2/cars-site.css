@@ -110,3 +110,25 @@ input:not([type="radio"]):not([type="checkbox"]) {
   margin-bottom: 1em;
   width: 20em;
 }
+.table-highlight {
+  background-color: #F1C0C3;
+  padding: 0.5em 1em 1em 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.75);
+  width: 80%;
+}
+.table-highlight table {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+.table-highlight th {
+  border: 1px solid gray;
+  padding: 0em 0.2em;
+  background-color: #D1A0A3;
+}
+.table-highlight td {
+  border: 1px solid gray;
+  padding: 0em 1em;
+}
