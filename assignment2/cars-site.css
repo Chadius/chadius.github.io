@@ -44,7 +44,7 @@ p.columns {
   font-family: 'Crimson Text', serif;
 }
 
-article.copyright {
+footer.copyright {
   border: 0.2rem solid black;
   padding: 1rem;
   width: 100%;
@@ -131,4 +131,13 @@ input:not([type="radio"]):not([type="checkbox"]) {
 .table-highlight td {
   border: 1px solid gray;
   padding: 0em 1em;
+}
+a:focus,a:hover{
+    text-decoration:underline;
+    background-color:#ddd;
+}
+h1:hover,h2:hover,h3:hover,h1:focus,h2:focus,h3:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
 }
