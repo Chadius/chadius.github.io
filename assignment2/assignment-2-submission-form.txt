@@ -1,8 +1,10 @@
 1. Provide a link to the first page of your website:
 https://chadius.github.io/assignment2/
-My site looks the way I want on (choose one): Mac
+My site looks the way I want on (choose one):
+Mac
 
-With this browser (choose one): Chrome
+With this browser (choose one):
+Chrome
 
 
 FLOATS & POSITIONING (40% of grade)
@@ -65,19 +67,27 @@ https://chadius.github.io/assignment2/index.html line 90
 12. We will evaluate appropriateness of the input field type chosen for the type of data collected. (Nothing to submit here.)
 
 
-ACCESSIBILITY (25% of grade) 
+ACCESSIBILITY (25% of grade)
 List the URL and starting HTML line number for each item. If you feel it’s helpful, explain what you did to meet accessibility requirements for each item.
 
 13. Headings and document structure (list the URL for the page that exemplifies this best. HTML line numbers not required)
+https://chadius.github.io/assignment2/index.html
 
 14. Hyperlinks
+https://chadius.github.io/assignment2/index.html line 98
 
 15. Bullets and numbered lists (include at least one type of list)
+https://chadius.github.io/assignment2/highlight.html line 30
 
 16. Color and contrast (indicate which contrast checker tool you used and the results of your final design)
+Contrast Checker tool:
+https://snook.ca/technical/colour_contrast/colour.html#fg=000000,bg=CCDDCC
+Used on the fieldset:
+https://chadius.github.io/assignment2/index.html line 72
+https://chadius.github.io/assignment2/cars-site.css line 98
 
 17. Image alt-text (include at least one image)
-
+https://chadius.github.io/assignment2/index.html line 28
 
 18. ARIA role, control, label, or state included on your site:
 https://chadius.github.io/assignment2/index.html line 23
@@ -87,11 +97,13 @@ Skip Links
 https://chadius.github.io/assignment2/index.html line 104
 
 Landmarks
+https://chadius.github.io/assignment2/highlight.html line 23, line 40
 
 Onfocus Styling
 https://chadius.github.io/assignment2/cars-site.css line 135, line 139
 
 Headings
+https://chadius.github.io/assignment2/highlight.html line 21
 
 20. Indicate the URL(s) and starting HTML line number for the table of information marked up for accessibility
 https://chadius.github.io/assignment2/index.html line 35
