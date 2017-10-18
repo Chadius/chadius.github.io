@@ -78,9 +78,20 @@ List the URL and starting HTML line number for each item. If you feel it’s hel
 
 17. Image alt-text (include at least one image)
 
+
 18. ARIA role, control, label, or state included on your site:
 https://chadius.github.io/assignment2/index.html line 23
 
 19. Indicate the URL(s) and starting HTML line number(s) demonstrating your navigation best practices:
+Skip Links
+https://chadius.github.io/assignment2/index.html line 104
+
+Landmarks
+
+Onfocus Styling
+https://chadius.github.io/assignment2/cars-site.css line 135, line 139
+
+Headings
 
 20. Indicate the URL(s) and starting HTML line number for the table of information marked up for accessibility
+https://chadius.github.io/assignment2/index.html line 35
