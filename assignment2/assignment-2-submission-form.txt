@@ -1,8 +1,8 @@
 1. Provide a link to the first page of your website:
 
-My site looks the way I want on (choose one): Mac  PC
+My site looks the way I want on (choose one): Mac
 
-With this browser (choose one): Firefox Chrome 
+With this browser (choose one): Chrome
 
 
 FLOATS & POSITIONING (40% of grade)
