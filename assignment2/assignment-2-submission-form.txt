@@ -1,5 +1,5 @@
 1. Provide a link to the first page of your website:
-
+https://chadius.github.io/assignment2/
 My site looks the way I want on (choose one): Mac
 
 With this browser (choose one): Chrome
@@ -9,30 +9,58 @@ FLOATS & POSITIONING (40% of grade)
 Provide URL(s) and starting line number(s) for HTML and CSS for each item.
 
 2. My standard navigation bar linking pages together:
+https://chadius.github.io/assignment2/index.html line 16
+https://chadius.github.io/assignment2/cars-site.css line 27
 
 3. Two floats and clears:
+https://chadius.github.io/assignment2/index.html line 16, line 23, line 103
+https://chadius.github.io/assignment2/cars-site.css line 28, line 51, line 55
 
 4. One positioning (absolute, relative, fixed):
+https://chadius.github.io/assignment2/index.html line 102
+https://chadius.github.io/assignment2/cars-site.css line 69
 
-5. Correct use of CSS3 columns OR styling with inline block (specify which):
-
-6. Column layout example: 
+5. Correct use of CSS3 columns OR styling with inline block (specify which): CSS3 columns
+https://chadius.github.io/assignment2/about.html line 26
+https://chadius.github.io/assignment2/cars-site.css line 40
+6. Column layout example:
+https://chadius.github.io/assignment2/about.html line 24
+https://chadius.github.io/assignment2/cars-site.css line 77
 
 
 STYLING WITH CSS3 (10% of grade)
 State which technique you used, and provide URL(s) and starting line number(s) for HTML and CSS for each item.
-7. Technique 1:
+7. Technique 1: Gradients
+https://chadius.github.io/assignment2/index.html line 11
+https://chadius.github.io/assignment2/cars-site.css line 5
 
-8. Technique 2:
+8. Technique 2: Web Fonts
+https://chadius.github.io/assignment2/index.html line 9
+https://chadius.github.io/assignment2/cars-site.css line 40
 
-9. Technique 3:
+9. Technique 3: Rounded Corners
+https://chadius.github.io/assignment2/highlight.html line 27
+https://chadius.github.io/assignment2/cars-site.css line 88
 
 
 FORM (25% of grade)
 Provide URL(s) and starting line number(s) for HTML and CSS for each item.
 10. Indicate the URL and HTML line number where the form starts. We will look for 4 fields of information and a submit button.
+https://chadius.github.io/assignment2/index.html line 73
+https://chadius.github.io/assignment2/cars-site.css line 98
 
 11. List 4 form input types included in your form, with line number in HTML.
+Text
+https://chadius.github.io/assignment2/index.html line 75
+
+Color
+https://chadius.github.io/assignment2/index.html line 77
+
+Number
+https://chadius.github.io/assignment2/index.html line 79
+
+Date
+https://chadius.github.io/assignment2/index.html line 90
 
 12. We will evaluate appropriateness of the input field type chosen for the type of data collected. (Nothing to submit here.)
 
@@ -51,6 +79,7 @@ List the URL and starting HTML line number for each item. If you feel it’s hel
 17. Image alt-text (include at least one image)
 
 18. ARIA role, control, label, or state included on your site:
+https://chadius.github.io/assignment2/index.html line 23
 
 19. Indicate the URL(s) and starting HTML line number(s) demonstrating your navigation best practices:
 
