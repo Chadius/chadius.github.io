@@ -1,0 +1,52 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ffc;
+}
+div {
+	width: 12.5rem;
+	height: 9.4rem;
+	background-color: darkslateblue;
+	color: aliceblue;
+	font-size: 1.875em;
+	text-align: center;
+	padding-top: 1em;
+	border: 3px solid chartreuse;
+	border-radius: 10px;
+	margin-bottom: 1.25em;
+}
+/* #box1 {
+	transform: rotate(-30deg);
+}
+#box1:hover {
+	transform: rotate(-30deg) skewX(-30deg);
+	background-color: chartreuse;
+	border-color: darkslateblue;
+	color: darkslateblue;
+} */
+
+#box2 {
+	position: absolute;
+	left: 120px;
+}
+#box1:hover + #box2 {
+	left: 502px;
+	background-color: chartreuse;
+	border-color: darkslateblue;
+	transform: rotate(45deg) scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
