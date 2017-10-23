@@ -1,0 +1,64 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ffc;
+}
+div {
+  width: 25em;
+  height: 25em;
+  margin: 5em;
+  background-color: red; 
+  animation-name: square-to-circle;
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes square-to-circle {
+	0% { 
+		background-color: red; 
+		transform: rotate(0deg);
+		border-radius: 0%;
+	}
+	25% { 
+		background-color: orange;
+		transform: rotate(45deg); 
+		border-radius: 50% 0% 0% 0%;
+	}
+	50% { 
+		background-color: yellow; 
+		transform: rotate(90deg);
+		border-radius: 50% 50% 0% 0%;
+
+	}
+	75% { 
+		background-color: green; 
+		transform: rotate(135deg);
+		border-radius: 50% 50% 50% 0%;
+	}
+	100% { 
+		background-color: blue; 
+		transform: rotate(180deg);
+		border-radius: 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
