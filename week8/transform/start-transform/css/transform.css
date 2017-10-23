@@ -14,20 +14,24 @@ div {
 	border-radius: 10px;
 	margin-bottom: 1.25em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+#box1 {
+	transform: rotate(-30deg);
+}
+#box1:hover {
+	transform: rotate(-30deg) skewX(-10deg);
+	border-color: darkslateblue;
+	background-color: chartreuse;
+	color: darkslateblue;
+}
+*/
+#box2 {
+	position: absolute;
+	left: 120px;
+}
+#box1:hover + #box2 {
+	left: 502px;
+	border-color: darkslateblue;
+	background-color: chartreuse;
+	transform: rotate(45deg) scale(1.2);
+}
