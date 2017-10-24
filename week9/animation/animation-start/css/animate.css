@@ -14,17 +14,23 @@ div {
 	border-radius: 10px;
 	margin-bottom: 1.25em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#box2 {
+	/*transition-property: transform, background-color;*/
+	/*
+	transition-property: transform;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 1s;
+	*/
+	/*transition: property duration timing-function delay;*/
+	transition: transform 2s ease-in-out 1s,
+							background-color 2s ease-in-out,
+							border-color 2s ease-in-out,
+							color 2s ease-in-out;
+}
+#box2:hover {
+	transform: rotate(360deg) translateX(6em);
+	background-color: chartreuse;
+	border-color: darkslateblue;
+	color: darkslateblue;
+}
