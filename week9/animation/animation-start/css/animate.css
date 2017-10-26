@@ -34,3 +34,49 @@ div {
 	border-color: darkslateblue;
 	color: darkslateblue;
 }
+
+/*
+@keyframes box1 {
+	from {
+		transform: translateX(0px);
+	}
+	to {
+		transform: translateX(400px);
+		background-color: chartreuse;
+	}
+}
+
+#box1 {
+	animation-name: box1;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+}
+*/
+
+
+@keyframes box1 {
+	0% { transform: translateX(100px); }
+	20% { transform: translateX(-10px); }
+	100% { transform: translateX(450px); }
+}
+#box1 {
+	animation-name: box1;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-timing-function: cubic-bezier(.02, .73, .92, .34);
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	animation-iteration-count: 2;
+	/* animation: animation 2000ms linear infinite both; */
+}
+
+/* pre-defined animation timing functions
+ease: default -- slow, faster, slow
+linear -- Constant Speed
+ease-in -- slow to faster
+ease-out -- fast to slow
+ease-in-out -- slow, faster, slow */
+
+/* cubic-bezier.com for your cubic-bezier curve generator */
