@@ -2,30 +2,41 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: #ffc;
 }
+
+@keyframes example {
+	0% {
+		background-color: red;
+		transform: rotate(0deg);
+	}
+	25% {
+		background-color: orange;
+		transform: rotate(45deg);
+		border-radius: 12.5em 0em 0em 0em;
+	}
+	50% {
+		background-color: yellow;
+		transform: rotate(90deg);
+		border-radius: 12.5em 12.5em 0em 0em;
+	}
+	75% {
+		background-color: green;
+		transform: rotate(135deg);
+		border-radius: 12.5em 12.5em 12.5em 0em;
+	}
+	100% {
+		background-color: blue;
+		transform: rotate(180deg);
+		border-radius: 12.5em;
+	}
+}
+
 div {
   width: 25em;
   height: 25em;
   margin: 5em;
-  background-color: red; 
+  background-color: red;
+	animation-name: example;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
