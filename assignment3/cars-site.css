@@ -158,10 +158,22 @@ h1:hover,h2:hover,h3:hover,h1:focus,h2:focus,h3:focus{
 }
 
 @keyframes fadetogray {
-  0% { background-color: lightcoral; }
-  33% { background-color: lightblue; }
-  66% { background-color: lightgreen; }
-  100% { background-color: lightgray; }
+  0% {
+    background-color: lightcoral;
+    transform: skewX(0deg);
+  }
+  33% {
+    background-color: lightblue;
+    transform: skewX(5deg);
+  }
+  66% {
+    background-color: lightgreen;
+    transform: skewX(0deg);
+  }
+  100% {
+    background-color: lightgray;
+    transform: skewX(-5deg);
+  }
 }
 
 .skewonhover {
