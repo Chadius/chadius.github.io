@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="cars-site.css" rel="stylesheet">
+  <title>Cars By Chad Serrant</title>
+  <script src="https://use.fontawesome.com/ca72266b04.js"></script>
+</head>
+<body>
+<header>
+  <strong>Cars!</strong>
+  by Chad Serrant
+</header>
+<nav>
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./about.html">About me</a></li>
+    <li><a href="./highlight.html">Monthly Highlight</a></li>
+  </ul>
+</nav>
+<article class="main" role="main">
+  <h1>Cars</h1>
+  <p>
+    Have you ever wanted to blaze through town, with nothing but the wind at your back?
+  </p>
+  <img src="http://lorempixel.com/200/200/transport/" alt="Randomly selected transport">
+  <p>You should try a car!</p>
+  <h2>Types of cars</h2>
+  <p>Almost everyone uses one, and it's easy to learn how to drive! Pedal to the metal!</p>
+  <p>Deep down inside, every vehicle is a car.</p>
+
+  <div class="table-highlight">
+    <table>
+      <caption>Types of Cars</caption>
+      <tr>
+        <th>Vehicle Name</th>
+        <th>Number of Wheels</th>
+        <th>Travel Surface</th>
+        <th>Number of Passengers</th>
+      </tr>
+      <tr>
+        <td>Compact Car</td>
+        <td>4</td>
+        <td>Road</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Big Rig</td>
+        <td>18</td>
+        <td>Road</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Motorcycle</td>
+        <td>2</td>
+        <td>Road</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Hydrofoil</td>
+        <td>0</td>
+        <td>Water</td>
+        <td>4</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+  <h2>Survey - What's your dream car?</h2>
+  <p>Fill out this survey and tell us what's in your dream vehicle!</p>
+  <fieldset>
+    <form action="" method="">
+      <label for="car_name">What's the name of your dream vehicle?</label>
+        <input type="text" id="car_name">
+      <label for="car_color">What's your favorite car color?</label>
+        <input type="color" id="car_color">
+      <label for="wheels">How many wheels do you want?</label>
+        <input type="number" id="wheels" min="0" max="18">
+      <label for="feature">What outlandish feature should it have?</label>
+        <select name="feature" id="feature">
+          <option selected>Select one...</option>
+          <option value="flight">I want a flying car!</option>
+          <option value="amphibious">Make it amphibous so I can drive over water.</option>
+          <option value="efficient">High fuel efficiency</option>
+          <option value="capacity">Lots of space for packages and passengers</option>
+          <option value="automatic">Self driving!</option>
+        </select>
+      <label for="release_date">When do you think this car will be available for a test drive?</label>
+        <input type="date" id="release_date">
+      <button type="submit">Submit</button>
+    </form>
+  </fieldset>
+</article>
+<article class="highlight">
+  <p class="yell">Highlight</p>
+  <a href="./highlight.html">
+    <img src="http://lorempixel.com/100/100/transport/" alt="This highlighted vehicle of the month: Zoommaster 500">
+  </a>
+  <p>This month's highlight is the Zoommaster 500. Click here or on the image to learn more about it. Zoom Zoom!</p>
+</article>
+<aside class="subscribe">Please subscribe!</aside>
+<footer class="copyright">Copyright 2017 by Chad Serrant.</footer>
+<script type="text/javascript" src="http://paypal.github.io/skipto/downloads/js/SkipTo.min.js"></script>
+</body>
+</html>
