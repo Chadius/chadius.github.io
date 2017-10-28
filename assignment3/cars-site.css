@@ -72,6 +72,11 @@ aside.subscribe {
   position: fixed;
   left: 0.5rem;
   bottom: 2rem;
+  transition: all 1s ease-out 0.3s;
+}
+
+aside.subscribe:hover{
+  transform: translateY(2rem);
 }
 
 article.two-column {
@@ -140,4 +145,41 @@ h1:hover,h2:hover,h3:hover,h1:focus,h2:focus,h3:focus{
     outline: none;
     border-color: #9ecaed;
     box-shadow: 0 0 10px #9ecaed;
+}
+
+#about-me {
+    animation-name: fadetogray;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadetogray {
+  0% { background-color: lightcoral; }
+  100% { background-color: lightgray; }
+}
+
+.skewonhover {
+  transition: all 1s ease-in-out 0.3s;
+}
+.skewonhover:hover {
+  transform: skewX(30deg);
+}
+
+.spintowin:hover {
+  animation-name: spinning;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinning {
+  0% { transform: rotate(0deg) scale(1,1);}
+  100% { transform: rotate(360deg) scale(1.2,1.2);}
 }
