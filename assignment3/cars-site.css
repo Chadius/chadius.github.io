@@ -247,3 +247,41 @@ h1:hover,h2:hover,h3:hover,h1:focus,h2:focus,h3:focus{
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+@keyframes fade-in {
+  0% { filter: blur(10px); }
+  100% { filter: blur(0px); }
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes invert-in {
+  0% { filter: invert(1); }
+  100% { filter: invert(0); }
+}
+
+.invert-in {
+  animation-name: invert-in;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+img.sepia {
+  filter: sepia(1);
+}
+
+img.contrast {
+  filter: contrast(1.8);
+}
+
+img.saturated {
+  filter: saturate(2);
+}
+
+img.redtint {
+  filter: sepia(1) hue-rotate(300deg);
+}
