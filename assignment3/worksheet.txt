@@ -1,0 +1,69 @@
+DGMD E-20 Assignment 3
+
+Your name:
+Chad Serrant
+
+1. Provide a link to the first page of your website:
+https://chadius.github.io/assignment3/index.html
+
+My site looks the way I want on (choose one): Mac  PC
+Mac
+
+With this browser (choose one): Firefox Chrome
+Chrome
+
+TRANSITIONS & TRANSFORMS (25% of grade)
+Provide URL(s) and starting line number(s) for HTML and CSS for each item.
+
+2a. Instance #1 of transforms:
+index.html, line 253
+cars-site.css, line 78 (part of a transition between lines 69-80)
+
+2b. Instance #2 of transforms:
+about.html, line 24
+cars-site.css, line 160 (part of an animation between lines 150-177)
+
+3a. Instance #1 of transition, which is associated with a transform:
+index.html, line 253
+cars-site.css, line 75 (associated with transform on line 79)
+
+3b. Instance #2 of transition:
+highlight.html, line 27
+cars-site.css, line 180 (associated with transform on line 183)
+
+CSS ANIMATION (25% of grade)
+Provide URL(s) and starting line number(s) for HTML and CSS for each item.
+
+For the animation with at least 4 keyframes:
+4. Keyframes start on this CSS line number:
+cars-site.css, line 196
+
+5a. First property that changes through the 4 keyframes:
+rotate
+5b. Second property that changes through the 4 keyframes:
+scale
+6. This animation is activated on (choose one):
+page load/hover/active state of link
+hover
+(object is on index.html, line 28)
+SVG PLUS ANIMATION (25% of grade)
+
+7. Indicate where the SVG starts (separate file or starting HTML line number):
+index.html, line 30
+8. Attribution for SVG, or indicate that you created it yourself:
+I created the SVG file
+9a. SVG animation keyframe location (starting CSS line number):
+cars-site.css, line 204-217, line 226-242
+9b. URL location of the SVG animation:
+cars-site.css, line 219-224, line 244-249
+
+CSS FILTERS (25% of grade)
+Provide URL(s) and starting line number(s) for HTML and CSS for each item.
+
+10a. CSS filter #1, which was transitioned/animated:
+cars-site.css, line 262-265, line 267-271
+highlight.html, line 29
+
+10b. CSS filter #2:
+cars-site.css, line 285
+about.html, line 39
