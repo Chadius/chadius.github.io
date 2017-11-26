@@ -1,0 +1,26 @@
+.wrapper {
+	display: grid;
+	grid-gap: 10px;
+	font-family: Arial, sans-serif;
+}
+.wrapper > * {
+	padding: 1em;
+	border-radius: 1em;
+}
+header {
+	background-color: blue;
+	color: white;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+article {
+	background-color: green;
+	color: white;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+aside {
+	background-color: yellow;
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
