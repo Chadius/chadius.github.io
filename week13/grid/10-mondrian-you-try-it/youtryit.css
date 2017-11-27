@@ -3,7 +3,7 @@
   width: 633px;
   height: 458px;
   background: url(mondrian2.png) no-repeat;
- 
+  display: grid;
 }
 div {
 	border: 1px solid black;
@@ -11,42 +11,49 @@ div {
 	opacity: 0.5;
 }
 .a {
-
+  grid-row: 1/5;
+  grid-column: 1/2;
 }
 .b {
-
+  grid-row: 1/3;
+  grid-column: 2/3;
 }
 .c {
-
+  display: none;
+  grid-row: 1/6;
+  grid-column: 1/4;
 }
 .d {
-
+  display: none;
+  grid-row: 1/6;
+  grid-column: 1/4;
 }
 .e {
-
+  display: none;
+  grid-row: 1/6;
+  grid-column: 1/4;
 }
 .f {
-
+  display: none;
+  grid-row: 1/6;
+  grid-column: 1/4;
 }
 .g {
-	
+  display: none;
+  grid-row: 1/6;
+  grid-column: 1/4;
 }
 .h {
-	
+  grid-row: 5/6;
+  grid-column: 1/2;
 }
 .i {
-	
+  display: none;
+  grid-row: 1/6;
+  grid-column: 1/4;
 }
 .j {
-	
+  display: none;
+  grid-row: 1/6;
+  grid-column: 1/4;
 }
-
-
-
-
-
-
-
-
-
-
