@@ -1,12 +1,12 @@
-/* Border box declaration 
+/* Border box declaration
 https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
   box-sizing: border-box;
 }
 /* inherit border-box on all elements in the universe and before and after
  */
-*, 
-*:before, 
+*,
+*:before,
 *:after {
   box-sizing: inherit;
 }
@@ -27,48 +27,50 @@ a {
 /* hack to make images flexible in our prototype */
 div img {
 	width: 100%;
-	max-width: 250px; 
+	max-width: 250px;
 }
 /* grid system */
-.row {
-	display: flex;
-	flex-flow: row wrap;
-	flex: 0 1 auto;
+.wrapper {
+  width: 97%
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
 }
 [class*="col-"] {
 	flex: 0 0 92%;
 	margin-left: 4%;
 }
-.col-1 {
+article {
 	background-color: #ffc;
-	flex: 0 0 20%;
 }
-.col-2 {
+.r2c1, .r2c2, .r5c1 {
 	background-color: #ccf;
-	flex: 0 0 44%;
 }
-.col-3 {
+.r3c1 {
 	background-color: #fcf;
-	flex: 0 0 68%;
 }
-.col-4 {
+.r4c1 {
 	background-color: #cff;
-	flex: 0 0 92%;
 }
-.order-first {
-	order: 1;
-}	
-.order-second {
-	order: 2;
+/*
+.r1c1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
-.order-third {
-	order: 3;
+.r1c2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
-.order-fourth {
-	order: 4;
+.r1c3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
-
-
-
-
-
+.r1c4 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+*/
