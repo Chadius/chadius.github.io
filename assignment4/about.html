@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="cars-site.css" rel="stylesheet">
+  <link href="cars-grid.css" rel="stylesheet">
   <title>Cars By Chad Serrant</title>
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   <script src="https://use.fontawesome.com/ca72266b04.js"></script>
@@ -14,23 +14,55 @@
   <strong>Cars!</strong>
   by Chad Serrant
 </header>
-<nav>
-  <ul>
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./about.html">About me</a></li>
-    <li><a href="./highlight.html">Monthly Highlight</a></li>
-  </ul>
-</nav>
-<article class="two-column" role="main">
-  <p class="yell">About me</p>
-  <p class="columns">I am Chad Serrant, software engineer and aspiring game designer. User Interface is a very important yet often ignored part of product design.<BR>
-  <BR>
-  Did you know this section was typed using multiple columns? Mess around with the page width if it isn't apparent.<BR>
-  <BR>
-  Anyway I am certain I will pass this course with flying colors because I work hard and never give up.<BR>
-  <BR>
-  Now, go look at one of the other links in the navigation bar.</p>
-</article>
+<div class="wrapper">
+  <nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About me</a></li>
+      <li><a href="./highlight.html">Monthly Highlight</a></li>
+    </ul>
+  </nav>
+  <article class="two-column row" role="main">
+    <p class="yell">About me</p>
+    <p class="columns">I am Chad Serrant, software engineer and aspiring game designer. User Interface is a very important yet often ignored part of product design.<BR>
+    <BR>
+    Did you know this section was typed using multiple columns? Mess around with the page width if it isn't apparent.<BR>
+    <BR>
+    Anyway I am certain I will pass this course with flying colors because I work hard and never give up.<BR>
+    <BR>
+    Now, go look at one of the other links in the navigation bar.</p>
+  </article>
+  <div class="row">
+    <h2>Other website ideas:</h2>
+  </div>
+  <div class="row column">
+    <div class="cell1">
+      <h3>Sports Land</h3>
+      <img src="http://lorempixel.com/200/200/sports/" alt="Sports land!" class="centered">
+    </div>
+    <div class="cell2">
+      <p>Sports Land description</p>
+    </div>
+  </div>
+  <div class="row column">
+    <div class="cell2">
+      <h3>Food in your Tummy</h3>
+      <img src="http://lorempixel.com/200/200/food/" alt="Food in your Tummy" class="centered">
+    </div>
+    <div class="cell3">
+      <p>Food in your Tummy is all about food. Food around the world. Food in different cultures. Just make sure it fits in your tummy!</p>
+    </div>
+  </div>
+  <div class="row column">
+    <div class="cell1">
+      <img src="http://lorempixel.com/150/150/nightlife/" alt="Nighttime in the City" class="centered">
+      <h3>Nighttime in the City</h3>
+    </div>
+    <div class="cell2">
+      <p>Nighttime in the City is dedicated to talking about night clubs, dance halls, urban spelunking and all the fun stuff when the sun sets.</p>
+    </div>
+  </div>
+</div>
 <aside class="subscribe">Please subscribe!</aside>
 <footer class="copyright">Copyright 2017 by Chad Serrant.</footer>
 <script type="text/javascript" src="http://paypal.github.io/skipto/downloads/js/SkipTo.min.js"></script>
