@@ -80,7 +80,7 @@ footer.copyright {
   width: 97%;
 	margin: 0 auto;
   display: grid;
-  grid-gap: 0.5em;
+  grid-gap: calc(1em / 10);
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }

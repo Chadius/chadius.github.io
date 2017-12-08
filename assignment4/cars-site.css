@@ -85,6 +85,10 @@ img.centered {
   margin: auto;
 }
 
+img.off-left {
+  padding-left: calc(50px * 2);
+}
+
 img.centered {
   content: "";
   top: 0;

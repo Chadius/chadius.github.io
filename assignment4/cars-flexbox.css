@@ -89,7 +89,8 @@ header {
 aside.subscribe {
   flex: 0 0 10%;
   border: 0.2rem solid blue;
-  align-self: center;
+  padding: 0 calc(20px - 10px);
+  align-self: baseline;
 }
 
 footer.copyright {
