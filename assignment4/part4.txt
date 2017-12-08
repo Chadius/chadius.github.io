@@ -1,5 +1,12 @@
+CSS columns
+One good use case is a newspaper display, where it's easy to break up text into multiple columns.
+As the name implies, CSS columns is great for column display and not much else. You do have fine control over the size of the columns though.
+
 Flexbox
+Flexbox is very useful when you want to display information along a single access, like with a slideshow. You can dynamically add elements to the row without specifying their exact placement.
 Flexbox relies on rows as its core element, so it's difficult to create an element that spans multiple rows or columns.
 
 CSS Grid
 This is extremely easy to set up elements in a grid-like pattern. You can specify what columns you want it to fulfill.
+I found it a bit difficult to add small, special elements into the grid without adding a new row/column and editing the rest of the CSS.
+Because it grows and shrinks as needed, this is an excellent choice when you aren't certain on the dimensions of the display. Is it tall? Wide? CSS Grid will figure it out.
