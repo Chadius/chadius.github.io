@@ -1,0 +1,51 @@
+DGMD E-20 Assignment 4
+
+Your name:
+
+1. Provide a link to the first page of your website:
+
+My site looks the way I want on (choose one): Mac  PC
+
+With this browser (choose one): Firefox Chrome
+
+
+PART 1A FLEXBOX GAME
+2. Take a screenshot of the "winning" final screen for either game. Set this aside to include in your final submitted zip file.
+
+
+PART 1B FLEXBOX LAYOUT
+Provide URL(s) and starting line number(s) for HTML and CSS for each item.
+
+3.URL for the page coded with Flexbox grid layout. In the CSS, include a comment for where the Flexbox grid layout starts.
+
+4. Number of columns used in your grid system:
+
+5. HTML and CSS line numbers for where grid reordering occurs:
+
+
+PART 2A MONDRIAN PAINTING
+6. URL for your coded Mondrian painting:
+
+
+PART 2B GRID LAYOUT
+7. URL for the page coded with Grid layout. In the CSS, include a comment for where the Grid layout starts.
+
+8. HTML and CSS line numbers for where grid reordering occurs:
+
+9. HTML and CSS line numbers for where grid offset OR nested grid occurs:
+
+
+PART 3 CSS CALC
+Provide URL(s) and starting line number(s) for HTML and CSS for each item.
+
+10. Calc used here #1:
+
+11. Calc used here #2:
+
+12. Calc used here #3:
+
+
+PART 4: CSS LAYOUT PAPER
+If you have created a .DOC(X) file, PDF file, or a text file, zip it as part of your submission.
+Please read "part4.txt"
+If you want to use Google Docs or similar online service, indicate a URL where we might find your paper:
