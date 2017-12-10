@@ -3,18 +3,18 @@ During this term, you encountered many methodologies for laying out web pages an
 
 Choose three of these methodologies and write no more than 1 page comparing and contrasting these methods.
 =====
-CSS columns
-One good use case is a newspaper display, where it's easy to break up text into multiple columns.
-As the name implies, CSS columns is great for column display and not much else. You do have fine control over the size of the columns though.
+CSS3 columns
+One good use case is a newspaper display, where it's easy to break up text into multiple columns. You do have fine control over the size and relative alignment of the columns, since it is so specialized.
+As the name implies, CSS columns is great for column display and not much else.
 
 Flexbox
 Flexbox is very useful when you want to display information along a single axis, like with a slideshow. You can dynamically add elements to the row without specifying their exact placement.
-Flexbox relies on rows as its core element, so it's difficult to create an element that spans multiple rows or columns.
+Flexbox is based on placing elements in a single row. So it is difficult to create an element that spans multiple rows or columns.
 
 CSS Grid
-This is extremely easy to set up elements in a grid-like pattern. You can specify what columns you want it to fulfill.
+With this layout, it is extremely easy to set up elements in a grid-like pattern. You can specify the size of the grid columns and rows, as well as the size of individual elements.
 
-I found it a bit difficult to add small elements into the grid without adding a new row/column and editing the rest of the CSS. Compare this to Flexbox's space-around attribute.
+I found it a bit difficult to add small elements into the grid without adding a new row/column and editing the rest of the CSS. Compare this to Flexbox's space-between/space-around attributes, where adding a new element dynamically adjusts spacing.
 
 Because it grows and shrinks as needed, this is an excellent choice when you aren't certain on the dimensions of the display. Is it tall? Wide? CSS Grid will figure it out.
 
@@ -22,7 +22,7 @@ Might you ever combine methodologies? Which methodologies? Why?
 =====
 Combining formats will help emphasize each kind of layout methodology. A newspaper website, for example, could use CSS Columns for the article text. Put the CSS Column div inside of a CSS Grid layout.
 
-Flexbox is very useful when displaying elements along a single axis. You can put the Flexbox element inside of a CSS Grid if you want it to always remain among a single row.
+Flexbox is very useful when displaying elements along a single axis. You can put the Flexbox element inside of a CSS Grid if you want it to always remain inside a single row.
 
 Which one of the three is "best?" (Be sure you define "best.") Why is it the best?
 =====
