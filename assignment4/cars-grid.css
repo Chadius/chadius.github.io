@@ -23,7 +23,7 @@ body {
 header {
   font-size: 2rem;
 }
-
+/* assignment 4, part 2b starts here */
 .wrapper {
 	width: 97%;
 	margin: 0 auto;
@@ -85,11 +85,18 @@ footer.copyright {
   grid-template-rows: 1fr;
 }
 
+.cell1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
 .cell2 {
+  grid-row: 1/2;
   grid-column: 2/3;
 }
 
 .cell3 {
+  grid-row: 1/2;
   grid-column: 3/4;
 }
 

@@ -2,13 +2,7 @@ Part 4: CSS layout reflection (10 points)
 During this term, you encountered many methodologies for laying out web pages and page elements with CSS, including floats, positioning, inline-block, CSS columns, Flexbox, and Grid.
 
 Choose three of these methodologies and write no more than 1 page comparing and contrasting these methods.
-
-For each chosen method, provide some positive and negative features or characteristics of the method.
-When is it appropriate to use each methodology?
-Might you ever combine methodologies? Which methodologies? Why?
-Which one of the three is "best?" (Be sure you define "best.") Why is it the best?
-You should turn in a document that addresses the above items. If this is a .DOC(X) file, PDF file, or a text file, zip it as part of your submission. If you want to use Google Docs or similar online service, submit a URL where we might find your paper.
-
+=====
 CSS columns
 One good use case is a newspaper display, where it's easy to break up text into multiple columns.
 As the name implies, CSS columns is great for column display and not much else. You do have fine control over the size of the columns though.
@@ -22,6 +16,11 @@ This is extremely easy to set up elements in a grid-like pattern. You can specif
 I found it a bit difficult to add small, special elements into the grid without adding a new row/column and editing the rest of the CSS.
 Because it grows and shrinks as needed, this is an excellent choice when you aren't certain on the dimensions of the display. Is it tall? Wide? CSS Grid will figure it out.
 
+
+Might you ever combine methodologies? Which methodologies? Why?
+=====
 Combining formats will help emphasize each kind of layout methodology. A newspaper website, for example, could use CSS Columns for the article text. But put the CSS Column div inside of a CSS Grid layout.
 
+Which one of the three is "best?" (Be sure you define "best.") Why is it the best?
+=====
 Which layout is the best? I think CSS Grid is the easiest to understand while offering a lot of flexibility in two dimensions.

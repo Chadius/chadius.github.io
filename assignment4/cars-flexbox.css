@@ -26,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* assignment 4 part 1b starts here */
 .toppicks-row {
   display: flex;
 }

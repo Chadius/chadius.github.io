@@ -4,6 +4,7 @@ Your name:
 Chad Serrant
 
 1. Provide a link to the first page of your website:
+https://chadius.github.io/assignment4/
 
 My site looks the way I want on (choose one): Mac  PC
 Mac
@@ -19,23 +20,33 @@ PART 1B FLEXBOX LAYOUT
 Provide URL(s) and starting line number(s) for HTML and CSS for each item.
 
 3.URL for the page coded with Flexbox grid layout. In the CSS, include a comment for where the Flexbox grid layout starts.
+https://chadius.github.io/assignment4/highlight.html
+cars-flexbox.css line 49
 
 4. Number of columns used in your grid system:
+3
 
 5. HTML and CSS line numbers for where grid reordering occurs:
-
+https://chadius.github.io/assignment4/highlight.html line 33-53
+cars-flexbox.css line 33-38
 
 PART 2A MONDRIAN PAINTING
 6. URL for your coded Mondrian painting:
-assignment4/part2a/youtryit.html
+https://chadius.github.io/assignment4/part2a/youtryit.html
 
 PART 2B GRID LAYOUT
 7. URL for the page coded with Grid layout. In the CSS, include a comment for where the Grid layout starts.
+https://chadius.github.io/assignment4/about.html
+cars-grid.css line 26
 
 8. HTML and CSS line numbers for where grid reordering occurs:
+https://chadius.github.io/assignment4/about.html line 49
+cars-grid.css line 88-101
 
 9. HTML and CSS line numbers for where grid offset OR nested grid occurs:
-
+Nested Grid appears in:
+https://chadius.github.io/assignment4/about.html lines 40-48, 49-57, 58-66
+cars-grid.css line 78-87
 
 PART 3 CSS CALC
 Provide URL(s) and starting line number(s) for HTML and CSS for each item.
@@ -52,4 +63,3 @@ cars-site.css line 89
 PART 4: CSS LAYOUT PAPER
 If you have created a .DOC(X) file, PDF file, or a text file, zip it as part of your submission.
 Please read "part4.txt"
-If you want to use Google Docs or similar online service, indicate a URL where we might find your paper:
