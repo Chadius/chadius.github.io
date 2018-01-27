@@ -107,27 +107,49 @@ footer {
   display: table;
   clear: both;
 }
-.col-1 {
-  width: 20%;
+[class*="col-"] {
   margin-left: 4%;
   float: left;
+}
+.col-1 {
+  width: 20%;
   background: #ffc;
 }
 .col-2 {
   width: 44%;
-  margin-left: 4%;
-  float: left;
   background: #cfc;
 }
 .col-3 {
   width: 68%;
-  margin-left: 4%;
-  float: left;
   background: #fcc;
 }
 .col-4 {
   width: 92%;
-  margin-left: 4%;
-  float: left;
   background: #ccf;
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px) and (max-width: 767px)  {
+.col-1 {
+	width: 44%;
+}
+.col-2 {
+	width: 44%;
+}
+.col-3 {
+	width: 92%;
+	}
+/* technically this style is not needed as it is the same as desktop. You could leave it out */
+.col-4 {
+	width: 92%;
+	}
+
+}
+
+/* Mobile Portrait Screen Sizes */
+@media only screen and (max-width: 479px) {
+	[class*='col-'] {
+		width: 92%;
+	}
+
 }
