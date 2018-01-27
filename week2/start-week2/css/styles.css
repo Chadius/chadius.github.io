@@ -1,0 +1,98 @@
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+	background-color: #B1D3EE;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	float: none;
+	background-color: #fff;
+}
+header {
+	background: url(../img/boston-1200.jpg) no-repeat;
+	width: 1200px;
+	height: 218px;
+	font-family: 'Cabin Condensed', sans-serif; 
+	color: #fff;
+}
+header h1 {
+	padding: 8px;
+	margin: 0;
+}
+header h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+nav {
+	background-color: #ED8F00;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+nav ul li {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+nav ul a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 16px;
+	float: left;
+}
+nav ul a:hover {
+	color: #a16100;
+}
+main {
+	overflow: auto;
+	padding-right: 48px;
+	background-color: #EFECCA;
+}
+main h2 {
+	font-size: 48px;
+	padding-top: 16px;
+}
+main p {
+	font-size: 24px;
+	font-family: 'Cabin Condensed', sans-serif;
+}
+main img {
+	float: left;
+	margin-right: 30px;
+}
+div {
+	float: left;
+	width: 250px;
+	margin-left: 40px;
+}
+footer {
+	clear: both;
+	padding: 32px 0;
+	margin: 48px 0;
+	color: #999;
+	text-align: center;
+}
