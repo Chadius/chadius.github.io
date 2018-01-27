@@ -3,8 +3,8 @@ html {
   box-sizing: border-box;
 }
 /* inherit border-box on all elements in the universe and before and after */
-*, 
-*:before, 
+*,
+*:before,
 *:after {
   box-sizing: inherit;
 }
@@ -25,7 +25,8 @@ a {
 	color: #2772B0;
 }
 .wrapper {
-	width: 1200px;
+	max-width: 1200px;
+  width: 97%;
 	margin: 0 auto;
 	float: none;
 	background-color: #fff;
@@ -34,11 +35,11 @@ header {
 	background: url(../img/boston-1200.jpg) no-repeat;
 	width: 1200px;
 	height: 218px;
-	font-family: 'Cabin Condensed', sans-serif; 
+	font-family: 'Cabin Condensed', sans-serif;
 	color: #fff;
 }
 header h1 {
-	padding: 8px;
+	padding: 0.5em;
 	margin: 0;
 }
 header h1 a {
@@ -61,7 +62,7 @@ nav ul a {
 	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
-	padding: 16px;
+	padding: 1em;
 	float: left;
 }
 nav ul a:hover {
@@ -69,30 +70,30 @@ nav ul a:hover {
 }
 main {
 	overflow: auto;
-	padding-right: 48px;
+	padding-right: 3em;
 	background-color: #EFECCA;
 }
 main h2 {
-	font-size: 48px;
-	padding-top: 16px;
+	font-size: 3em;
+	padding-top: 1em;
 }
 main p {
-	font-size: 24px;
+	font-size: 1.5em;
 	font-family: 'Cabin Condensed', sans-serif;
 }
 main img {
 	float: left;
-	margin-right: 30px;
+	margin-right: 1.875em;
 }
 div {
 	float: left;
-	width: 250px;
-	margin-left: 40px;
+	width: 250px; /* Ignore */
+	margin-left: 2.5em;
 }
 footer {
 	clear: both;
-	padding: 32px 0;
-	margin: 48px 0;
+	padding: 2em 0;
+	margin: 3em 0;
 	color: #999;
 	text-align: center;
 }
