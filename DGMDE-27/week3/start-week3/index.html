@@ -47,33 +47,46 @@
 			<p>Beautiful parks, great schools, and a strong sense of history makes Arlington one of the great places to live in eastern Massachusetts.</p>
 			<p><a href="http://www.arlingtonma.gov" target="_blank">Read more &gt;&gt;</a></p>
 		</main>
-		<div class="col-1-2">
-			<h3>Minuteman Bikeway</h3>
-		    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
-		    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
-		    <p><a href="http://www.minutemanbikeway.org/" target="_blank">Read more &gt;&gt;</a></p>
+		<div class="row sameHeights">
+			<div data-key="sameHeights" class="col-1-2">
+				<h3>Minuteman Bikeway</h3>
+			    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
+			    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
+			    <p><a href="http://www.minutemanbikeway.org/" target="_blank">Read more &gt;&gt;</a></p>
+			</div>
+			<div data-key="sameHeights" class="col-1-2">
+	    	<h3>Near Boston</h3>
+	    	<img src="img/boston-225.jpg" alt="Boston from Robbins Farm Park.">
+	    	<p>Arlington is just 6 miles from Boston, and it's served by subway and bus service.</p>
+	    	<p><a href="http://www.mbta.com" target="_blank">Read more &gt;&gt;</a></p>
+	    </div>
+	    <div data-key="sameHeights" class="col-1-2">
+	    	<h3>Art and Beauty</h3>
+	    	<img src="img/statue-225.jpg" alt="Native American statue.">
+	    	<p>"Menotomy Indian Hunter", by Cyrus E. Dallin (1911), is on display in the Winfield Robbins Memorial Garden. </p>
+	    	<p><a href="http://commons.wikimedia.org/wiki/File:Menotomy_Indian_Hunter_by_Cyrus_E._Dallin_-_Arlington,_Massachusetts.JPG" target="_blank">Read more &gt;&gt;</a></p>
+	    </div>
+	    <div data-key="sameHeights" class="col-1-2">
+	    	<h3>Historic Structures</h3>
+	    	<img src="img/watertower-225.jpg" alt="Arlington Water Tower." class="img-responsive">
+	    	<p>The Arlington Water Tower is just one of many unique and historic structures in Arlington.</p>
+	    	<p><a href="http://en.wikipedia.org/wiki/Arlington_Reservoir_(Arlington,_Massachusetts)" target="_blank">Read more &gt;&gt;</a></p>
+	    </div>
+	    <footer class="col-4">
+	    	<p>&copy; 2015 Your Town.</p>
+	    </footer>
 		</div>
-		<div class="col-1-2">
-    	<h3>Near Boston</h3>
-    	<img src="img/boston-225.jpg" alt="Boston from Robbins Farm Park.">
-    	<p>Arlington is just 6 miles from Boston, and it's served by subway and bus service.</p>
-    	<p><a href="http://www.mbta.com" target="_blank">Read more &gt;&gt;</a></p>
-    </div>
-    <div class="col-1-2">
-    	<h3>Art and Beauty</h3>
-    	<img src="img/statue-225.jpg" alt="Native American statue.">
-    	<p>"Menotomy Indian Hunter", by Cyrus E. Dallin (1911), is on display in the Winfield Robbins Memorial Garden. </p>
-    	<p><a href="http://commons.wikimedia.org/wiki/File:Menotomy_Indian_Hunter_by_Cyrus_E._Dallin_-_Arlington,_Massachusetts.JPG" target="_blank">Read more &gt;&gt;</a></p>
-    </div>
-    <div class="col-1-2">
-    	<h3>Historic Structures</h3>
-    	<img src="img/watertower-225.jpg" alt="Arlington Water Tower." class="img-responsive">
-    	<p>The Arlington Water Tower is just one of many unique and historic structures in Arlington.</p>
-    	<p><a href="http://en.wikipedia.org/wiki/Arlington_Reservoir_(Arlington,_Massachusetts)" target="_blank">Read more &gt;&gt;</a></p>
-    </div>
-    <footer class="col-4">
-    	<p>&copy; 2015 Your Town.</p>
-    </footer>
 	</div>
+	<script src="js/easypeasy.js"></script>
+	<script type="text/javascript">
+	if ('addEventListener' in window) {
+	    window.addEventListener('resize', function(){
+	        sameHeights();
+	    });
+	    window.addEventListener('load', function(){
+	        sameHeights();
+	    });
+	}
+	</script>
 </body>
 </html>
