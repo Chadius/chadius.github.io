@@ -36,31 +36,30 @@ blockquote ~ blockquote cite {
 }
 /* this line places an &mdash; before the citation.
 Property "content" doesn't understand &mdash; but it does
-understand the unicode version. To get translation of 
+understand the unicode version. To get translation of
 special characters to unicode or HTML entity,
 see http://www.w3schools.com/charsets/ref_utf_punctuation.asp */
 blockquote ~ blockquote cite::before {
 	content: "\2014  ";
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[class*='col-'] {
+position: relative;
+}
+.col-push-1 {
+left: 24.16666%;
+/* push over 1 column, 20.83333% plus one margin of 3.3333% */
+}
+.col-pull-3 {
+left: -72.49999%;
+/* pull over 3 columns, 69.1666% plus one margin of 3.3333% */
+}
+/* Mobile Landscape Screen Sizes */
+@media (max-width: 767px) {
+ .col-push-1 {
+ left: 0;
+ }
+ .col-pull-3 {
+ left: 0;
+ }
+}

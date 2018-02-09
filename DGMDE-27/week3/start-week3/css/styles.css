@@ -85,8 +85,8 @@ div img {
 main img {
 	float: left;
 	margin-right: 1.875em;
-	width: 100%;
-	max-width: 400px;
+	width: auto;
+	max-width: auto;
 }
 footer {
 	clear: both;
@@ -140,10 +140,23 @@ footer {
 	[class*='col-'] {
 		width: 92%;
 	}
-
+  main {
+  padding-right: 1em;
+  }
+  main h2 {
+  font-size: 1.5em;
+  padding-top: 0em;
+  }
+  main p {
+  font-size: 1em;
+  font-family: 'Cabin Condensed', sans-serif;
+  }
+  main img {
+  padding-right: 0em;
+  }
 }
 /* adjust "discover" box for smaller width */
-@media only screen and (min-width: 702px) and (max-width: 866px){
+@media only screen and (min-width: 1014px){
 	main h2 {
 		font-size: 2.5em;
 		padding-top: 0em;
@@ -155,7 +168,7 @@ footer {
 }
 
 /* adjust "discover" box again and change nav layout */
-@media only screen and (max-width: 701px)  {
+@media only screen and (max-width: 1013px)  {
 
 	main h2 {
 		font-size: 2em;
@@ -164,10 +177,6 @@ footer {
 	main p {
 		font-size: 1.2em;
 		font-family: 'Cabin Condensed', sans-serif;
-	}
-	main img {
-		float: none;
-		margin: 0;
 	}
 	/* splits nav into 2 columns
 	http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
