@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.wrapper {
+	width: 97%;
+	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+[class^='column'] {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0.2em 0 0.2em;
+}
+.column-1 {
+  flex-grow: 1;
+  background-color: lightblue;
+}
+.column-2 {
+  flex-grow: 2;
+  background-color: pink;
+}
+.column-3 {
+  flex-grow: 3;
+  background-color: lightgreen;
+}
+.column-4 {
+  flex-grow: 4;
+  background-color: lightgray;
+}
+.column-5 {
+  flex-grow: 5;
+  background-color: orange;
+}
+.yell {
+  font-size: 2em;
+}
+header {
+  background: url(http://lorempixel.com/1000/200/food/) no-repeat;
+  height: 200px;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+nav ul a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 1em;
+	float: left;
+}
+nav ul a:hover {
+	color: blue;
+}
