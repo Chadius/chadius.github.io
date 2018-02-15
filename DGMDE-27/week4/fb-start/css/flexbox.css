@@ -1,12 +1,12 @@
-/* Border box declaration 
+/* Border box declaration
 https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
   box-sizing: border-box;
 }
 /* inherit border-box on all elements in the universe and before and after
  */
-*, 
-*:before, 
+*,
+*:before,
 *:after {
   box-sizing: inherit;
 }
@@ -26,8 +26,8 @@ a {
 /* hack to make images flexible in our prototype */
 div img {
 	width: 100%;
-	max-width: 250px; 
-} 
+	max-width: 250px;
+}
 /* grid system */
 .row {
 	display: flex;
@@ -35,34 +35,19 @@ div img {
 }
 [class*="col"] {
 	margin-right: 4%;
+  flex-basis: 0 0 92%;
 }
 .col-1 {
-	flex: 0 0 20%;
 	background-color: #ffc;
 }
 .col-2 {
-	flex: 0 0 44%;
 	background-color: #ccf;
 }
 .col-3 {
-	flex: 0 0 68%;
 	background-color: #fcf;
 }
 .col-4 {
-	flex: 0 0 92%;
 	background-color: #cff;
-}
-.order-first {
-	order: 1;
-}	
-.order-second {
-	order: 2;
-}
-.order-third {
-	order: 3;
-}
-.order-fourth {
-	order: 4;
 }
 
 /* global alignment options */
@@ -71,3 +56,42 @@ div img {
 }
 
 
+@media (min-width: 767px) {
+  .col-1,
+  .col-2 {
+    flex: 0 0 44%;
+  }
+  .col-1-4,
+  .col-2-4,
+  .col-3,
+  .col-4 {
+    flex: 0 0 92%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .col-1 {
+  	flex: 0 0 20%;
+  }
+  .col-2 {
+  	flex: 0 0 44%;
+  }
+  .col-3 {
+  	flex: 0 0 68%;
+  }
+  .col-4 {
+  	flex: 0 0 92%;
+  }
+  .order-first {
+  	order: 1;
+  }
+  .order-second {
+  	order: 2;
+  }
+  .order-third {
+  	order: 3;
+  }
+  .order-fourth {
+  	order: 4;
+  }
+}
