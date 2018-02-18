@@ -1,0 +1,128 @@
+/* Mobile dimensions (default) */
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.drinks-dessert {
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  background-color: orange;
+}
+
+.hours {
+  background-color: orange;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+}
+
+.us-catering {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+}
+
+.catering {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet dimensions */
+@media (min-width: 750px) {
+  .map-hours {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .map-hours .map {
+    flex: 0 0 45%;
+    margin-right: 5%;
+  }
+
+  .map-hours .hours {
+    flex: 0 0 45%;
+    margin-right: 5%;
+  }
+
+  .us-catering {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-us {
+    flex: 0 0 45%;
+    margin-right: 5%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catering {
+    flex: 0 0 45%;
+    margin-right: 5%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/* Desktop dimensions */
+@media (min-width: 1000px) {
+  .map-hours {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .map-hours .map {
+    flex: 0 0 60%;
+    margin-right: 5%;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .map-hours .map div {
+    flex: 0 0 60%;
+  }
+
+  .map-hours .hours {
+    flex: 0 0 30%;
+    margin-right: 5%;
+    background-color: orange;
+  }
+
+  .us-catering {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-us {
+    flex: 0 0 35%;
+    margin-right: 5%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catering {
+    flex: 0 0 55%;
+    margin-right: 5%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+  }
+}
