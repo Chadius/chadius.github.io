@@ -49,75 +49,50 @@ nav ul a:hover {
 	color: blue;
 }
 
-.row-to-column,
-.row {
+/* Mobile dimensions (default) */
+header {
   display: flex;
   flex-direction: row;
 }
 
-/* Tablet dimensions */
-@media (min-width: 750px) {
-  .tablet-row {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .row-to-column {
-    flex-direction: column-reverse;
-  }
-
-  .left-side {
-    flex: 0 0 48%;
-    margin-right: 2%;
-    background-color: lightblue;
-    order: -1;
-  }
-
-  .right-side {
-    flex: 0 0 48%;
-    margin-right: 2%;
-    background-color: pink;
-  }
-
-  .banner {
-    flex: 0 0 90%;
-    margin: 0 5% 0 5%;
-    background-color: lightgray;
-  }
+header h1 {
+  flex: 0 0 45%;
+  margin-right: 5%;
+  background-color: lightblue;
 }
+
+header nav {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: row;
+  background-color: lightblue;
+}
+
+nav div {
+  flex: 0 0 45%;
+  margin-right: 5%
+}
+
 /* Desktop dimensions */
 @media (min-width: 1000px) {
-  .row-to-column {
-    flex-direction: column;
-  }
-  [class^='column'] {
+  header {
     display: flex;
     flex-direction: column;
-    margin: 1em 0.2em 0 0.2em;
   }
-  .column-1 {
-    flex: 0 0 18%;
-    margin-right: 2%;
+
+  header h1 {
+    margin-bottom: 5%;
     background-color: lightblue;
   }
-  .column-2 {
-    flex: 0 0 38%;
-    margin-right: 2%;
-    background-color: pink;
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
   }
-  .column-3 {
-    flex: 0 0 58%;
-    margin-right: 2%;
-    background-color: lightgreen;
-  }
-  .column-4 {
-    flex: 0 0 78%;
-    margin-right: 2%;
-    background-color: lightgray;
-  }
-  .column-5 {
-    flex: 0 0 98%;
-    margin-right: 2%;
-    background-color: orange;
+
+  nav div {
+    flex: 0 0 45%;
+    margin-right: 5%
   }
 }
