@@ -27,6 +27,7 @@ div img {
 
 .yell {
   font-size: 2em;
+  margin: 0.5em 0;
 }
 header {
   background: url(http://lorempixel.com/1000/200/food/) no-repeat;
@@ -47,6 +48,15 @@ nav ul a {
 }
 nav ul a:hover {
 	color: blue;
+}
+
+section {
+  background-color: lightgreen;
+  margin-bottom: 1em;
+}
+
+aside {
+  background-color: lightgray;
 }
 
 /* Mobile dimensions (default) */
@@ -70,7 +80,42 @@ header nav {
 
 nav div {
   flex: 0 0 45%;
-  margin-right: 5%
+  margin-right: 5%;
+}
+
+.restaurant-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  background-color: orange;
+}
+
+.hours {
+  background-color: orange;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+}
+
+.us-catering {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+}
+
+.catering {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Desktop dimensions */
@@ -92,7 +137,52 @@ nav div {
   }
 
   nav div {
-    flex: 0 0 45%;
-    margin-right: 5%
+    flex: 0 0 15%;
+    margin-right: 5%;
   }
+
+  .map-hours {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .map-hours .map {
+    flex: 0 0 60%;
+    margin-right: 5%;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .map-hours .map div {
+    flex: 0 0 60%;
+  }
+
+  .map-hours .hours {
+    flex: 0 0 30%;
+    margin-right: 5%;
+    background-color: orange;
+  }
+
+  .us-catering {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-us {
+    flex: 0 0 35%;
+    margin-right: 5%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catering {
+    flex: 0 0 55%;
+    margin-right: 5%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+  }
+
 }
