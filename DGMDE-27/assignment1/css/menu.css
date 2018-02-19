@@ -9,6 +9,10 @@
   flex-direction: column;
 }
 
+.drinks-dessert section {
+  padding: 1em 1em;
+}
+
 .appetizer-entree section{
   padding: 1em 1em;
 }
