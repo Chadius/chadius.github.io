@@ -17,19 +17,23 @@
   flex-direction: column;
 }
 
+.directions {
+  background-color: orange;
+}
+
 .us-catering {
   display: flex;
   flex-direction: column;
 }
 
 .about-us {
-  background-color: orange;
+  background-color: lightgray;
   display: flex;
   flex-direction: column;
 }
 
 .catering {
-  background-color: orange;
+  background-color: lightgray;
   display: flex;
   flex-direction: column;
 }
@@ -47,7 +51,12 @@
   }
 
   .map-hours .hours {
-    flex: 0 0 45%;
+    flex: 0 0 15%;
+    margin-right: 5%;
+  }
+
+  .map-hours .directions {
+    flex: 0 0 15%;
     margin-right: 5%;
   }
 
@@ -59,7 +68,6 @@
   .about-us {
     flex: 0 0 45%;
     margin-right: 5%;
-    background-color: orange;
     display: flex;
     flex-direction: column;
   }
@@ -67,7 +75,6 @@
   .catering {
     flex: 0 0 45%;
     margin-right: 5%;
-    background-color: orange;
     display: flex;
     flex-direction: column;
   }
@@ -82,22 +89,28 @@
   }
 
   .map-hours .map {
-    flex: 0 0 60%;
+    flex: 0 0 45%;
     margin-right: 5%;
-    background-color: orange;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 1em 1em;
   }
 
   .map-hours .map div {
     flex: 0 0 60%;
   }
 
-  .map-hours .hours {
-    flex: 0 0 30%;
+  .map-hours .directions {
+    flex: 0 0 20%;
     margin-right: 5%;
-    background-color: orange;
+    padding: 0 1em;
+  }
+
+  .map-hours .hours {
+    flex: 0 0 20%;
+    margin-right: 5%;
+    padding: 0 1em;
   }
 
   .us-catering {
@@ -108,7 +121,6 @@
   .about-us {
     flex: 0 0 35%;
     margin-right: 5%;
-    background-color: orange;
     display: flex;
     flex-direction: column;
   }
@@ -116,7 +128,6 @@
   .catering {
     flex: 0 0 55%;
     margin-right: 5%;
-    background-color: orange;
     display: flex;
     flex-direction: column;
   }
