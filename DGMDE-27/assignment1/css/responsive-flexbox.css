@@ -30,7 +30,7 @@ div img {
   margin: 0.5em 0;
 }
 header {
-  background: url("../Samosachutney.jpg") no-repeat;
+  background: url("../images/Samosachutney.jpg") no-repeat;
   background-size: cover;
 }
 nav {
@@ -91,7 +91,7 @@ nav div {
   header {
     display: flex;
     flex-direction: column;
-    background: url("../Samosachutney800.jpg") no-repeat;
+    background: url("../images/Samosachutney800.jpg") no-repeat;
     background-size: cover;
   }
 
