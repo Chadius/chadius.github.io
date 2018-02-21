@@ -9,14 +9,13 @@
   flex-direction: column;
 }
 
+.appetizer-entree .appetizer,
+.appetizer-entree section,
 .drinks-dessert section {
+  background-color: hsl(174, 12%, 78%);
   padding: 1em 1em;
-}
-
-.appetizer-entree section{
-  padding: 1em 1em;
-}
-.appetizer-entree .appetizer{
+  border: 2px solid hsl(174, 12%, 53%);
+  border-radius: 25px;
   padding: 1em 1em;
 }
 

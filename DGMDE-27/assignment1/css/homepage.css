@@ -4,36 +4,15 @@
   flex-direction: column;
 }
 
-.map {
-  background-color: orange;
-}
-
+.about-us,
+.catering,
+.directions,
+.map,
 .hours {
-  background-color: orange;
-}
-
-.hours {
-  display: flex;
-  flex-direction: column;
-}
-
-.directions {
-  background-color: orange;
-}
-
-.us-catering {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-us {
-  background-color: lightgray;
-  display: flex;
-  flex-direction: column;
-}
-
-.catering {
-  background-color: lightgray;
+  background-color: hsl(213, 12%, 78%);
+  padding: 1em 1em;
+  border: 2px solid hsl(212, 12%, 53%);
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
 }
