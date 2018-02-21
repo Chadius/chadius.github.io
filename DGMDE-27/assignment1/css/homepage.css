@@ -17,6 +17,11 @@
   flex-direction: column;
 }
 
+.map img {
+  border: 2px solid hsl(5, 30%, 70%);
+  border-radius: 2px;
+}
+
 /* Tablet dimensions */
 @media (min-width: 750px) {
   .map-hours {
