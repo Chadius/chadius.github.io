@@ -18,7 +18,9 @@ PART 1: BUILD A RESPONSIVE WEBSITE (90 POINTS)
 
 3. Grid system
 a. Number of columns in use in your system:
-3
+Desktop: index.html uses 5, menu.html uses 3
+Tablet: index.html uses 2, menu.html uses 2
+Mobile: index.html uses 1, menu.html uses 1
 
 b. I used  _________ (Flexbox/floats) in creating my grid system
 Flexbox
@@ -28,7 +30,7 @@ index.html, lines 27-56
 
 d. Do you have grid code outside of a media query? 
 If so, that code is in the CSS on line _________
-css/responsive-flexbox.css, lines 26-31
+No grid code outside of media queries
 
 Other grid CSS is assumed to be in media queries and will be graded with the guidance of the media query line numbers below.
 
