@@ -81,8 +81,8 @@ header h1 {
   margin: 0 auto 5% auto;
   background-color: hsl(13, 2%, 90%);
   padding: 0.1em 1em;
-  border: 1px solid hsl(13, 2%, 70%);
-  border-radius: 10px;
+  border: 0.1em solid hsl(13, 2%, 70%);
+  border-radius: 1em;
 }
 
 header nav {
