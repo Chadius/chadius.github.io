@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Yummy Delight</title>
-	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/responsive-flexbox.css">
 	<link rel="stylesheet" href="css/homepage.css">
+	<script>
+		// Picture element HTML5 shiv
+		document.createElement( "picture" );
+	</script>
+	<script src="js/picturefill.min.js" async></script>
 </head>
 <body class="wrapper">
 	<header>
@@ -35,7 +40,7 @@
 	  	</section>
 			<aside class="directions">
 				<h2>Directions</h2>
-				<p>Yummy Delight is located within the Back Bay area, about 5 minutes from the Prudential.</p>
+				<p>Yummy Delight is located in Cambridge, about 5 minutes from the Harvard T Station.</p>
 			</aside>
 		  <aside class="hours">
 			  <h2>Hours</h2>
@@ -44,8 +49,7 @@
 				  <p>10 AM - 10 PM</p>
 				</div>
 				<div class="Weekend">
-				  <h3>Friday</h3> <p>10 AM - Midnight</p>
-				  <h3>Saturday</h3> <p>10 AM - Midnight</p>
+				  <h3>Friday to Saturday</h3> <p>10 AM - Midnight</p>
 				  <h3>Sunday</h3> <p>8 AM - 8 PM</p>
 				</div>
 		  </aside>
@@ -60,7 +64,7 @@
 				<source media="(min-width: 750px)" srcset="images/myportrait.jpg">
 				<img src="images/myportrait-small.jpg" alt="Staff Photo">
 			</picture>
-	    <span class="small-title">About Us!</span>
+	    <h3>About Us!</h3>
 	    <p>We are Yummy Delight, a vegan restaurant that gives you the best of the best without the hassle.</p>
 	  </section>
 	  <aside class="catering">
@@ -68,7 +72,7 @@
 				<source media="(min-width: 750px)" srcset="images/wedding-dinner.jpg">
 				<img src="images/wedding-dinner-small.jpg" alt="Catering for a wedding dinner">
 			</picture>
-	    <span class="small-title">Catering!</span>
+	    <h3>Catering!</h3>
 	    <p>Call us if you wish to discuss catering options. 10 person minimum.</p>
 	  </aside>
 	</div>

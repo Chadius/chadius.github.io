@@ -17,8 +17,23 @@
   flex-direction: column;
 }
 
+.about-us h3,
+.catering h3 {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+.map a {
+  margin: 1em;
+}
+
 .map img {
   border: 2px solid hsl(5, 30%, 70%);
+  border-radius: 2px;
+}
+
+.about-us img {
+  border: 2px solid hsl(5, 10%, 90%);
   border-radius: 2px;
 }
 
