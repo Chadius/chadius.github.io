@@ -1,0 +1,211 @@
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+	background-color: #B1D3EE;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+	max-width: 1200px;
+	width: 97%;
+	margin: 0 auto;
+	float: none;
+	background-color: #fff;
+}
+header {
+	font-family: 'Cabin Condensed', sans-serif;
+  width:100%;
+	color: #fff;
+}
+header h1 {
+  margin: 0;
+}
+header h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+nav {
+	background-color: #ED8F00;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+nav ul li {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+nav ul a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 1em;
+	float: left;
+}
+nav ul a:hover {
+	color: #a16100;
+}
+main {
+	overflow: auto;
+	padding-right: 3em;
+	background-color: #EFECCA;
+}
+main h2 {
+	font-size: 3em;
+	padding-top: 1em;
+}
+main p {
+	font-size: 1.5em;
+	font-family: 'Cabin Condensed', sans-serif;
+}
+div img {
+	width: 100%;
+	max-width: 225px;
+}
+main img {
+	float: left;
+	margin-right: 1.875em;
+	width: auto;
+	max-width: auto;
+}
+footer {
+	clear: both;
+	padding: 2em 0;
+	margin: 3em 0;
+	color: #999;
+	text-align: center;
+}
+/* grid system */
+/* row class will clear floats from previous row */
+.row:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+[class*="col-"] {
+	margin-left: 4%;
+	float: left;
+}
+.col-1-2,
+.col-1-4 {
+	width: 20%;
+}
+.col-2 {
+	width: 44%;
+}
+.col-3 {
+	width: 68%;
+}
+.col-4 {
+	width: 92%;
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px) and (max-width: 767px)  {
+.col-1-2 {
+	width: 44%;
+}
+.col-2 {
+	width: 44%;
+}
+.col-1-4,
+.col-3,
+.col-4 {
+	width: 92%;
+	}
+}
+
+/* Mobile Portrait Screen Sizes */
+@media only screen and (max-width: 479px) {
+	[class*='col-'] {
+		width: 92%;
+	}
+  main {
+  padding-right: 1em;
+  }
+  main h2 {
+  font-size: 1.5em;
+  padding-top: 0em;
+  }
+  main p {
+  font-size: 1em;
+  font-family: 'Cabin Condensed', sans-serif;
+  }
+  main img {
+  padding-right: 0em;
+  }
+}
+/* adjust "discover" box for smaller width */
+@media only screen and (min-width: 1014px){
+	main h2 {
+		font-size: 2.5em;
+		padding-top: 0em;
+	}
+	main p {
+		font-size: 1.5em;
+		font-family: 'Cabin Condensed', sans-serif;
+	}
+}
+
+/* adjust "discover" box again and change nav layout */
+@media only screen and (max-width: 1013px)  {
+
+	main h2 {
+		font-size: 2em;
+		padding-top: 0em;
+	}
+	main p {
+		font-size: 1.2em;
+		font-family: 'Cabin Condensed', sans-serif;
+	}
+	/* splits nav into 2 columns
+	http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
+	nav li:nth-child(even) {
+	  width: 50%;
+	  float: right;
+	}
+	nav li:nth-child(odd) {
+	  width: 50%;
+	  float: left;
+	}
+
+}
+@media only screen and (max-width: 701px) {
+    header {
+      background: url(../img/boston-710.jpg) no-repeat;
+      height:149px;
+    }
+    header h1 {
+      padding: 100px 0 0 10px;
+      font-size: 1.6em;
+    }
+}
+@media only screen and (min-width: 702px) {
+    header {
+      background: url(../img/boston-1200.jpg) no-repeat;
+      height:218px;
+    }
+    header h1 {
+      padding: 0.5em;
+    }
+}

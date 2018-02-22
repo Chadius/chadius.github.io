@@ -1,0 +1,133 @@
+/* Mobile dimensions (default) */
+.restaurant-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us,
+.catering,
+.directions,
+.map,
+.hours {
+  background-color: hsl(213, 12%, 78%);
+  padding: 1em 1em;
+  border: 2px solid hsl(212, 12%, 53%);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us h3,
+.catering h3 {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+.map a {
+  margin: 1em;
+}
+
+.map img {
+  border: 2px solid hsl(5, 30%, 70%);
+  border-radius: 2px;
+}
+
+.about-us img {
+  border: 2px solid hsl(5, 10%, 90%);
+  border-radius: 2px;
+}
+
+/* Tablet dimensions */
+@media (min-width: 750px) {
+  .map-hours {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .map-hours .map {
+    flex: 0 0 45%;
+    margin-right: 5%;
+  }
+
+  .map-hours .hours {
+    flex: 0 0 15%;
+    margin-right: 5%;
+  }
+
+  .map-hours .directions {
+    flex: 0 0 15%;
+    margin-right: 5%;
+  }
+
+  .us-catering {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-us {
+    flex: 0 0 45%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catering {
+    flex: 0 0 45%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/* Desktop dimensions */
+@media (min-width: 1000px) {
+  .map-hours {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .map-hours .map {
+    flex: 0 0 45%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 1em;
+  }
+
+  .map-hours .map div {
+    flex: 0 0 60%;
+  }
+
+  .map-hours .directions {
+    flex: 0 0 20%;
+    margin-right: 5%;
+    padding: 0 1em;
+  }
+
+  .map-hours .hours {
+    flex: 0 0 20%;
+    margin-right: 5%;
+    padding: 0 1em;
+  }
+
+  .us-catering {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-us {
+    flex: 0 0 35%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catering {
+    flex: 0 0 55%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+}
