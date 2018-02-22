@@ -11,8 +11,8 @@
 .hours {
   background-color: hsl(213, 12%, 78%);
   padding: 1em 1em;
-  border: 2px solid hsl(212, 12%, 53%);
-  border-radius: 25px;
+  border: 0.2em solid hsl(212, 12%, 53%);
+  border-radius: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -28,13 +28,13 @@
 }
 
 .map img {
-  border: 2px solid hsl(5, 30%, 70%);
-  border-radius: 2px;
+  border: 0.2em solid hsl(5, 30%, 70%);
+  border-radius: 0.2em;
 }
 
 .about-us img {
-  border: 2px solid hsl(5, 10%, 90%);
-  border-radius: 2px;
+  border: 0.2em solid hsl(5, 10%, 90%);
+  border-radius: 0.2em;
 }
 
 /* Tablet dimensions */

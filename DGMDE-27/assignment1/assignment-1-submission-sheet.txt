@@ -1,0 +1,68 @@
+1. Provide a link to the first page of your website:
+https://chadius.github.io/DGMDE-27/assignment1/index.html
+
+My site looks the way I want on (choose one): Mac  PC
+Mac
+
+With this browser (choose one): Firefox Chrome
+Chrome
+
+PART 1: BUILD A RESPONSIVE WEBSITE (90 POINTS)
+
+2. General requirements: We will check for:
+- a nav bar on all pages
+- a similar look to all pages
+- valid HTML and CSS
+- responsive CSS units (%, em, rem, vh, vw) in use everywhere EXCEPT media queries may be in pixels.
+
+
+3. Grid system
+a. Number of columns in use in your system:
+3
+
+b. I used  _________ (Flexbox/floats) in creating my grid system
+Flexbox
+
+c. A sample row in my HTML starts on line ______
+index.html, lines 27-56
+
+d. Do you have grid code outside of a media query? 
+If so, that code is in the CSS on line _________
+css/responsive-flexbox.css, lines 26-31
+
+Other grid CSS is assumed to be in media queries and will be graded with the guidance of the media query line numbers below.
+
+
+4. Media Queries
+
+a. Media Query #1 is located in my CSS at line _______
+css/homepage.css, lines 41-81
+
+b. Media Query #2 is located in my CSS at line _______
+css/homepage.css, lines 84-133
+
+5. Images that Resize
+
+a. HTML line number of at least one image using <picture>: ______
+menu.html, lines 32-35
+
+b. CSS line numbers of an image swap for a background image: ________
+css/responsive-flexbox.css, lines 43 and 119
+
+
+ABOVE AND BEYOND (10 POINTS)
+What did you do for your “above and beyond” requirement? How many points do you think this was worth and why?
+
+I have made 7 points of credit.
+
+- CSS uses a "mobile-first" approach by defining mobile dimensions first and then using media queries to apply tablet and desktop dimensions to the elements.
+- The pages use tablet and desktop dimensions with breakpoints at widths of 750 and 1000 pixels.
+- I used a google font, Roberto. (See css/responsive-flexbox.css lines 10-17 and index.html line 8)
+- Every picture has a large and small version, using the <picture> tag.
+- The map on index.html actually links to Google Maps
+
+Photo credits:
+Google Maps
+Wikipedia entry on Samosas
+Self Photograph
+The rest are stock images taken from https://foodiefactor.com
