@@ -1,3 +1,8 @@
+$primary-color: #00c4c7;
+$secondary-color: #c80060;
+$accent-color: #cc8850;
+$border-radius: 0.625rem;
+$standard-space: 1em;
 /*
   declare border-box sizing
   http://www.paulirish.com/2012/box-sizing-border-box-ftw/
@@ -22,14 +27,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Niconne', cursive;
   font-weight: normal;
-  color: #c80060;
+  color: $secondary-color;
 }
 
 a {
-  color: #00c4c7;
+  color: $primary-color;
 }
 a:hover {
-  color: #c80060;
+  color: $secondary-color;
   text-decoration: none;
 }
 
@@ -52,7 +57,7 @@ nav ul {
   background-color: #e4c0a3;
   padding: 0.75em;
   margin: 0.75em 0 0 0;
-  border-bottom: 3px solid #cc8850;
+  border-bottom: 3px solid $accent-color;
   overflow: auto;
 }
 nav li:nth-child(even) {
@@ -66,7 +71,7 @@ nav li:nth-child(odd) {
   padding: 0.5em;
 }
 nav a {
-  color: #c80060;
+  color: $secondary-color;
   text-decoration: none;
   display: block;
   padding-left: 3%;
@@ -77,9 +82,9 @@ nav a:hover {
 
 div.row {
   background-color: #fff6e0;
-  border-bottom-left-radius: 0.625rem;
-  border-bottom-right-radius: 0.625rem;
-  padding: 1em;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  padding: $standard-space;
 }
 
 [class*='col'] {
@@ -92,29 +97,29 @@ div.row {
 }
 
 article img {
-  border-radius: 0.625rem;
+  border-radius: $border-radius;
   display: block;
-  margin-bottom: 1em;
+  margin-bottom: $standard-space;
   width: 100%;
   max-width: 320px;
 }
 
 [class*='sidebar'] {
   border: 1px solid #00c4c7;
-  border-radius: 0.625rem;
-  margin-bottom: 1em;
+  border-radius: $border-radius;
+  margin-bottom: $standard-space;
   margin-top: 2.5em;
 }
 [class*='sidebar'] h3 {
   margin: 0;
   color: white;
   background-color: #00c4c7;
-  border-top-left-radius: 0.625rem;
-  border-top-right-radius: 0.625rem;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
   padding-left: 0.5em;
 }
 [class*='sidebar'] img {
-  border-radius: 0px 0px 0.625rem 0.625rem;
+  border-radius: 0px 0px $border-radius $border-radius;
   width: 100%;
   max-width: 250px;
   display: block;
@@ -122,31 +127,31 @@ article img {
 }
 
 .sidebar-secondary {
-  border-color: #c80060;
+  border-color: $secondary-color;
 }
 .sidebar-secondary h3 {
-  background-color: #c80060;
+  background-color: $secondary-color;
 }
 
 blockquote {
   padding: 0;
   margin: 0;
-  padding: 0 1em;
+  padding: 0 $standard-space;
 }
 
 blockquote cite {
   text-transform: uppercase;
   font-style: normal;
-  padding: 0 1em 1em 1em;
+  padding: 0 $standard-space $standard-space $standard-space;
   display: block;
 }
 
 footer {
-  background-color: #00CDD1;
+  background-color: $primary-color;
   color: white;
   clear: both;
   padding: 0 0.5em 3em 0.5em;
-  border-top: 1px solid #00CDD1;
+  border-top: 1px solid $primary-color;
 }
 footer p {
   text-align: center;
