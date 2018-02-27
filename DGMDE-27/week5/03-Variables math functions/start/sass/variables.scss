@@ -1,36 +1,35 @@
-$mycolor: #c80060;
+$primary-color: #00c4c7;
+$secondary-color: #c80060;
 
-
-/* what colors are strong and h2? */
-
-strong {
-	color: $mycolor;
+h1 {
+	background-color: darken($primary-color, 10%);
+	color: white;
 }
 h2 {
-	color: $mycolor;
+	background-color: lighten($secondary-color, 10%);
+	color: white;
 }
-
-
-body {
-	font-family: Arial, Geneva, sans-serif;
-	background-image: url(../img/clouds.png);
-	margin: 0;
-	padding: 0; 
+h3 {
+	background-color: desaturate($primary-color, 30%);
+	color: white;
 }
-article {
-	width: 600px;
-	margin: 0 auto;
-	background-color: #fff6e0;
-	padding: 1em;
-	border-radius: 0.625em;
+h4 {
+	background-color: saturate(#cc8850, 30%);
+	color: white;
 }
-
-a {
-	color: #00c4c7;
+h5 {
+	background-color: transparentize($primary-color, 0.8);
+	color: white;
 }
-a:hover {
-	color: #c80060;
+.original-blue {
+	background-color: $primary-color;
+	color: white;
 }
-h1 {
-	//color: #c80060;
+.original-pink {
+	background-color: $secondary-color;
+	color: white;
+}
+.original-brown {
+	background-color: #cc8850;
+	color: white;
 }

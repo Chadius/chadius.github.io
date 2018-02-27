@@ -1,31 +1,49 @@
-/* what colors are strong and h2? */
-strong {
-  color: #c80060;
+/* line 4, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/03-Variables math functions/start/sass/variables.scss */
+h1 {
+  background-color: #009294;
+  color: white;
 }
 
+/* line 8, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/03-Variables math functions/start/sass/variables.scss */
 h2 {
-  color: #c80060;
+  background-color: #fb0078;
+  color: white;
 }
 
-body {
-  font-family: Arial, Geneva, sans-serif;
-  background-image: url(../img/clouds.png);
-  margin: 0;
-  padding: 0;
+/* line 12, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/03-Variables math functions/start/sass/variables.scss */
+h3 {
+  background-color: #1ea7a9;
+  color: white;
 }
 
-article {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #fff6e0;
-  padding: 1em;
-  border-radius: 0.625em;
+/* line 16, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/03-Variables math functions/start/sass/variables.scss */
+h4 {
+  background-color: #ee852e;
+  color: white;
 }
 
-a {
-  color: #00c4c7;
+/* line 20, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/03-Variables math functions/start/sass/variables.scss */
+h5 {
+  background-color: rgba(0, 196, 199, 0.2);
+  color: white;
 }
 
-a:hover {
-  color: #c80060;
+/* line 24, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/03-Variables math functions/start/sass/variables.scss */
+.original-blue {
+  background-color: #00c4c7;
+  color: white;
 }
+
+/* line 28, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/03-Variables math functions/start/sass/variables.scss */
+.original-pink {
+  background-color: #c80060;
+  color: white;
+}
+
+/* line 32, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/03-Variables math functions/start/sass/variables.scss */
+.original-brown {
+  background-color: #cc8850;
+  color: white;
+}
+
+/*# sourceMappingURL=../css/variables.map */
