@@ -1,4 +1,4 @@
-//Variables 
+//Variables
 $primary-color: #00c4c7;
 $secondary-color: #c80060;
 $accent-color: #cc8850;
@@ -9,15 +9,15 @@ $standard-space: 1em;
 $half-space: $standard-space * 0.5;
 $base-font-size: 16px;
 
-//custom function 
+//custom function
 @function pxtoem($px, $base: $base-font-size) {
   @return($px/$base) * 1em;
 }
 
 
-/* 
+/*
   declare border-box sizing
-  http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
+  http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 */
 
 html {
@@ -43,10 +43,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: $primary-color;
-}
-a:hover {
-  color: $secondary-color;
-  text-decoration: none;
+
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+  }
 }
 
 .wrapper {
@@ -62,35 +63,36 @@ nav {
   background: url(../img/scallop.png) repeat-x;
   /* splits nav into 2 columns
   http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
-}
-nav ul {
-  list-style-type: none;
-  background-color: lighten($accent-color, 20%);
-  padding: 0.75em;
-  margin: 0.75em 0 0 0;
-  border-bottom: 3px solid $accent-color;
-  overflow: auto;
-}
-nav li:nth-child(even) {
-  width: 50%;
-  float: right;
-  padding: $half-space;
-}
-nav li:nth-child(odd) {
-  width: 50%;
-  float: left;
-  padding: $half-space;
-}
-nav a {
-  color: $secondary-color;
-  text-decoration: none;
-  display: block;
-  padding-left: 3%;
-}
-nav a:hover {
-  color: $primary-color;
-}
 
+  ul {
+    list-style-type: none;
+    background-color: lighten($accent-color, 20%);
+    padding: 0.75em;
+    margin: 0.75em 0 0 0;
+    border-bottom: 3px solid $accent-color;
+    overflow: auto;
+  }
+  li {
+    width: 50%;
+    padding: $half-space;
+    &:nth-child(even) {
+      float: right;
+    }
+    &:nth-child(odd) {
+      float: left;
+    }
+  }
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+    display: block;
+    padding-left: 3%;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
 div.row {
   background-color: #fff6e0;
   border-bottom-left-radius: $border-radius;
@@ -116,32 +118,38 @@ article img {
 }
 
 [class*='sidebar'] {
-  border: 1px solid $primary-color;
-  border-radius: $border-radius;
-  margin-bottom: $standard-space;
-  margin-top: 2.5em;
-}
-[class*='sidebar'] h3 {
-  margin: 0;
-  color: white;
-  background-color: $primary-color;
-  border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
-  padding-left: $half-space;
-}
-[class*='sidebar'] img {
-  border-radius: 0px 0px $border-radius $border-radius;
-  width: 100%;
-  max-width: 250px;
-  display: block;
-  /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
-}
+  border: 1px solid $primary-color {
+    radius: $border-radius;
+  }
+  margin: {
+    bottom: $standard-space;
+    top: 2.5em;
+  }
 
+  h3 {
+    margin: 0;
+    color: white;
+    background-color: $primary-color;
+    border-top: {
+      left-radius: $border-radius;
+      right-radius: $border-radius;
+    }
+    padding-left: $half-space;
+  }
+  img {
+    border-radius: 0px 0px $border-radius $border-radius;
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
+  }
+}
 .sidebar-secondary {
   border-color: $secondary-color;
-}
-.sidebar-secondary h3 {
-  background-color: $secondary-color;
+
+  h3 {
+    background-color: $secondary-color;
+  }
 }
 
 blockquote {

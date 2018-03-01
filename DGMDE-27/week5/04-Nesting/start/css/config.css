@@ -2,14 +2,17 @@
   declare border-box sizing
   http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
 */
+/* line 15, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 html {
   box-sizing: border-box;
 }
 
+/* line 19, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+/* line 23, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 body {
   font-family: "Cabin", Arial, Geneva, sans-serif;
   background-image: url(../img/clouds.png);
@@ -17,36 +20,43 @@ body {
   padding: 0;
 }
 
+/* line 30, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Niconne', cursive;
   font-weight: normal;
   color: #c80060;
 }
 
+/* line 36, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 a {
   color: #00c4c7;
 }
 
+/* line 39, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 a:hover {
   color: #c80060;
   text-decoration: none;
 }
 
+/* line 44, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 .wrapper {
   margin: 0 auto;
 }
 
+/* line 48, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 header a {
   text-align: center;
   display: block;
 }
 
+/* line 53, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 nav {
   background: url(../img/scallop.png) repeat-x;
   /* splits nav into 2 columns
   http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
 }
 
+/* line 58, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 nav ul {
   list-style-type: none;
   background-color: #e4c0a3;
@@ -56,18 +66,21 @@ nav ul {
   overflow: auto;
 }
 
+/* line 66, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 nav li:nth-child(even) {
   width: 50%;
   float: right;
   padding: 0.5em;
 }
 
+/* line 71, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 nav li:nth-child(odd) {
   width: 50%;
   float: left;
   padding: 0.5em;
 }
 
+/* line 76, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 nav a {
   color: #c80060;
   text-decoration: none;
@@ -75,10 +88,12 @@ nav a {
   padding-left: 3%;
 }
 
+/* line 82, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 nav a:hover {
   color: #00c4c7;
 }
 
+/* line 86, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 div.row {
   background-color: #fff6e0;
   border-bottom-left-radius: 0.625rem;
@@ -86,15 +101,18 @@ div.row {
   padding: 1em;
 }
 
+/* line 93, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 [class*='col'] {
   margin-left: 0;
 }
 
+/* line 97, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 .col-1,
 .col-3 {
   width: 96.66666%;
 }
 
+/* line 102, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 article img {
   border-radius: 0.625rem;
   display: block;
@@ -103,6 +121,7 @@ article img {
   max-width: 320px;
 }
 
+/* line 110, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 [class*='sidebar'] {
   border: 1px solid #00c4c7;
   border-radius: 0.625rem;
@@ -110,6 +129,7 @@ article img {
   margin-top: 2.5em;
 }
 
+/* line 116, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 [class*='sidebar'] h3 {
   margin: 0;
   color: white;
@@ -119,6 +139,7 @@ article img {
   padding-left: 0.5em;
 }
 
+/* line 124, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 [class*='sidebar'] img {
   border-radius: 0px 0px 0.625rem 0.625rem;
   width: 100%;
@@ -127,20 +148,24 @@ article img {
   /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
 }
 
+/* line 132, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 .sidebar-secondary {
   border-color: #c80060;
 }
 
+/* line 135, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 .sidebar-secondary h3 {
   background-color: #c80060;
 }
 
+/* line 139, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 blockquote {
   padding: 0;
   margin: 0;
   padding: 0 1em;
 }
 
+/* line 145, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 blockquote cite {
   text-transform: uppercase;
   font-style: normal;
@@ -148,6 +173,7 @@ blockquote cite {
   display: block;
 }
 
+/* line 152, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 footer {
   background-color: #00CDD1;
   color: white;
@@ -156,15 +182,20 @@ footer {
   border-top: 1px solid #00CDD1;
 }
 
+/* line 159, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 footer p {
   text-align: center;
 }
 
+/* line 162, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 footer img {
   width: 52px;
 }
 
+/* line 165, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/04-Nesting/start/sass/config.scss */
 footer a {
   color: white;
   text-decoration: none;
 }
+
+/*# sourceMappingURL=../css/config.map */
