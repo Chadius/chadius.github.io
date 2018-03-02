@@ -2,14 +2,17 @@
   declare border-box sizing
   http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
 */
+/* line 23, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 html {
   box-sizing: border-box;
 }
 
+/* line 27, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+/* line 31, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 body {
   font-family: "Cabin", Arial, Geneva, sans-serif;
   background-image: url(../img/clouds.png);
@@ -17,34 +20,43 @@ body {
   padding: 0;
 }
 
+/* line 38, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Niconne', cursive;
   font-weight: normal;
   color: #c80060;
 }
 
+/* line 44, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 a {
   color: #00c4c7;
 }
+
+/* line 47, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 a:hover {
   color: #c80060;
   text-decoration: none;
 }
 
+/* line 53, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 .wrapper {
   margin: 0 auto;
 }
 
+/* line 57, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 header a {
   text-align: center;
   display: block;
 }
 
+/* line 62, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 nav {
   background: url(../img/scallop.png) repeat-x;
   /* splits nav into 2 columns
   http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
 }
+
+/* line 67, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 nav ul {
   list-style-type: none;
   background-color: #e3be9f;
@@ -53,26 +65,35 @@ nav ul {
   border-bottom: 3px solid #cc8850;
   overflow: auto;
 }
+
+/* line 76, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 nav li:nth-child(even) {
   width: 50%;
   float: right;
   padding: 0.5em;
 }
+
+/* line 81, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 nav li:nth-child(odd) {
   width: 50%;
   float: left;
   padding: 0.5em;
 }
+
+/* line 87, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 nav a {
   color: #c80060;
   text-decoration: none;
   display: block;
   padding-left: 3%;
 }
+
+/* line 93, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 nav a:hover {
   color: #00c4c7;
 }
 
+/* line 99, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 div.row {
   background-color: #fff6e0;
   border-bottom-left-radius: 0.625rem;
@@ -80,15 +101,18 @@ div.row {
   padding: 1em;
 }
 
+/* line 106, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 [class*='col'] {
   margin-left: 0;
 }
 
+/* line 110, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 .col-1,
 .col-3 {
   width: 96.66666%;
 }
 
+/* line 115, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 article img {
   border-radius: 0.625rem;
   display: block;
@@ -97,12 +121,15 @@ article img {
   max-width: 20em;
 }
 
+/* line 123, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 [class*='sidebar'] {
   border: 1px solid #00c4c7;
   border-radius: 0.625rem;
   margin-bottom: 1em;
   margin-top: 2.5em;
 }
+
+/* line 132, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 [class*='sidebar'] h3 {
   margin: 0;
   color: white;
@@ -111,6 +138,8 @@ article img {
   border-top-right-radius: 0.625rem;
   padding-left: 0.5em;
 }
+
+/* line 142, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 [class*='sidebar'] img {
   border-radius: 0px 0px 0.625rem 0.625rem;
   width: 100%;
@@ -119,18 +148,24 @@ article img {
   /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
 }
 
+/* line 151, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 .sidebar-secondary {
   border-color: #c80060;
 }
+
+/* line 154, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 .sidebar-secondary h3 {
   background-color: #c80060;
 }
 
+/* line 159, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 blockquote {
   padding: 0;
   margin: 0;
   padding: 0 1em;
 }
+
+/* line 164, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 blockquote cite {
   text-transform: uppercase;
   font-style: normal;
@@ -138,6 +173,7 @@ blockquote cite {
   display: block;
 }
 
+/* line 172, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 footer {
   background-color: #00CDD1;
   color: white;
@@ -145,13 +181,21 @@ footer {
   padding: 0 0.5em 3em 0.5em;
   border-top: 1px solid #00CDD1;
 }
+
+/* line 178, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 footer p {
   text-align: center;
 }
+
+/* line 181, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 footer img {
   width: 52px;
 }
+
+/* line 184, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/nesting.scss */
 footer a {
   color: white;
   text-decoration: none;
 }
+
+/*# sourceMappingURL=../css/nesting.map */

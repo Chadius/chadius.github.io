@@ -1,43 +1,47 @@
-h1 {
+/* line 21, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/mixins.scss */
+h1, h3, h5 {
+  background: -webkit-linear-gradient(#000000, #ff0000);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(#000000, #ff0000);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(#000000, #ff0000);
+  /* IE10 */
+  background: -o-linear-gradient(#000000, #ff0000);
+  /* Opera 11.10+ */
+  background: linear-gradient(#000000, #ff0000);
+  /* W3C */
   background-color: #00c4c7;
+}
+
+/* line 26, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/mixins.scss */
+h2, h4 {
   color: white;
   font-weight: normal;
   font-family: Georgia, serif;
   font-style: italic;
-}
-
-h2 {
   background-color: #c80060;
-  color: white;
-  font-weight: normal;
-  font-family: Georgia, serif;
-  font-style: italic;
 }
 
-h3 {
-  background-color: #00c4c7;
-  color: white;
-  font-weight: normal;
-  font-family: Georgia, serif;
-  font-style: italic;
+/* line 31, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/mixins.scss */
+article {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #fff6e0;
+  padding: 1em;
+  border-radius: 0.625em;
+  background: -webkit-linear-gradient(#e5b0c9, white);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(#e5b0c9, white);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(#e5b0c9, white);
+  /* IE10 */
+  background: -o-linear-gradient(#e5b0c9, white);
+  /* Opera 11.10+ */
+  background: linear-gradient(#e5b0c9, white);
+  /* W3C */
 }
 
-h4 {
-  background-color: #c80060;
-  color: white;
-  font-weight: normal;
-  font-family: Georgia, serif;
-  font-style: italic;
-}
-
-h5 {
-  background-color: #00c4c7;
-  color: white;
-  font-weight: normal;
-  font-family: Georgia, serif;
-  font-style: italic;
-}
-
+/* line 46, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/mixins.scss */
 body {
   font-family: Arial, Geneva, sans-serif;
   background-image: url(../img/clouds.png);
@@ -45,6 +49,7 @@ body {
   padding: 0;
 }
 
+/* line 52, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/mixins.scss */
 article {
   width: 600px;
   margin: 0 auto;
@@ -53,10 +58,14 @@ article {
   border-radius: 0.625em;
 }
 
+/* line 60, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/mixins.scss */
 a {
   color: #00c4c7;
 }
 
+/* line 63, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/05-Mixins extend/start/sass/mixins.scss */
 a:hover {
   color: #c80060;
 }
+
+/*# sourceMappingURL=../css/mixins.map */
