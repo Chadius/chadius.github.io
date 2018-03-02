@@ -1,3 +1,4 @@
+/* line 21, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mixins.scss */
 h1, h3, h5 {
   color: white;
   font-weight: normal;
@@ -6,6 +7,7 @@ h1, h3, h5 {
   background-color: #00c4c7;
 }
 
+/* line 25, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mixins.scss */
 h2, h4 {
   color: white;
   font-weight: normal;
@@ -14,6 +16,7 @@ h2, h4 {
   background-color: #c80060;
 }
 
+/* line 35, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mixins.scss */
 body {
   font-family: Arial, Geneva, sans-serif;
   background-image: url(../img/clouds.png);
@@ -21,6 +24,7 @@ body {
   padding: 0;
 }
 
+/* line 41, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mixins.scss */
 article {
   width: 600px;
   margin: 0 auto;
@@ -39,6 +43,7 @@ article {
   /* W3C */
 }
 
+/* line 50, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mixins.scss */
 .demogradient {
   width: 200px;
   height: 200px;
@@ -54,10 +59,14 @@ article {
   /* W3C */
 }
 
+/* line 55, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mixins.scss */
 a {
   color: #00c4c7;
 }
 
+/* line 58, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mixins.scss */
 a:hover {
   color: #c80060;
 }
+
+/*# sourceMappingURL=../css/mixins.map */

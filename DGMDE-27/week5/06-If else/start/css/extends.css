@@ -1,3 +1,4 @@
+/* line 4, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/extends.scss */
 h1, h2, h4, h3, h5 {
   background-color: #00c4c7;
   color: white;
@@ -6,10 +7,12 @@ h1, h2, h4, h3, h5 {
   font-style: italic;
 }
 
+/* line 11, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/extends.scss */
 h2, h4 {
   background-color: #c80060;
 }
 
+/* line 19, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/extends.scss */
 .box-primary, .box-secondary {
   width: 100px;
   height: 100px;
@@ -21,15 +24,18 @@ h2, h4 {
   color: black;
 }
 
+/* line 29, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/extends.scss */
 .box-primary {
   background-color: #00c4c7;
   border-radius: 10px;
 }
 
+/* line 34, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/extends.scss */
 .box-secondary {
   background-color: #c80060;
 }
 
+/* line 43, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/extends.scss */
 body {
   font-family: Arial, Geneva, sans-serif;
   background-image: url(../img/clouds.png);
@@ -37,6 +43,7 @@ body {
   padding: 0;
 }
 
+/* line 49, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/extends.scss */
 article {
   width: 600px;
   margin: 0 auto;
@@ -45,10 +52,14 @@ article {
   border-radius: 0.625em;
 }
 
+/* line 57, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/extends.scss */
 a {
   color: #00c4c7;
 }
 
+/* line 60, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/extends.scss */
 a:hover {
   color: #c80060;
 }
+
+/*# sourceMappingURL=../css/extends.map */
