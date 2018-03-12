@@ -1,0 +1,49 @@
+/* Small devices (tablets, 551px-849px) */
+@include mq($sm-medium) {
+  .wrapper {
+      width: 97%;
+      max-width: 47.938em; //767 px
+      float: none;
+  }
+  .col-1,
+  .col-3 {
+    width: 96.66666%;
+  }
+  div.row {
+    padding: 0 ($standard-space * 2);
+  }
+  [class*='sidebar'] {
+    float: left;
+    width: 47%;
+    margin-right: 3%;
+  }
+}
+/* Large devices (large desktops, 850px and up) */
+@include mq($medium){
+  .wrapper {
+      width: 97%;
+      max-width: 75em; //1200px
+      float: none;
+  }
+  %columns {
+    float: left;
+    margin-left: 3.33333%;
+    min-height: 1px;
+  }
+  .col-1 {
+    @extend %columns;
+    width: 20.83333%;
+  }
+  .col-3 {
+    @extend %columns;
+    width: 69.16665%;
+  }
+  h2 {
+    font-size: 3em;
+    border-bottom: 2px dotted $secondary-color;
+  }
+  h3 {
+    font-size: 2em;
+  }
+
+}
