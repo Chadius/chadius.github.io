@@ -1,0 +1,245 @@
+/*
+  declare border-box sizing
+  http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+/* line 6, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 10, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 14, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+body {
+  font-family: "Cabin", Arial, Geneva, sans-serif;
+  background-image: url(../img/clouds.png);
+  margin: 0;
+  padding: 0; }
+
+/* line 21, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Niconne', cursive;
+  font-weight: normal;
+  color: #c80060; }
+
+/* line 27, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+a {
+  color: #00c4c7; }
+  /* line 30, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  a:hover {
+    color: #c80060;
+    text-decoration: none; }
+
+/* line 36, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+.wrapper {
+  margin: 0 auto; }
+
+/* line 40, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+header a {
+  text-align: center;
+  display: block; }
+
+/* line 45, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+nav {
+  background: url(../img/scallop.png) repeat-x;
+  /* splits nav into 2 columns
+  http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */ }
+  /* line 50, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  nav ul {
+    list-style-type: none;
+    background-color: #e3be9f;
+    padding: 0.75em;
+    margin: 0.75em 0 0 0;
+    border-bottom: 3px solid #cc8850;
+    overflow: auto; }
+  /* line 59, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  nav li:nth-child(even) {
+    width: 50%;
+    float: right;
+    padding: 0.5em; }
+  /* line 62, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  nav li:nth-child(odd) {
+    width: 50%;
+    float: left;
+    padding: 0.5em; }
+  /* line 66, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  nav a {
+    color: #c80060;
+    text-decoration: none;
+    display: block;
+    padding-left: 3%; }
+    /* line 72, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+    nav a:hover {
+      color: #00c4c7; }
+
+/* line 78, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+div.row {
+  background-color: #fff6e0;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  padding: 1em; }
+
+/* line 85, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+[class*='col'] {
+  margin-left: 0; }
+
+/* line 89, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+.col-1,
+.col-3 {
+  width: 96.66666%; }
+
+/* line 94, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+article img {
+  border-radius: 0.625rem;
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+  max-width: 20em; }
+
+/* line 102, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+[class*='sidebar'] {
+  border: 1px solid #00c4c7;
+    border-radius: 0.625rem;
+  margin-bottom: 1em;
+  margin-top: 2.5em; }
+  /* line 111, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  [class*='sidebar'] h3 {
+    margin: 0;
+    color: white;
+    background-color: #00c4c7;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    padding-left: 0.5em; }
+  /* line 121, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  [class*='sidebar'] img {
+    border-radius: 0px 0px 0.625rem 0.625rem;
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */ }
+
+/* line 130, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+.sidebar-secondary {
+  border-color: #c80060; }
+  /* line 133, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  .sidebar-secondary h3 {
+    background-color: #c80060; }
+
+/* line 138, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+blockquote {
+  padding: 0;
+  margin: 0;
+  padding: 0 1em; }
+  /* line 143, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  blockquote cite {
+    text-transform: uppercase;
+    font-style: normal;
+    padding: 0 1em 1em 1em;
+    display: block; }
+
+/* line 151, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+footer {
+  background-color: #00CDD1;
+  color: white;
+  clear: both;
+  padding: 0 0.5em 3em 0.5em;
+  border-top: 1px solid #00CDD1; }
+  /* line 157, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  footer p {
+    text-align: center; }
+  /* line 160, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  footer img {
+    width: 52px; }
+  /* line 163, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_mobile.scss */
+  footer a {
+    color: white;
+    text-decoration: none; }
+
+/* for tablets and desktops, min width 550px */
+@media (min-width: 34.375em) {
+  /* clearing hack */
+  /* line 4, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_tablet.scss */
+  .row:before,
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 10, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_tablet.scss */
+  .floatleft {
+    float: left;
+    margin: 0 1em 1em 0; }
+  /* line 13, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_tablet.scss */
+  .floatright {
+    float: right;
+    margin: 0 0 1em 1em; }
+  /* line 16, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_tablet.scss */
+  .floatnone {
+    float: none;
+    margin: 0 auto;
+    display: block; }
+  /* line 19, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_tablet.scss */
+  header a {
+    text-align: left; }
+  /* line 22, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_tablet.scss */
+  div.row {
+    padding: 0; }
+  /* line 25, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_tablet.scss */
+  nav li,
+  nav li:nth-child(even),
+  nav li:nth-child(odd) {
+    display: inline-block;
+    width: auto;
+    float: none;
+    padding: 0; }
+  /* line 31, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_tablet.scss */
+  nav a {
+    padding: 0em 1em; } }
+
+/* Small devices (tablets, 551px-849px) */
+@media (min-width: 34.375em) and (max-width: 53.063em) {
+  /* line 3, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_desktop.scss */
+  .wrapper {
+    width: 97%;
+    max-width: 47.938em;
+    float: none; }
+  /* line 8, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_desktop.scss */
+  .col-1,
+  .col-3 {
+    width: 96.66666%; }
+  /* line 12, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_desktop.scss */
+  div.row {
+    padding: 0 2em; }
+  /* line 15, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_desktop.scss */
+  [class*='sidebar'] {
+    float: left;
+    width: 47%;
+    margin-right: 3%; } }
+
+/* Large devices (large desktops, 850px and up) */
+@media (min-width: 53.125em) {
+  /* line 23, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_desktop.scss */
+  .wrapper {
+    width: 97%;
+    max-width: 75em;
+    float: none; }
+  /* line 28, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_desktop.scss */
+  .col-1, .col-3 {
+    float: left;
+    margin-left: 3.33333%;
+    min-height: 1px; }
+  /* line 33, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_desktop.scss */
+  .col-1 {
+    width: 20.83333%; }
+  /* line 37, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_desktop.scss */
+  .col-3 {
+    width: 69.16665%; }
+  /* line 41, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_desktop.scss */
+  h2 {
+    font-size: 3em;
+    border-bottom: 2px dotted #c80060; }
+  /* line 45, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/_desktop.scss */
+  h3 {
+    font-size: 2em; } }
+
+/*# sourceMappingURL=../css/filemanagement.map */
