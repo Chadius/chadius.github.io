@@ -1,0 +1,144 @@
+/* line 5, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 8, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* line 14, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 23, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dedede;
+}
+
+/* line 30, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+.wrapper {
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 37, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+div img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 42, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+.yell {
+  font-size: 2em;
+  margin: 0.5em auto;
+}
+
+/* line 46, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+header {
+  background: url("../images/Samosachutney.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* line 50, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+nav {
+  max-height: 2em;
+}
+
+/* line 52, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: auto;
+}
+
+/* line 58, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+nav ul a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em;
+  float: left;
+}
+
+/* line 65, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+nav ul a:hover {
+  color: blue;
+}
+
+/* line 72, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+aside,
+section {
+  margin-bottom: 1em;
+}
+
+/* Mobile dimensions (default) */
+/* line 78, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 81, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+header h1 {
+  flex: 0 0 45%;
+  margin-right: 5%;
+  width: min-content;
+  margin: 0 auto 5% auto;
+  background-color: #e6e5e5;
+  padding: 0.1em 1em;
+  border: 0.1em solid #b4b2b1;
+  border-radius: 1em;
+}
+
+/* line 91, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+header nav {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.3em;
+  background-color: rgba(230, 229, 229, 0.5);
+}
+
+/* Tablet dimensions */
+@media (min-width: 750px) {
+  /* line 102, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  header {
+    display: flex;
+    flex-direction: column;
+    background: url("../images/Samosachutney800.jpg") no-repeat;
+    background-size: cover;
+  }
+  /* line 110, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  header h1 {
+    width: min-content;
+    margin: 0 auto 5% auto;
+  }
+  /* line 115, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  header nav {
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 121, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  nav div {
+    flex: 0 0 15%;
+    margin-right: 5%;
+  }
+}
+
+/*# sourceMappingURL=../css/responsive-flexbox.map */
