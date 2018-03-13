@@ -1,0 +1,107 @@
+@import "variables";
+@import "mixins";
+
+/* Mobile dimensions (default) */
+.restaurant-info {
+  @include flex-column-layout;
+}
+
+.about-us,
+.catering,
+.directions,
+.map,
+.hours {
+  @extend %box-background;
+}
+
+.catering h3 {
+  @extend %bottom-row-margins;
+}
+
+.map {
+  a {
+    margin: 1em;
+  }
+
+  img {
+    border: 0.2em solid hsl(5, 30%, 70%);
+    border-radius: 0.2em;
+  }
+}
+
+.about-us {
+  img {
+    border: 0.2em solid hsl(5, 10%, 90%);
+    border-radius: 0.2em;
+  }
+
+  h3 {
+    @extend %bottom-row-margins;
+  }
+
+}
+
+/* Tablet dimensions */
+@media (min-width: 750px) {
+  .us-catering,
+  .map-hours {
+    @include flex-row-layout;
+  }
+
+  .map-hours {
+    .map {
+      @include flex-margin-right(45%);
+    }
+
+    .directions,
+    .hours {
+      @include flex-margin-right(15%);
+    }
+  }
+
+  .catering,
+  .about-us {
+    @include flex-margin-right(45%);
+    @include flex-column-layout;
+  }
+}
+
+/* Desktop dimensions */
+@media (min-width: 1000px) {
+  .map-hours {
+    @include flex-row-layout;
+  }
+
+  .map-hours {
+    .map {
+      @include flex-margin-right(45%);
+      @include flex-row-layout;
+      justify-content: space-between;
+      padding: 1em 1em;
+    }
+
+    .map div {
+      flex: 0 0 60%;
+    }
+
+    .hours,
+    .directions {
+      @include flex-margin-right(20%);
+      padding: 0 1em;
+    }
+  }
+
+  .us-catering {
+    @include flex-row-layout;
+  }
+
+  .about-us {
+    @include flex-margin-right(35%);
+    @include flex-column-layout;
+  }
+
+  .catering {
+    @include flex-margin-right(55%);
+    @include flex-column-layout;
+  }
+}
