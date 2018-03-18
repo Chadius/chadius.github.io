@@ -17,6 +17,15 @@ h4,
 h5,
 h6 {
   font-family: 'Roboto', sans-serif;
+  color: $font-heading-col;
+}
+
+h1 {
+  font-size: 3em; /* TODO scaling */
+}
+
+p {
+  font-family: 'PT Serif', serif;
 }
 
 body {
@@ -40,6 +49,7 @@ div img {
 .yell {
   font-size: 2em;
   margin: 0.5em auto;
+  color: $font-heading-col;
 }
 header {
   background: url("../images/Samosachutney.jpg") no-repeat;

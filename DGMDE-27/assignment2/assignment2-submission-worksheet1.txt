@@ -1,0 +1,56 @@
+Your name:
+Chad Serrant
+
+1. Provide a link to the first page of your website:
+
+My site looks the way I want on (choose one): Mac  PC
+Mac
+
+With this browser (choose one): Firefox Chrome 
+Chrome
+
+SASS (50 points)
+Provide partial file name(s) and starting line number(s) for the comment in Sass for the start of each item.
+
+2. Sass variables:
+
+3. 1 custom-coded mixin:
+flex-margin-right is defined in _mixins.scss, lines 13-16
+4. 1 extend:
+
+5. 2 levels of nesting:
+
+6. 2 instances of built-in Sass functions:
+
+7. 1 use of if/else
+
+8. The names of at least 2 partial files
+scss/_variables.css
+scss/_mixins.css
+
+COLOR AND TYPOGRAPHY (25 points)
+Provide partial file name(s) and starting line number(s) for the comment in Sass for the start of each item.
+
+9. Use of 2 typefaces:
+a. Names of typefaces and source (i.e. Cabin, Google Fonts)
+Roboto (Google Fonts) TODO Put into Sass?
+PT Serif (Google Fonts) TODO Put into Sass?
+b. An example of a style that uses this typeface (one example for each typeface)
+h1 uses Roboto (responsive-flexbox.scss, line 20)
+p uses PT Serif (responsive-flexbox.scss, line 26)
+
+10. Type scaling: 
+
+11. Color scheme:
+
+CSS CUSTOM PROPERTIES/VARIABLES (15 points)
+
+12. Provide partial file name(s) and line number(s) for the comments that  demonstrate:
+
+a. Variables initially configured (at least 3)
+
+b. Variables with changed values in media queries
+
+
+ABOVE AND BEYOND (10 POINTS)
+Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, Sass, or JavaScript line number(s) and explanation of what you did. How many points do you think this was worth, and why?
