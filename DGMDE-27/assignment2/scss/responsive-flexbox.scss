@@ -21,7 +21,23 @@ h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
+  @include breakpoint(tablet) {
+    font-size: 2.5em;
+  }
+  @include breakpoint(desktop) {
+    font-size: 3em;
+  }
+}
+
+h2 {
+  font-size: 1.25em;
+  @include breakpoint(tablet) {
+    font-size: 1.5em;
+  }
+  @include breakpoint(desktop) {
+    font-size: 1.7em;
+  }
 }
 
 p {
