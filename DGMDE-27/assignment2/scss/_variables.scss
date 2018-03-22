@@ -3,4 +3,14 @@ $box-col: hsl(213, 12%, 78%);
 $box-border-col: hsl(212, 12%, 53%);
 $font-heading-col: hsl(0%, 60%, 50%);
 $menu-bkg-col: hsl(174, 12%, 78%);
-$menu-border-col: hsl(174, 12%, 53%);
+$menu-border-col: darken($menu-bkg-col, 25%);
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Roboto');
+
+// Font Variables
+$pt-serif: 'PT Serif', serif;
+$roboto: 'Roboto', sans-serif;
+
+$mq-desktop: 1000px;
+$mq-tablet: 750px;

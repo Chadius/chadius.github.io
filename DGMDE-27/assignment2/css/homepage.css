@@ -1,10 +1,12 @@
-/* line 18, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/_mixins.scss */
+@import url("https://fonts.googleapis.com/css?family=PT+Serif|Roboto");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif|Roboto");
+/* line 27, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/_mixins.scss */
 .catering h3, .about-us h3 {
   margin-top: 0.1em;
   margin-bottom: 0.1em;
 }
 
-/* line 23, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/_mixins.scss */
+/* line 32, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/_mixins.scss */
 .about-us,
 .catering,
 .directions,

@@ -3,7 +3,7 @@
 
 /* Mobile dimensions (default) */
 .restaurant-info {
-  @include flex-column-layout;
+  @include flex-layout(column);
 }
 
 .about-us,
@@ -42,10 +42,10 @@
 }
 
 /* Tablet dimensions */
-@media (min-width: 750px) {
+@include breakpoint(tablet) {
   .us-catering,
   .map-hours {
-    @include flex-row-layout;
+    @include flex-layout(row);
   }
 
   .map-hours {
@@ -62,20 +62,20 @@
   .catering,
   .about-us {
     @include flex-margin-right(45%);
-    @include flex-column-layout;
+    @include flex-layout(column);
   }
 }
 
 /* Desktop dimensions */
-@media (min-width: 1000px) {
+@include breakpoint(desktop) {
   .map-hours {
-    @include flex-row-layout;
+    @include flex-layout(row);
   }
 
   .map-hours {
     .map {
       @include flex-margin-right(45%);
-      @include flex-row-layout;
+      @include flex-layout(row);
       justify-content: space-between;
       padding: 1em 1em;
     }
@@ -92,16 +92,16 @@
   }
 
   .us-catering {
-    @include flex-row-layout;
+    @include flex-layout(row);
   }
 
   .about-us {
     @include flex-margin-right(35%);
-    @include flex-column-layout;
+    @include flex-layout(column);
   }
 
   .catering {
     @include flex-margin-right(55%);
-    @include flex-column-layout;
+    @include flex-layout(column);
   }
 }

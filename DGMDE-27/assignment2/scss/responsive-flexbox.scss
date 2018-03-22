@@ -16,16 +16,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: $roboto;
   color: $font-heading-col;
 }
 
 h1 {
-  font-size: 3em; /* TODO scaling */
+  font-size: 3em;
 }
 
 p {
-  font-family: 'PT Serif', serif;
+  font-family: $pt-serif;
 }
 
 body {
@@ -84,7 +84,7 @@ section {
 
 /* Mobile dimensions (default) */
 header {
-  @include flex-row-layout;
+  @include flex-layout(row);
   h1 {
     @include flex-margin-right(45%);
     width: min-content;
@@ -96,16 +96,16 @@ header {
   }
   nav {
     flex: 0 0 45%;
-    @include flex-row-layout;
+    @include flex-layout(row);
     margin-bottom: 0.3em;
     background-color: hsla(13, 2%, 90%, 0.5);
   }
 }
 
 /* Tablet dimensions */
-@media (min-width: 750px) {
+@include breakpoint(tablet) {
   header {
-    @include flex-column-layout;
+    @include flex-layout(column);
     background: url("../images/Samosachutney800.jpg") no-repeat;
     background-size: cover;
   }
@@ -117,7 +117,7 @@ header {
     }
 
     nav {
-      @include flex-row-layout;
+      @include flex-layout(row);
     }
   }
 

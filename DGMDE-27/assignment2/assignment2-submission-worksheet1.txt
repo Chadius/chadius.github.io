@@ -13,16 +13,23 @@ SASS (50 points)
 Provide partial file name(s) and starting line number(s) for the comment in Sass for the start of each item.
 
 2. Sass variables:
+scss/_variables.scss
 
 3. 1 custom-coded mixin:
-flex-margin-right is defined in _mixins.scss, lines 13-16
+flex-margin-right is defined in scss/_mixins.scss, lines 13-16
+
 4. 1 extend:
+%box-background found in scss/_mixins.scss, lines 32-38
 
 5. 2 levels of nesting:
+"nav ul a" found in responsive-flexbox.scss, lines 58-78
 
 6. 2 instances of built-in Sass functions:
+hsl() found in scss/_variables.scss, line 2
+darken() found in scss/_variables.scss, line 6
 
 7. 1 use of if/else
+flex-layout is defined in scss/_mixins.scss, line 13
 
 8. The names of at least 2 partial files
 scss/_variables.css
@@ -33,13 +40,15 @@ Provide partial file name(s) and starting line number(s) for the comment in Sass
 
 9. Use of 2 typefaces:
 a. Names of typefaces and source (i.e. Cabin, Google Fonts)
-Roboto (Google Fonts) TODO Put into Sass?
-PT Serif (Google Fonts) TODO Put into Sass?
-b. An example of a style that uses this typeface (one example for each typeface)
-h1 uses Roboto (responsive-flexbox.scss, line 20)
-p uses PT Serif (responsive-flexbox.scss, line 26)
+Roboto (Google Fonts)
+PT Serif (Google Fonts)
+Imported and variables are defined in scss/_variables.scss, lines 8 to 13
 
-10. Type scaling: 
+b. An example of a style that uses this typeface (one example for each typeface)
+h1 uses Roboto (scss/responsive-flexbox.scss, line 20)
+p uses PT Serif (scss/responsive-flexbox.scss, line 26)
+
+10. Type scaling:
 
 11. Color scheme:
 
