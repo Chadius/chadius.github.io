@@ -1,44 +1,44 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif|Roboto");
 @import url("https://fonts.googleapis.com/css?family=PT+Serif|Roboto");
-/* line 27, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/_mixins.scss */
+/* line 27, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/_mixins.scss */
 .catering h3, .about-us h3 {
   margin-top: 0.1em;
   margin-bottom: 0.1em;
 }
 
-/* line 32, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/_mixins.scss */
+/* line 32, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/_mixins.scss */
 .about-us,
 .catering,
 .directions,
 .map,
 .hours {
-  background-color: #bcc2c2;
+  background-color: #b6c1c9;
   padding: 1em 1em;
-  border: 0.2em solid #798685;
+  border: 0.2em solid #6c8393;
   border-radius: 1em;
   display: flex;
   flex-direction: column;
 }
 
 /* Mobile dimensions (default) */
-/* line 5, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+/* line 5, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
 .restaurant-info {
   display: flex;
   flex-direction: column;
 }
 
-/* line 22, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+/* line 22, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
 .map a {
   margin: 1em;
 }
 
-/* line 26, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+/* line 26, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
 .map img {
   border: 0.2em solid #c99f9c;
   border-radius: 0.2em;
 }
 
-/* line 33, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+/* line 33, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
 .about-us img {
   border: 0.2em solid #e8e3e3;
   border-radius: 0.2em;
@@ -46,24 +46,24 @@
 
 /* Tablet dimensions */
 @media (min-width: 750px) {
-  /* line 46, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 46, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .us-catering,
   .map-hours {
     display: flex;
     flex-direction: row;
   }
-  /* line 52, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 52, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .map-hours .map {
     flex: 0 0 45%;
     margin-right: 5%;
   }
-  /* line 56, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 56, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .map-hours .directions,
   .map-hours .hours {
     flex: 0 0 15%;
     margin-right: 5%;
   }
-  /* line 62, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 62, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .catering,
   .about-us {
     flex: 0 0 45%;
@@ -75,12 +75,12 @@
 
 /* Desktop dimensions */
 @media (min-width: 1000px) {
-  /* line 71, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 71, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .map-hours {
     display: flex;
     flex-direction: row;
   }
-  /* line 76, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 76, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .map-hours .map {
     flex: 0 0 45%;
     margin-right: 5%;
@@ -89,30 +89,30 @@
     justify-content: space-between;
     padding: 1em 1em;
   }
-  /* line 83, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 83, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .map-hours .map div {
     flex: 0 0 60%;
   }
-  /* line 87, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 87, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .map-hours .hours,
   .map-hours .directions {
     flex: 0 0 20%;
     margin-right: 5%;
     padding: 0 1em;
   }
-  /* line 94, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 94, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .us-catering {
     display: flex;
     flex-direction: row;
   }
-  /* line 98, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 98, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .about-us {
     flex: 0 0 35%;
     margin-right: 5%;
     display: flex;
     flex-direction: column;
   }
-  /* line 103, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
+  /* line 103, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/homepage.scss */
   .catering {
     flex: 0 0 55%;
     margin-right: 5%;
