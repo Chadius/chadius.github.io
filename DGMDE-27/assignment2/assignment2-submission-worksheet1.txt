@@ -6,7 +6,7 @@ Chad Serrant
 My site looks the way I want on (choose one): Mac  PC
 Mac
 
-With this browser (choose one): Firefox Chrome 
+With this browser (choose one): Firefox Chrome
 Chrome
 
 SASS (50 points)
@@ -53,8 +53,7 @@ h1 and h2 styles in responsive-flexbox.scss, lines 23-34 and 36-47
 .yell styles in responsive-flexbox.scss, lines 71-81
 
 11. Color scheme:
-I used Natalya Shelburne's Sass formulas in scss/_colors.scss. Only line 1 was written by me.
-The colors are deployed in _variables.scss.
+The colors are defined in scss/_variables.scss.
 
 CSS CUSTOM PROPERTIES/VARIABLES (15 points)
 
