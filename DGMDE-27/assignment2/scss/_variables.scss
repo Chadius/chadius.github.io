@@ -1,9 +1,12 @@
-$bkg-col: #dedede;
-$box-col: hsl(213, 12%, 78%);
-$box-border-col: hsl(212, 12%, 53%);
-$font-heading-col: hsl(0%, 60%, 50%);
-$menu-bkg-col: hsl(174, 12%, 78%);
+@import "colors";
+
+$bkg-col: lighten(desaturate($second-color, 80%), 20%);
+$box-col: lighten(desaturate($second-color, 95%), 25%);
+$box-border-col: darken($box-col, 25%);
+$font-heading-col: desaturate-neutral($first-color);
+$menu-bkg-col: lighten(desaturate($second-color, 95%), 25%);
 $menu-border-col: darken($menu-bkg-col, 25%);
+$yell-col: darken($second-color, 50%);
 
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=PT+Serif|Roboto');

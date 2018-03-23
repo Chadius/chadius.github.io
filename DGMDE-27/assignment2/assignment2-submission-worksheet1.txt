@@ -49,8 +49,12 @@ h1 uses Roboto (scss/responsive-flexbox.scss, line 20)
 p uses PT Serif (scss/responsive-flexbox.scss, line 26)
 
 10. Type scaling:
+h1 and h2 styles in responsive-flexbox.scss, lines 23-34 and 36-47
+.yell styles in responsive-flexbox.scss, lines 71-81
 
 11. Color scheme:
+I used Natalya Shelburne's Sass formulas in scss/_colors.scss. Only line 1 was written by me.
+The colors are deployed in _variables.scss.
 
 CSS CUSTOM PROPERTIES/VARIABLES (15 points)
 
