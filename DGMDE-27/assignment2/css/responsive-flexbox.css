@@ -1,18 +1,46 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif|Roboto");
 @import url("https://fonts.googleapis.com/css?family=PT+Serif|Roboto");
-/* line 4, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 4, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+:root {
+  --base-font-size: 1em;
+  --base-line-height: 1.125;
+  --h2-font-size: 1.25em;
+  --h1-line-height: 1.125;
+}
+
+@media (min-width: 750px) {
+  /* line 4, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  :root {
+    --base-font-size: 1em;
+    --base-line-height: 1;
+    --h2-font-size: 1.5em;
+    --h1-line-height: 1.25;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* line 4, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  :root {
+    --base-font-size: 1.5em;
+    --base-line-height: 1;
+    --h2-font-size: 1.7em;
+    --h1-line-height: 1.25;
+  }
+}
+
+/* line 24, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 7, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 27, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-/* line 13, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 33, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 h1,
 h2,
 h3,
@@ -23,66 +51,49 @@ h6 {
   color: #ff0015;
 }
 
-/* line 23, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 43, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 h1 {
-  font-size: 2em;
-  line-height: 1.25;
+  font-size: calc(var(--base-font-size) * 2);
+  line-height: var(--base-line-height);
 }
 
 @media (min-width: 750px) {
-  /* line 23, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  /* line 43, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
   h1 {
-    font-size: 2.5em;
-    line-height: 1.5;
+    line-height: calc(var(--base-line-height) * 1.2);
   }
 }
 
 @media (min-width: 1000px) {
-  /* line 23, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  /* line 43, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
   h1 {
-    font-size: 3em;
-    line-height: 1.5;
+    line-height: calc(var(--base-line-height) * 1.2);
   }
 }
 
-/* line 36, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 54, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 h2 {
-  font-size: 1.25em;
-  line-height: 1.25;
+  font-size: var(--h2-font-size);
+  line-height: var(--base-line-height);
+  margin-bottom: 0em;
 }
 
-@media (min-width: 750px) {
-  /* line 36, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
-  h2 {
-    font-size: 1.5em;
-    line-height: 1.125;
-  }
-}
-
-@media (min-width: 1000px) {
-  /* line 36, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
-  h2 {
-    font-size: 1.7em;
-    line-height: 1.125;
-  }
-}
-
-/* line 49, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 60, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 h3 {
   color: #b3000f;
 }
 
-/* line 53, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 64, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 h4 {
   color: #80000b;
 }
 
-/* line 57, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 68, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 p {
   font-family: "PT Serif", serif;
 }
 
-/* line 61, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 72, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -90,7 +101,7 @@ body {
   background-color: #40bf75;
 }
 
-/* line 68, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 79, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 .wrapper {
   width: 97%;
   margin: 0 auto;
@@ -98,13 +109,13 @@ body {
   flex-direction: column;
 }
 
-/* line 74, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 85, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 div img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 79, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 90, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 .yell {
   font-size: 1.1em;
   margin: 0.5em auto;
@@ -112,66 +123,65 @@ div img {
 }
 
 @media (min-width: 750px) {
-  /* line 79, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  /* line 90, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
   .yell {
     font-size: 1.5em;
   }
 }
 
 @media (min-width: 1000px) {
-  /* line 79, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  /* line 90, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
   .yell {
     font-size: 2em;
   }
 }
 
-/* line 90, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 102, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 header {
   background: url("../images/Samosachutney.jpg") no-repeat;
   background-size: cover;
 }
 
-/* line 94, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 106, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 nav {
   max-height: 2em;
 }
 
-/* line 96, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
-nav ul {
+/* line 108, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+nav div {
   margin: 0;
   padding: 0;
   list-style-type: none;
   overflow: auto;
+  font-size: var(--base-font-size);
 }
 
-/* line 102, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
-nav ul a {
-  color: black;
-  text-decoration: none;
+/* line 115, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+nav div a {
+  color: #005999;
   font-weight: bold;
-  padding: 1em;
-  float: left;
+  margin-left: 1em;
 }
 
-/* line 109, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
-nav ul a:hover {
+/* line 119, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+nav div a:hover {
   color: blue;
 }
 
-/* line 116, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 126, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 aside,
 section {
   margin-bottom: 1em;
 }
 
 /* Mobile dimensions (default) */
-/* line 122, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 132, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 header {
   display: flex;
   flex-direction: row;
 }
 
-/* line 124, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 134, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 header h1 {
   flex: 0 0 45%;
   margin-right: 5%;
@@ -183,7 +193,7 @@ header h1 {
   border-radius: 1em;
 }
 
-/* line 133, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+/* line 143, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
 header nav {
   flex: 0 0 45%;
   display: flex;
@@ -194,24 +204,24 @@ header nav {
 
 /* Tablet dimensions */
 @media (min-width: 750px) {
-  /* line 143, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  /* line 153, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
   header {
     display: flex;
     flex-direction: column;
     background: url("../images/Samosachutney800.jpg") no-repeat;
     background-size: cover;
   }
-  /* line 150, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  /* line 160, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
   header h1 {
     width: min-content;
     margin: 0 auto 5% auto;
   }
-  /* line 155, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  /* line 165, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
   header nav {
     display: flex;
     flex-direction: row;
   }
-  /* line 160, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
+  /* line 170, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment2/scss/responsive-flexbox.scss */
   nav div {
     flex: 0 0 15%;
     margin-right: 5%;

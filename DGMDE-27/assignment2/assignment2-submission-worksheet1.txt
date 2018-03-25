@@ -60,9 +60,9 @@ CSS CUSTOM PROPERTIES/VARIABLES (15 points)
 12. Provide partial file name(s) and line number(s) for the comments that  demonstrate:
 
 a. Variables initially configured (at least 3)
-
+scss/responsive-flexbox.scss, lines 5-8
 b. Variables with changed values in media queries
-
+scss/responsive-flexbox.scss, lines 4-22
 
 ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, Sass, or JavaScript line number(s) and explanation of what you did. How many points do you think this was worth, and why?
