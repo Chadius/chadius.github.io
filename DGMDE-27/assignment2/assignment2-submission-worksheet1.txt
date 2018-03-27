@@ -2,6 +2,7 @@ Your name:
 Chad Serrant
 
 1. Provide a link to the first page of your website:
+https://chadius.github.io/DGMDE-27/assignment2/index.html
 
 My site looks the way I want on (choose one): Mac  PC
 Mac
@@ -16,20 +17,20 @@ Provide partial file name(s) and starting line number(s) for the comment in Sass
 scss/_variables.scss
 
 3. 1 custom-coded mixin:
-flex-margin-right is defined in scss/_mixins.scss, lines 13-16
+flex-margin-right is defined in scss/_mixins.scss, lines 22-25
 
 4. 1 extend:
 %box-background found in scss/_mixins.scss, lines 32-38
 
 5. 2 levels of nesting:
-"nav ul a" found in responsive-flexbox.scss, lines 58-78
+"nav div a" found in responsive-flexbox.scss, lines 106-124
 
 6. 2 instances of built-in Sass functions:
-hsl() found in scss/_variables.scss, line 2
-darken() found in scss/_variables.scss, line 6
+hsl() found in scss/_variables.scss, line 3
+lighten() and desaturate() found in scss/_variables.scss, line 11
 
 7. 1 use of if/else
-flex-layout is defined in scss/_mixins.scss, line 13
+flex-layout is defined in scss/_mixins.scss, lines 14-19
 
 8. The names of at least 2 partial files
 scss/_variables.css
@@ -42,15 +43,16 @@ Provide partial file name(s) and starting line number(s) for the comment in Sass
 a. Names of typefaces and source (i.e. Cabin, Google Fonts)
 Roboto (Google Fonts)
 PT Serif (Google Fonts)
-Imported and variables are defined in scss/_variables.scss, lines 8 to 13
+Variables are Imported and defined in scss/_variables.scss, lines 16 to 20
 
 b. An example of a style that uses this typeface (one example for each typeface)
-h1 uses Roboto (scss/responsive-flexbox.scss, line 20)
-p uses PT Serif (scss/responsive-flexbox.scss, line 26)
+h1 uses Roboto (scss/responsive-flexbox.scss, line 39)
+p uses PT Serif (scss/responsive-flexbox.scss, line 69)
 
 10. Type scaling:
-h1 and h2 styles in responsive-flexbox.scss, lines 23-34 and 36-47
-.yell styles in responsive-flexbox.scss, lines 71-81
+h1 style in responsive-flexbox.scss, lines 5,11,17,44
+h2 style in responsive-flexbox.scss, lines 7,13,19,55
+.yell styles in responsive-flexbox.scss, lines 91-100
 
 11. Color scheme:
 The colors are defined in scss/_variables.scss.
