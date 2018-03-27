@@ -66,3 +66,7 @@ scss/responsive-flexbox.scss, lines 4-22
 
 ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, Sass, or JavaScript line number(s) and explanation of what you did. How many points do you think this was worth, and why?
+I would like 5 points for this section.
+
+I'm using a split compliment color scheme in scss/_variables.scss, lines 3-5.
+I combined CSS variables with CSS Calc to determine sizescss/responsive-flexbox.scss, lines 43-54
