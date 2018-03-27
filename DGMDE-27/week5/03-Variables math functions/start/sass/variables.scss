@@ -1,0 +1,35 @@
+$primary-color: #00c4c7;
+$secondary-color: #c80060;
+
+h1 {
+	background-color: darken($primary-color, 10%);
+	color: white;
+}
+h2 {
+	background-color: lighten($secondary-color, 10%);
+	color: white;
+}
+h3 {
+	background-color: desaturate($primary-color, 30%);
+	color: white;
+}
+h4 {
+	background-color: saturate(#cc8850, 30%);
+	color: white;
+}
+h5 {
+	background-color: transparentize($primary-color, 0.8);
+	color: white;
+}
+.original-blue {
+	background-color: $primary-color;
+	color: white;
+}
+.original-pink {
+	background-color: $secondary-color;
+	color: white;
+}
+.original-brown {
+	background-color: #cc8850;
+	color: white;
+}

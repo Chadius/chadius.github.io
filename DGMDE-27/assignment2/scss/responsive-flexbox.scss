@@ -1,0 +1,173 @@
+@import "variables";
+@import "mixins";
+
+:root {
+  --base-font-size: 1em;
+  --base-line-height: 1.125;
+  --h2-font-size: 1.25em;
+  --h1-line-height: 1.125;
+
+  @include breakpoint(tablet) {
+      --base-font-size: 1em;
+      --base-line-height: 1;
+      --h2-font-size: 1.5em;
+      --h1-line-height: 1.25;
+  }
+  @include breakpoint(desktop) {
+      --base-font-size: 1.5em;
+      --base-line-height: 1;
+      --h2-font-size: 1.7em;
+      --h1-line-height: 1.25;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $roboto;
+  color: $font-heading-col;
+}
+
+h1 {
+  font-size: calc(var(--base-font-size) * 3);
+  line-height: var(--base-line-height);
+  @include breakpoint(tablet) {
+    line-height: calc(var(--base-line-height) * 1.2);
+  }
+  @include breakpoint(desktop) {
+    line-height: calc(var(--base-line-height) * 1.2);
+  }
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  line-height: var(--base-line-height);
+  margin-bottom: 0em;
+}
+
+h3 {
+  color: darken($primary-color, 15%);
+}
+
+h4 {
+  color: darken($primary-color, 25%);
+}
+
+p {
+  font-family: $pt-serif;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+  background-color: $bkg-col;
+}
+
+.wrapper {
+	width: 97%;
+	margin: 0 auto;
+  @include flex-column-layout;
+}
+
+div img {
+	max-width: 100%;
+  max-height: 100%;
+}
+
+.yell {
+  font-size: 1.1em;
+
+  @include breakpoint(tablet) {
+    font-size: 1.5em;
+  }
+  @include breakpoint(desktop) {
+    font-size: 2em;
+  }
+  margin: 0.5em auto;
+  color: $yell-col;
+}
+header {
+  background: url("../images/Samosachutney.jpg") no-repeat;
+  background-size: cover;
+}
+nav {
+  max-height: 2em;
+  div {
+	  margin: 0;
+	  padding: 0;
+	  list-style-type: none;
+	  overflow: auto;
+    font-size: var(--base-font-size);
+
+    a {
+    	color: darken($split-comp2, 20%);
+    	font-weight: bold;
+      margin-left: 1em;
+      &:hover {
+      	color: blue;
+      }
+    }
+  }
+}
+
+aside,
+section {
+  margin-bottom: 1em;
+}
+
+/* Mobile dimensions (default) */
+header {
+  @include flex-layout(row);
+  h1 {
+    @include flex-margin-right(45%);
+    width: min-content;
+    margin: 0 auto 5% auto;
+    background-color: hsl(13, 2%, 90%);
+    padding: 0.1em 1em;
+    border: 0.1em solid hsl(13, 2%, 70%);
+    border-radius: 1em;
+  }
+  nav {
+    flex: 0 0 45%;
+    @include flex-layout(row);
+    margin-bottom: 0.3em;
+    background-color: hsla(13, 2%, 90%, 0.5);
+  }
+}
+
+/* Tablet dimensions */
+@include breakpoint(tablet) {
+  header {
+    @include flex-layout(column);
+    background: url("../images/Samosachutney800.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    h1 {
+      width: min-content;
+      margin: 0 auto 5% auto;
+    }
+
+    nav {
+      @include flex-layout(row);
+    }
+  }
+
+  nav div {
+    @include flex-margin-right(15%);
+  }
+}

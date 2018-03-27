@@ -1,0 +1,74 @@
+Your name:
+Chad Serrant
+
+1. Provide a link to the first page of your website:
+https://chadius.github.io/DGMDE-27/assignment2/index.html
+
+My site looks the way I want on (choose one): Mac  PC
+Mac
+
+With this browser (choose one): Firefox Chrome
+Chrome
+
+SASS (50 points)
+Provide partial file name(s) and starting line number(s) for the comment in Sass for the start of each item.
+
+2. Sass variables:
+scss/_variables.scss
+
+3. 1 custom-coded mixin:
+flex-margin-right is defined in scss/_mixins.scss, lines 22-25
+
+4. 1 extend:
+%box-background found in scss/_mixins.scss, lines 32-38
+
+5. 2 levels of nesting:
+"nav div a" found in responsive-flexbox.scss, lines 106-124
+
+6. 2 instances of built-in Sass functions:
+hsl() found in scss/_variables.scss, line 3
+lighten() and desaturate() found in scss/_variables.scss, line 11
+
+7. 1 use of if/else
+flex-layout is defined in scss/_mixins.scss, lines 14-19
+
+8. The names of at least 2 partial files
+scss/_variables.css
+scss/_mixins.css
+
+COLOR AND TYPOGRAPHY (25 points)
+Provide partial file name(s) and starting line number(s) for the comment in Sass for the start of each item.
+
+9. Use of 2 typefaces:
+a. Names of typefaces and source (i.e. Cabin, Google Fonts)
+Roboto (Google Fonts)
+PT Serif (Google Fonts)
+Variables are Imported and defined in scss/_variables.scss, lines 16 to 20
+
+b. An example of a style that uses this typeface (one example for each typeface)
+h1 uses Roboto (scss/responsive-flexbox.scss, line 39)
+p uses PT Serif (scss/responsive-flexbox.scss, line 69)
+
+10. Type scaling:
+h1 style in responsive-flexbox.scss, lines 5,11,17,44
+h2 style in responsive-flexbox.scss, lines 7,13,19,55
+.yell styles in responsive-flexbox.scss, lines 91-100
+
+11. Color scheme:
+The colors are defined in scss/_variables.scss.
+
+CSS CUSTOM PROPERTIES/VARIABLES (15 points)
+
+12. Provide partial file name(s) and line number(s) for the comments that  demonstrate:
+
+a. Variables initially configured (at least 3)
+scss/responsive-flexbox.scss, lines 5-8
+b. Variables with changed values in media queries
+scss/responsive-flexbox.scss, lines 4-22
+
+ABOVE AND BEYOND (10 POINTS)
+Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, Sass, or JavaScript line number(s) and explanation of what you did. How many points do you think this was worth, and why?
+I would like 5 points for this section.
+
+I'm using a split compliment color scheme in scss/_variables.scss, lines 3-5.
+I combined CSS variables with CSS Calc to determine sizescss/responsive-flexbox.scss, lines 43-54

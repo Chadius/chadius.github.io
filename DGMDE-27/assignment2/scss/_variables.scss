@@ -1,0 +1,23 @@
+$hue: 355;
+
+$primary-color: hsl($hue, 100%, 50%);
+$split-comp1: adjust-hue($primary-color, 150deg);
+$split-comp2: adjust-hue($primary-color, 210deg);
+
+$bkg-col: desaturate($split-comp1, 50%);
+$box-col: lighten(desaturate($split-comp2, 85%), 25%);
+$box-border-col: darken($box-col, 25%);
+$font-heading-col: $primary-color;
+$menu-bkg-col: lighten(desaturate($split-comp1, 85%), 25%);
+$menu-border-col: darken($menu-bkg-col, 25%);
+$yell-col: darken($split-comp2, 35%);
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Roboto');
+
+// Font Variables
+$pt-serif: 'PT Serif', serif;
+$roboto: 'Roboto', sans-serif;
+
+$mq-desktop: 1000px;
+$mq-tablet: 750px;

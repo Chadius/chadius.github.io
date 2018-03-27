@@ -1,0 +1,34 @@
+/* for tablets and desktops, min width 550px */
+@include mq($small) {
+  /* clearing hack */
+  .row:before,
+  .row:after {
+      content:"";
+      display: table;
+      clear:both;
+  }
+  .floatleft {
+    @include floatme(left);
+  }
+  .floatright {
+    @include floatme;
+  }
+  .floatnone {
+    @include floatme(none);
+  }
+  header a {
+    text-align: left;
+  }
+  div.row {
+    padding: 0;
+  }
+  nav li,
+  nav li:nth-child(even),
+  nav li:nth-child(odd) {
+    display: inline-block;
+    @include navstyle(auto, none, 0);
+  }
+  nav a {
+      padding: 0em $standard-space;
+  }
+}

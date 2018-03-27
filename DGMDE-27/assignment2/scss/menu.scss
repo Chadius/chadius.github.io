@@ -1,0 +1,84 @@
+@import "variables";
+@import "mixins";
+
+/* Mobile dimensions (default) */
+.drinks-dessert,
+.intro {
+  @include flex-layout(column);
+}
+
+.appetizer-entree .appetizer,
+.appetizer-entree section,
+.drinks-dessert section {
+  background-color: $menu-bkg-col;
+  padding: 1em 1em;
+  border: 0.2em solid $menu-border-col;
+  border-radius: 2em;
+  padding: 1em 1em;
+}
+
+/* Tablet dimensions */
+@include breakpoint(tablet) {
+  .intro,
+  .appetizer-entree .appetizer,
+  .appetizer-entree section,
+  .drinks-dessert section {
+    @include flex-layout(column);
+  }
+
+  .intro {
+    flex-flow: row wrap;
+  }
+
+  .appetizer-entree,
+  .drinks-dessert {
+    @include flex-layout(row);
+  }
+
+  .appetizer-entree {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .appetizer-entree .appetizer{
+    @include flex-margin-right(75%);
+  }
+
+  .appetizer-entree section,
+  .drinks-dessert section {
+    @include flex-margin-right(45%);
+  }
+}
+
+/* Desktop dimensions */
+@include breakpoint(desktop) {
+  .intro,
+  .appetizer-entree section,
+  .appetizer-entree .appetizer,
+  .drinks-dessert section {
+    @include flex-layout(column);
+  }
+
+  .drinks-dessert,
+  .appetizer-entree {
+    @include flex-layout(row);
+  }
+
+  .appetizer-entree {
+    flex-flow: nowrap;
+    justify-content: flex-start;
+  }
+
+  .appetizer-entree section,
+  .appetizer-entree .appetizer {
+    @include flex-margin-right(30%);
+  }
+
+  .drinks-dessert section {
+    @include flex-margin-right(65%);
+  }
+
+  .drinks-dessert .drink {
+    flex: 0 0 30%;
+  }
+}

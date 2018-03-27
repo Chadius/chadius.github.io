@@ -1,0 +1,47 @@
+@import "variables";
+
+@mixin flex-column-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-layout($direction: column){
+  @if $direction == column {
+    @include flex-column-layout;
+  }
+  @else if $direction == row {
+    @include flex-row-layout;
+  }
+}
+
+@mixin flex-margin-right($width) {
+  flex: 0 0 $width;
+  margin-right: 5%;
+}
+
+%bottom-row-margins {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+%box-background {
+  background-color: $box-col;
+  padding: 1em 1em;
+  border: 0.2em solid $box-border-col;
+  border-radius: 1em;
+  @include flex-layout(column);
+}
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: $mq-desktop) { @content ; }
+ }
+ @else if $point == tablet {
+    @media (min-width: $mq-tablet) { @content ; }
+ }
+}

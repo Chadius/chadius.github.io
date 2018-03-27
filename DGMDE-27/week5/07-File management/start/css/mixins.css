@@ -1,0 +1,65 @@
+/* line 21, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/mixins.scss */
+h1, h3, h5 {
+  color: white;
+  font-weight: normal;
+  font-family: Georgia, serif;
+  font-style: italic;
+  background-color: #00c4c7; }
+
+/* line 25, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/mixins.scss */
+h2, h4 {
+  color: white;
+  font-weight: normal;
+  font-family: Georgia, serif;
+  font-style: italic;
+  background-color: #c80060; }
+
+/* line 35, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/mixins.scss */
+body {
+  font-family: Arial, Geneva, sans-serif;
+  background-image: url(../img/clouds.png);
+  margin: 0;
+  padding: 0; }
+
+/* line 41, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/mixins.scss */
+article {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #fff6e0;
+  padding: 1em;
+  border-radius: 0.625em;
+  background: -webkit-linear-gradient(#afe3e4, white);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(#afe3e4, white);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(#afe3e4, white);
+  /* IE10 */
+  background: -o-linear-gradient(#afe3e4, white);
+  /* Opera 11.10+ */
+  background: linear-gradient(#afe3e4, white);
+  /* W3C */ }
+
+/* line 50, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/mixins.scss */
+.demogradient {
+  width: 200px;
+  height: 200px;
+  background: -webkit-linear-gradient(#c80060, #e6bf98);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(#c80060, #e6bf98);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(#c80060, #e6bf98);
+  /* IE10 */
+  background: -o-linear-gradient(#c80060, #e6bf98);
+  /* Opera 11.10+ */
+  background: linear-gradient(#c80060, #e6bf98);
+  /* W3C */ }
+
+/* line 55, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/mixins.scss */
+a {
+  color: #00c4c7; }
+
+/* line 58, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/07-File management/start/sass/mixins.scss */
+a:hover {
+  color: #c80060; }
+
+/*# sourceMappingURL=../css/mixins.map */

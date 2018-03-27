@@ -1,0 +1,302 @@
+/* 
+  declare border-box sizing
+  http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
+*/
+/* line 30, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 34, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 38, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+body {
+  font-family: "Cabin", Arial, Geneva, sans-serif;
+  background-image: url(../img/clouds.png);
+  margin: 0;
+  padding: 0;
+}
+
+/* line 45, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Niconne', cursive;
+  font-weight: normal;
+  color: #c80060;
+}
+
+/* line 51, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+a {
+  color: #00c4c7;
+}
+
+/* line 54, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+a:hover {
+  color: #c80060;
+  text-decoration: none;
+}
+
+/* line 60, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+.wrapper {
+  margin: 0 auto;
+}
+
+/* line 64, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+header a {
+  text-align: center;
+  display: block;
+}
+
+/* line 69, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+nav {
+  background: url(../img/scallop.png) repeat-x;
+  /* splits nav into 2 columns
+  http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
+}
+
+/* line 74, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+nav ul {
+  list-style-type: none;
+  background-color: #e3be9f;
+  padding: 0.75em;
+  margin: 0.75em 0 0 0;
+  border-bottom: 3px solid #cc8850;
+  overflow: auto;
+}
+
+/* line 83, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+nav li:nth-child(even) {
+  width: 50%;
+  float: right;
+  padding: 0.5em;
+}
+
+/* line 86, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+nav li:nth-child(odd) {
+  width: 50%;
+  float: left;
+  padding: 0.5em;
+}
+
+/* line 90, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+nav a {
+  color: #c80060;
+  text-decoration: none;
+  display: block;
+  padding-left: 3%;
+}
+
+/* line 96, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+nav a:hover {
+  color: #00c4c7;
+}
+
+/* line 102, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+div.row {
+  background-color: #fff6e0;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  padding: 1em;
+}
+
+/* line 109, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+[class*='col'] {
+  margin-left: 0;
+}
+
+/* line 113, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+.col-1,
+.col-3 {
+  width: 96.66666%;
+}
+
+/* line 118, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+article img {
+  border-radius: 0.625rem;
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+  max-width: 20em;
+}
+
+/* line 126, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+[class*='sidebar'] {
+  border: 1px solid #00c4c7;
+  border-radius: 0.625rem;
+  margin-bottom: 1em;
+  margin-top: 2.5em;
+}
+
+/* line 135, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+[class*='sidebar'] h3 {
+  margin: 0;
+  color: white;
+  background-color: #00c4c7;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  padding-left: 0.5em;
+}
+
+/* line 145, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+[class*='sidebar'] img {
+  border-radius: 0px 0px 0.625rem 0.625rem;
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
+}
+
+/* line 154, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+.sidebar-secondary {
+  border-color: #c80060;
+}
+
+/* line 157, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+.sidebar-secondary h3 {
+  background-color: #c80060;
+}
+
+/* line 162, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+blockquote {
+  padding: 0;
+  margin: 0;
+  padding: 0 1em;
+}
+
+/* line 167, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+blockquote cite {
+  text-transform: uppercase;
+  font-style: normal;
+  padding: 0 1em 1em 1em;
+  display: block;
+}
+
+/* line 175, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+footer {
+  background-color: #00CDD1;
+  color: white;
+  clear: both;
+  padding: 0 0.5em 3em 0.5em;
+  border-top: 1px solid #00CDD1;
+}
+
+/* line 181, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+footer p {
+  text-align: center;
+}
+
+/* line 184, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+footer img {
+  width: 52px;
+}
+
+/* line 187, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* for tablets and desktops, min width 550px */
+@media (min-width: 34.375em) {
+  /* clearing hack */
+  /* line 196, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  .row:before,
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 202, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  .floatleft {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+  /* line 206, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  .floatright {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+  /* line 210, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  header a {
+    text-align: left;
+  }
+  /* line 213, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  div.row {
+    padding: 0;
+  }
+  /* line 216, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  nav li,
+  nav li:nth-child(even),
+  nav li:nth-child(odd) {
+    display: inline-block;
+    width: auto;
+    float: none;
+    padding: 0;
+  }
+  /* line 222, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  nav a {
+    padding: 0em 1em;
+  }
+}
+
+/* Small devices (tablets, 551px-849px) */
+@media (min-width: 34.438em) and (max-width: 53.063em) {
+  /* line 229, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  .wrapper {
+    width: 97%;
+    max-width: 47.938em;
+    float: none;
+  }
+  /* line 234, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  .col-1,
+  .col-3 {
+    width: 96.66666%;
+  }
+  /* line 238, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  div.row {
+    padding: 0 2em;
+  }
+  /* line 241, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  [class*='sidebar'] {
+    float: left;
+    width: 47%;
+    margin-right: 3%;
+  }
+}
+
+/* Large devices (large desktops, 850px and up) */
+@media (min-width: 53.125em) {
+  /* line 249, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  .wrapper {
+    width: 97%;
+    max-width: 75em;
+    float: none;
+  }
+  /* line 254, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  .col-1, .col-3 {
+    float: left;
+    margin-left: 3.33333%;
+    min-height: 1px;
+  }
+  /* line 259, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  .col-1 {
+    width: 20.83333%;
+  }
+  /* line 263, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  .col-3 {
+    width: 69.16665%;
+  }
+  /* line 267, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  h2 {
+    font-size: 3em;
+    border-bottom: 2px dotted #c80060;
+  }
+  /* line 271, /Users/chad/Documents/code/chadius.github.io/DGMDE-27/week5/06-If else/start/sass/mix-extend.scss */
+  h3 {
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=../css/mix-extend.map */

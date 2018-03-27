@@ -1,0 +1,201 @@
+/*
+  declare border-box sizing
+  http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+/* line 10, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 14, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 20, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+body {
+  font-family: "Cabin", Arial, Geneva, sans-serif;
+  background-image: url(../img/clouds.png);
+  margin: 0;
+  padding: 0;
+}
+
+/* line 27, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Niconne', cursive;
+  font-weight: normal;
+  color: #c80060;
+}
+
+/* line 33, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+a {
+  color: #00c4c7;
+}
+
+/* line 36, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+a:hover {
+  color: #c80060;
+  text-decoration: none;
+}
+
+/* line 41, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+.wrapper {
+  margin: 0 auto;
+}
+
+/* line 45, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+header a {
+  text-align: center;
+  display: block;
+}
+
+/* line 50, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+nav {
+  background: url(../img/scallop.png) repeat-x;
+  /* splits nav into 2 columns
+  http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
+}
+
+/* line 55, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+nav ul {
+  list-style-type: none;
+  background-color: #e4c0a3;
+  padding: 0.75em;
+  margin: 0.75em 0 0 0;
+  border-bottom: 3px solid #cc8850;
+  overflow: auto;
+}
+
+/* line 63, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+nav li:nth-child(even) {
+  width: 50%;
+  float: right;
+  padding: 0.5em;
+}
+
+/* line 68, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+nav li:nth-child(odd) {
+  width: 50%;
+  float: left;
+  padding: 0.5em;
+}
+
+/* line 73, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+nav a {
+  color: #c80060;
+  text-decoration: none;
+  display: block;
+  padding-left: 3%;
+}
+
+/* line 79, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+nav a:hover {
+  color: #00c4c7;
+}
+
+/* line 83, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+div.row {
+  background-color: #fff6e0;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  padding: 1em;
+}
+
+/* line 90, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+[class*='col'] {
+  margin-left: 0;
+}
+
+/* line 94, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+.col-1,
+.col-3 {
+  width: 96.66666%;
+}
+
+/* line 99, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+article img {
+  border-radius: 0.625rem;
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* line 107, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+[class*='sidebar'] {
+  border: 1px solid #00c4c7;
+  border-radius: 0.625rem;
+  margin-bottom: 1em;
+  margin-top: 2.5em;
+}
+
+/* line 113, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+[class*='sidebar'] h3 {
+  margin: 0;
+  color: white;
+  background-color: #00c4c7;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  padding-left: 0.5em;
+}
+
+/* line 121, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+[class*='sidebar'] img {
+  border-radius: 0px 0px 0.625rem 0.625rem;
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
+}
+
+/* line 129, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+.sidebar-secondary {
+  border-color: #c80060;
+}
+
+/* line 132, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+.sidebar-secondary h3 {
+  background-color: #c80060;
+}
+
+/* line 136, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+blockquote {
+  padding: 0;
+  margin: 0;
+  padding: 0 1em;
+}
+
+/* line 142, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+blockquote cite {
+  text-transform: uppercase;
+  font-style: normal;
+  padding: 0 1em 1em 1em;
+  display: block;
+}
+
+/* line 149, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+footer {
+  background-color: #00c4c7;
+  color: white;
+  clear: both;
+  padding: 0 0.5em 3em 0.5em;
+  border-top: 1px solid #00c4c7;
+}
+
+/* line 156, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+footer p {
+  text-align: center;
+}
+
+/* line 159, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+footer img {
+  width: 52px;
+}
+
+/* line 162, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/week5/02-Create your first Sass/start/scss/originalconfig.scss */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=../css/originalconfig.map */
