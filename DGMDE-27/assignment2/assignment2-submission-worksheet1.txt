@@ -2,7 +2,7 @@ Your name:
 Chad Serrant
 
 1. Provide a link to the first page of your website:
-https://chadius.github.io/DGMDE-27/assignment2/index.html
+https://chadius.github.io/DGMDE-27/assignment2/
 
 My site looks the way I want on (choose one): Mac  PC
 Mac
