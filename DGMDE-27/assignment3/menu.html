@@ -16,7 +16,7 @@
 	</script>
 	<script src="js/picturefill.min.js" async></script>
 </head>
-<header uk-width-1-1 uk-card uk-card-default>
+<header class="uk-width-1-1 uk-card uk-card-default">
 	<h1>Yummy Delight</h1>
 	<nav>
 		<div><a href="index.html">Hours</a></div>
@@ -25,77 +25,89 @@
 </header>
 <body class="wrapper">
 	<div class="intro">
-	  <aside class="yell" uk-grid>
+	  <aside class="yell uk-grid" uk-grid>
 			<span uk-width-1-1 uk-card uk-card-default>
 		    Every Monday, new menu!
 			</span>
 	  </aside>
 
-		<div class="restaurant-info" uk-grid>
-			<section class="appetizer uk-width-1-3 uk-card uk-card-default">
-				<picture>
-					<source media="(min-width: 750px)" srcset="images/Vegetable_Samosa800x600.jpg">
-					<img src="images/Vegetable_Samosa400x300.jpg" alt="Vegetable Samosas">
-				</picture>
-		    <h3>Appetizer</h3>
-		    <h4>Vegetable Samosas(2)</h4>
-		    <p>$5</p>
-		    <p>This savory fried dish is filled with potatoes, peas and a little bit of pepper for that extra kick!</p>
-		  </section>
-			<section class="uk-width-1-3 uk-card uk-card-default">
-				<picture>
-					<source media="(min-width: 750px)" srcset="images/pasta-food.jpg">
-					<img src="images/pasta-food-small.jpg" alt="Vegan Alfredo with Penne and Broccoli">
-				</picture>
-		    <h3>Main Course #1</h3>
-		    <h4>Vegan Alfredo with Penne and Broccoli</h4>
-		    <p>$8-10</p>
-		    <p>Did you know ground up cauliflower can make a creamy sauce? Add some lemon and garlic and you have alfredo sauce!
-		    A twist of a classic dish. Comes with a breadstick and cashews.</p>
-		    <p>Add buttermilk tofu for $2 more</p>
-		  </section>
-			<section class="uk-width-1-3 uk-card uk-card-default">
-				<picture>
-					<source media="(min-width: 750px)" srcset="images/salad-fork.jpg">
-					<img src="images/salad-fork-small.jpg" alt="Mixed Fruit and Nut Salad">
-				</picture>
-				<h3>Main Course #2</h3>
-				<h4>Mixed Fruit and Nut salad</h4>
-				<p>$10</p>
-				<p>Oh? You think salad isn't a main course? Have you tried it with cashews, boiled carrots, apples, cranberries, blueberries, almonds, fried chickpeas and 1/3 a pound of spinach over a vinagrette dressing? Probably not!</p>
-				<p>Mix and match as many ingredients as you want.</p>
-			</section>
+		<div class="restaurant-info uk-grid uk-grid-match" uk-grid>
+			<div class="uk-width-1-3">
+				<section class="appetizer uk-card uk-card-default uk-card-body">
+					<picture>
+						<source media="(min-width: 750px)" srcset="images/Vegetable_Samosa800x600.jpg">
+						<img src="images/Vegetable_Samosa400x300.jpg" alt="Vegetable Samosas">
+					</picture>
+			    <h3 class="uk-card-title">Appetizer</h3>
+			    <h4>Vegetable Samosas(2)</h4>
+			    <p>$5</p>
+			    <p>This savory fried dish is filled with potatoes, peas and a little bit of pepper for that extra kick!</p>
+			  </section>
+			</div>
+			<div class="uk-width-1-3">
+				<section class="uk-card uk-card-default uk-card-body">
+					<picture>
+						<source media="(min-width: 750px)" srcset="images/pasta-food.jpg">
+						<img src="images/pasta-food-small.jpg" alt="Vegan Alfredo with Penne and Broccoli">
+					</picture>
+			    <h3 class="uk-card-title">Main Course #1</h3>
+			    <h4>Vegan Alfredo with Penne and Broccoli</h4>
+			    <p>$8-10</p>
+			    <p>Did you know ground up cauliflower can make a creamy sauce? Add some lemon and garlic and you have alfredo sauce!
+			    A twist of a classic dish. Comes with a breadstick and cashews.</p>
+			    <p>Add buttermilk tofu for $2 more</p>
+			  </section>
+			</div>
+			<div class="uk-width-1-3">
+				<section class="uk-card uk-card-default uk-card-body">
+					<picture>
+						<source media="(min-width: 750px)" srcset="images/salad-fork.jpg">
+						<img src="images/salad-fork-small.jpg" alt="Mixed Fruit and Nut Salad">
+					</picture>
+					<h3 class="uk-card-title">Main Course #2</h3>
+					<h4>Mixed Fruit and Nut salad</h4>
+					<p>$10</p>
+					<p>Oh? You think salad isn't a main course? Have you tried it with cashews, boiled carrots, apples, cranberries, blueberries, almonds, fried chickpeas and 1/3 a pound of spinach over a vinagrette dressing? Probably not!</p>
+					<p>Mix and match as many ingredients as you want.</p>
+				</section>
+			</div>
 		</div>
 
-		<div class="drinks-dessert" uk-grid>
-		  <section class="drink uk-width-1-3 uk-card uk-card-default">
-				<picture>
-					<source media="(min-width: 750px)" srcset="images/banana-smoothie.jpg">
-					<img src="images/banana-smoothie-small.jpg" alt="Banana & Apple Smoothie">
-				</picture>
-		    <h3>Specialty Drink</h3>
-		    <h4>Banana & Apple Smoothie</h4>
-		    <p>$5</p>
-		    <p>Using Almond or Soy milk as a base (your choice!) We top this with some sweet cinnamon.
-		    Kale is optional (and free) if you wish.</p>
-		  </section>
-		  <section class="uk-width-2-3 uk-card uk-card-default">
-				<picture>
-					<source media="(min-width: 750px)" srcset="images/cake-table.jpg">
-					<img src="images/cake-table-small.jpg" alt="Carrot Cake">
-				</picture>
-		    <h3>Special Dessert of the week</h3>
-		    <h4>Ultimate Carrot Cake</h4>
-		    <p>$5 per slice, $35 for an 8-slice cake</p>
-		    <p>This week's big meal is a big carrot cake. No eggs or cow butter were harmed in the creation of this culinary confection!</p>
-		  </section>
+		<div class="drinks-dessert uk-grid uk-grid-match" uk-grid>
+			<div class="uk-width-1-3">
+			  <section class="drink uk-card uk-card-default uk-card-body">
+					<picture>
+						<source media="(min-width: 750px)" srcset="images/banana-smoothie.jpg">
+						<img src="images/banana-smoothie-small.jpg" alt="Banana & Apple Smoothie">
+					</picture>
+			    <h3 class="uk-card-title">Specialty Drink</h3>
+			    <h4>Banana & Apple Smoothie</h4>
+			    <p>$5</p>
+			    <p>Using Almond or Soy milk as a base (your choice!) We top this with some sweet cinnamon.
+			    Kale is optional (and free) if you wish.</p>
+			  </section>
+			</div>
+			<div class="uk-width-2-3">
+			  <section class="uk-card uk-card-default uk-card-body">
+					<picture>
+						<source media="(min-width: 750px)" srcset="images/cake-table.jpg">
+						<img src="images/cake-table-small.jpg" alt="Carrot Cake">
+					</picture>
+			    <h3 class="uk-card-title">Special Dessert of the week</h3>
+			    <h4>Ultimate Carrot Cake</h4>
+			    <p>$5 per slice, $35 for an 8-slice cake</p>
+			    <p>This week's big meal is a big carrot cake. No eggs or cow butter were harmed in the creation of this culinary confection!</p>
+			  </section>
+			</div>
 		</div>
 
 	</div>
-	<div class="row" uk-grid>
-		<footer uk-width-1-1 uk-card uk-card-default>
-			&copy; 2018 Chad Serrant
-		</footer>
+	<div class="row" class="uk-grid" uk-grid>
+		<div class="uk-width-1-1">
+			<footer class="uk-card uk-card-default uk-card-body">
+				&copy; 2018 Chad Serrant
+			</footer>
+		</div>
 	</div>
 </body>
 </html>

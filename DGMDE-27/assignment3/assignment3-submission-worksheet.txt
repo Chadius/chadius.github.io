@@ -1,22 +1,25 @@
 Your name:
-
+Chad Serrant
 1. Provide a link to the first page of your website:
 
 My site looks the way I want on (choose one): Mac  PC
-
-With this browser (choose one): Firefox Chrome 
-
+Mac
+With this browser (choose one): Firefox Chrome
+Chrome
 UIKIT (70 points)
 
 2. Grid: provide an example of a section of your website that has grid incorporated with responsive features.
 URL:
 Line numbers:
 
-Modifier used (choose the one you used): gutter modifiers, nested grid, divider modifier, match height, wrap multiple rows, "Grid and flex" 
+Modifier used (choose the one you used): gutter modifiers, nested grid, divider modifier, match height, wrap multiple rows, "Grid and flex"
+Match height,
 HTML line numbers:
+
 
 3. Other Layout Structures
 The widget you used is: card, article, comment, cover
+card,
 URL:
 HTML line numbers:
 
@@ -31,18 +34,18 @@ URL:
 HTML line numbers:
 
 6. Styling: 3 instances
-Choose from: alert, animation, background, badge, button, column, description list, icon, label, overlay, table, thumbnav. 
+Choose from: alert, animation, background, badge, button, column, description list, icon, label, overlay, table, thumbnav.
 
 a. Choice 1: (name)
-URL: 
+URL:
 HTML line numbers:
 
 b. Choice 2: (name)
-URL: 
+URL:
 HTML line numbers:
 
 c. Choice 3: (name)
-URL: 
+URL:
 HTML line numbers:
 
 7. Form
@@ -92,6 +95,3 @@ If you are using Google Docs (or similar), be sure that we have permission to vi
 
 ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, Sass, or JavaScript line number(s) and explanation of what you did. How many points do you think this was worth, and why? You can do more than one thing if you want.
-
-
-
