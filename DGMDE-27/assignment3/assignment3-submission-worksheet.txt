@@ -9,8 +9,8 @@ Chrome
 UIKIT (70 points)
 
 2. Grid: provide an example of a section of your website that has grid incorporated with responsive features.
-URL:
-Line numbers:
+URL: index.html
+Line numbers: line 19
 
 Modifier used (choose the one you used): gutter modifiers, nested grid, divider modifier, match height, wrap multiple rows, "Grid and flex"
 Match height,
@@ -19,9 +19,9 @@ HTML line numbers:
 
 3. Other Layout Structures
 The widget you used is: card, article, comment, cover
-card,
-URL:
-HTML line numbers:
+card
+URL: index.html
+HTML line numbers: line 27
 
 4. Navigation bar
 URL:
