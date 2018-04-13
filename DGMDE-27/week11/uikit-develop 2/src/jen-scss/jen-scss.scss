@@ -1,0 +1,110 @@
+// 1. Your custom variables and variable overwrites.
+$global-font-family:    "Cabin", Arial, Geneva, sans-serif;
+$base-heading-font-family: 'Niconne', cursive;
+$base-body-color: #222;
+$global-primary-background: #00cdd1;
+$global-secondary-background:  #C80060;
+$global-link-color: $global-primary-background;
+$global-link-hover-color: darken($global-link-color, 10%);
+$offcanvas-bar-background:  $global-primary-background;
+$base-heading-color: $global-secondary-background;
+
+
+//navbar
+$navbar-background:#E6BE97;
+$nav-header-text-transform: lowercase;
+$navbar-nav-item-active-color: $global-secondary-background;
+$navbar-nav-item-color: $global-secondary-background;
+$navbar-nav-item-hover-color: $global-primary-background;
+$navbar-nav-item-font-size: 16px;
+$navbar-nav-item-height: auto;
+$navbar-toggle-color: white;
+$navbar-toggle-hover-color: $global-secondary-background;
+
+// 2. Import default variables and available mixins.
+@import "../scss/variables-theme.scss";
+@import "../scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-navbar(){ padding: 16px 0; }
+@mixin hook-navbar-nav-item(){ text-transform: none; }
+
+@mixin hook-button-secondary(){
+	text-transform: none;
+	border-radius: 100px;
+	font-family: $base-heading-font-family;
+	font-size: 20px;
+}
+
+
+// 4. Import UIkit.
+@import "../scss/uikit-theme.scss";
+
+
+// 5. Custom styles
+body {
+	background-image: url(../img/clouds.png);
+}
+.bkgdimg {
+  height: 12px;
+    background: url(../img/scallop.png) repeat-x ;
+}
+.home {
+  background-color: #fff6e0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 2em;
+}
+footer {
+  background-color: $global-primary-background;
+  color: white;
+}
+footer a {
+	color: white;
+}
+
+/* below is Bootstrap 4 -- getbootstrap.com -- .sr-only class  */
+[uk-icon] span,
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+@media (min-width: $breakpoint-small) { 
+  .heading {
+    background: url(../img/header-850.jpg) no-repeat;
+    height: 130px;
+}
+}
+
+@media (min-width: $breakpoint-medium) { 
+  .heading {
+    background: url(../img/header-1200.jpg) no-repeat;
+    height: 183px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
