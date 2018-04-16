@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=PT+Serif|Roboto");
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -12308,11 +12309,22 @@ iframe.uk-cover {
   }
 }
 
-/* line 17, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+/* line 24, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
 .main-item,
 .menu-item {
   border: 0.1em solid #b4b2b1;
   border-radius: 1em;
+}
+
+/* line 30, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  /*color: $font-heading-col;*/
 }
 
 /*# sourceMappingURL=../../dist/css/chad-scss.map */

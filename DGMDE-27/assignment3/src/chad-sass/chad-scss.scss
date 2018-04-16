@@ -7,6 +7,13 @@ $card-default-background: #b6c1c9;
 @import "../scss/variables-theme.scss";
 @import "../scss/mixins-theme.scss";
 
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Roboto');
+
+// Font Variables
+$pt-serif: 'PT Serif', serif;
+$roboto: 'Roboto', sans-serif;
+
 // 3. Your custom mixin overwrites.
 @mixin hook-card() { color: #000; }
 
@@ -18,4 +25,14 @@ $card-default-background: #b6c1c9;
 .menu-item {
   border: 0.1em solid hsl(13, 2%, 70%);
   border-radius: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $roboto;
+  /*color: $font-heading-col;*/
 }
