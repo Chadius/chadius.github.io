@@ -1,7 +1,58 @@
 // 1. Your custom variables and variable overwrites.
+$hue: 355;
+
+$primary-color: hsl($hue, 100%, 50%);
+$split-comp1: adjust-hue($primary-color, 150deg);
+$split-comp2: adjust-hue($primary-color, 210deg);
+
+$bkg-col: desaturate($split-comp1, 50%);
+
 $global-link-color: #DA7D02;
-$base-body-background: #40bf75;
+$base-body-background: $bkg-col;
 $card-default-background: #b6c1c9;
+
+$menu-border-col: darken($card-default-background, 25%);
+$font-heading-col: $primary-color;
+
+$card-default-title-color: darken($primary-color, 15%);
+
+$box-col: lighten(desaturate($split-comp2, 85%), 25%);
+$box-border-col: darken($box-col, 25%);
+$menu-bkg-col: lighten(desaturate($split-comp1, 85%), 25%);
+$menu-border-col: darken($menu-bkg-col, 25%);
+$yell-col: darken($split-comp2, 35%);
+
+$width-small-width: 750px;
+$width-medium-width: 1000px;
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: $width-medium-width) { @content ; }
+ }
+ @else if $point == tablet {
+    @media (min-width: $width-small-width) { @content ; }
+ }
+}
+
+:root {
+  --base-font-size: 1em;
+  --base-line-height: 1.125;
+  --h2-font-size: 1.25em;
+  --h1-line-height: 1.125;
+
+  @include breakpoint(tablet) {
+      --base-font-size: 1em;
+      --base-line-height: 1;
+      --h2-font-size: 1.5em;
+      --h1-line-height: 1.25;
+  }
+  @include breakpoint(desktop) {
+      --base-font-size: 1.5em;
+      --base-line-height: 1;
+      --h2-font-size: 1.7em;
+      --h1-line-height: 1.25;
+  }
+}
 
 // 2. Import default variables and available mixins.
 @import "../scss/variables-theme.scss";
@@ -21,18 +72,61 @@ $roboto: 'Roboto', sans-serif;
 @import "../scss/uikit-theme.scss";
 
 // Personal styling
+header.uk-card-default {
+  background: url("../images/Samosachutney.jpg") no-repeat;
+  background-size: cover;
+}
+
 .main-item,
 .menu-item {
-  border: 0.1em solid hsl(13, 2%, 70%);
+  border: 0.1em solid $menu-border-col;
   border-radius: 1em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $roboto;
-  /*color: $font-heading-col;*/
+h1 {
+  color: $font-heading-col;
+  font-size: calc(var(--base-font-size) * 3);
+  line-height: var(--base-line-height);
+  @include breakpoint(tablet) {
+    line-height: calc(var(--base-line-height) * 1.2);
+  }
+  @include breakpoint(desktop) {
+    line-height: calc(var(--base-line-height) * 1.2);
+  }
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  line-height: var(--base-line-height);
+  margin-bottom: 0em;
+}
+
+.uk-h3 {
+  color: darken($primary-color, 15%);
+}
+
+.uk-h4 {
+  color: darken($primary-color, 25%);
+}
+
+/* Mobile dimensions (default) */
+header {
+  h1 {
+    width: min-content;
+    margin: 0 auto 5% auto;
+    background-color: hsl(13, 2%, 90%);
+    padding: 0.1em 1em;
+    border: 0.1em solid hsl(13, 2%, 70%);
+    border-radius: 1em;
+  }
+}
+
+/* Tablet dimensions */
+@include breakpoint(tablet) {
+  header {
+    h1 {
+      width: min-content;
+      margin: 0 auto 5% auto;
+    }
+  }
 }
