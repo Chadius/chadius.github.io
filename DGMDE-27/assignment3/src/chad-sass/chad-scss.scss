@@ -28,6 +28,8 @@ $width-medium-width: 1000px;
 $badge-background: lighten(desaturate($split-comp2, 35%), 5%);
 $label-background: darken(desaturate($split-comp1, 35%), 15%);
 
+$slideshow-button-col: white;
+
 @mixin breakpoint($point) {
   @if $point == desktop {
     @media (min-width: $width-medium-width) { @content ; }
@@ -136,4 +138,67 @@ header {
       margin: 0 auto 5% auto;
     }
   }
+}
+
+/* Slideshow styling */
+.slideshow-container {
+  background-color: transparent;
+}
+
+.slide {
+  display: none;
+  width:100%;
+  padding-top: 1rem;
+}
+
+.slide img {
+  height: 10rem;
+}
+
+.slideshow-prev, .slideshow-next {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  width: auto;
+  font-weight: bold;
+  transition: 0.6s ease;
+  font-size: 2em;
+  color: $slideshow-button-col;
+}
+
+/* Position the "next button" to the right */
+.slideshow-prev {
+  left: 10em;
+  border-radius: 3px 0 0 3px;
+}
+
+.slideshow-next {
+  right: 10em;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow-prev:hover, .slideshow-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow-caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

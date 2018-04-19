@@ -62,9 +62,10 @@ width modifiers
 HTML line numbers: menu.html, line 40
 
 8. JavaScripty Widgets
-URL:
-HTML line numbers:
+URL: index.html (javascript is in js/slideshow.js)
+HTML line numbers: 12, 21-25, 45-60
 The widget you chose is: lightbox, modal, notification, scrollspy, slideshow
+slideshow
 
 9. Sass variable #1: ________
 Partial file name:

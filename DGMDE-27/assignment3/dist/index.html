@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Yummy Delight</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/uikit.min.js"></script>
 	<script src="js/uikit-icons.min.js"></script>
+	<script src="js/slideshow.js"></script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/chad-scss.css">
 	<script>
@@ -15,6 +17,12 @@
 		document.createElement( "picture" );
 	</script>
 	<script src="js/picturefill.min.js" async></script>
+
+	<script>
+	  $(document).ready(function() {
+	    slideshow.document_ready();
+	  });
+	</script>
 </head>
 <a id="top"></a>
 <header class="uk-width-1-1 uk-card uk-card-default">
@@ -34,7 +42,22 @@
 			<div><a href="menu.html">Menu</a></div>
 		</div>
 	</div>
-
+	<div class="slideshow-container uk-text-center uk-width-1-1 uk-card uk-card-default">
+		<div class="slide fade">
+			<img src="images/Vegetable_Samosa400x300.jpg" alt="Vegetable Samosas">
+			<div class="slide-caption">Vegetable Samosas</div>
+		</div>
+		<div class="slide fade">
+			<img src="images/pasta-food-small.jpg" alt="Vegan Alfredo with Penne and Broccoli">
+			<div class="slide-caption">Vegan Alfredo</div>
+		</div>
+		<div class="slide fade">
+			<img src="images/cake-table-small.jpg" alt="Carrot Cake">
+			<div class="slide-caption">Carrot Cake</div>
+		</div>
+		<a class="slideshow-prev">&#10094;</a>
+		<a class="slideshow-next">&#10095;</a>
+	</div>
 	<div class="restaurant-info uk-grid uk-grid-match" uk-grid>
 		<div class="uk-width-1-2@m uk-width-1-1@s">
 		  <section class="map uk-card uk-card-default uk-card-body main-item">
