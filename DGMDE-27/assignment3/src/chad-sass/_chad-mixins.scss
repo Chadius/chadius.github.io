@@ -1,0 +1,10 @@
+@import "chad-variables";
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: $width-medium-width) { @content ; }
+ }
+ @else if $point == tablet {
+    @media (min-width: $width-small-width) { @content ; }
+ }
+}

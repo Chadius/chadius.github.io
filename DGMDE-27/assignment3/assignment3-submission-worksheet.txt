@@ -67,29 +67,29 @@ HTML line numbers: 12, 21-25, 45-60
 The widget you chose is: lightbox, modal, notification, scrollspy, slideshow
 slideshow
 
-9. Sass variable #1: ________
-Partial file name:
-Line number:
+9. Sass variable #1: $base-body-background
+Partial file name: chad-sass/_chad-variables.scss
+Line number: 10
 
-Sass variable #2: _________
-Partial file name:
-Line number:
+Sass variable #2: $card-default-background
+Partial file name: chad-sass/_chad-variables.scss
+Line number: 11
 
-10: New style #1: ________
-Partial file name:
-Line number:
+10: New style #1: .slide
+Partial file name: chad-sass/_chad-styles.scss
+Line number: 92-96
 
-New style #2: _________
-Partial file name:
-Line number:
+New style #2: .main-item
+Partial file name: chad-sass/_chad-styles.scss
+Line number: 29-33
 
-11. Modified style #1: ________
-Partial file name:
-Line number:
+11. Modified style #1: uk-h3
+Partial file name: chad-sass/_chad-styles.scss
+Line number: 53-55
 
-Modified style #2: _________
-Partial file name:
-Line number:
+Modified style #2: .uk-checkbox
+Partial file name: chad-sass/_chad-styles.scss
+Line number: 61-63
 
 COMPARISON EXERCISE (20 points)
 Please remember to turn in your paper as described in the assignment.

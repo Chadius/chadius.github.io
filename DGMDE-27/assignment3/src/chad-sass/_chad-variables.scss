@@ -1,0 +1,30 @@
+$hue: 355;
+
+$primary-color: hsl($hue, 100%, 50%);
+$split-comp1: adjust-hue($primary-color, 150deg);
+$split-comp2: adjust-hue($primary-color, 210deg);
+
+$bkg-col: desaturate($split-comp1, 50%);
+
+$global-link-color: #DA7D02;
+$base-body-background: $bkg-col;
+$card-default-background: #b6c1c9;
+
+$menu-border-col: darken($card-default-background, 25%);
+$font-heading-col: $primary-color;
+
+$card-default-title-color: darken($primary-color, 15%);
+
+$box-col: lighten(desaturate($split-comp2, 85%), 25%);
+$box-border-col: darken($box-col, 25%);
+$menu-bkg-col: lighten(desaturate($split-comp1, 85%), 25%);
+$menu-border-col: darken($menu-bkg-col, 25%);
+$yell-col: darken($split-comp2, 35%);
+
+$width-small-width: 750px;
+$width-medium-width: 1000px;
+
+$badge-background: lighten(desaturate($split-comp2, 35%), 5%);
+$label-background: darken(desaturate($split-comp1, 35%), 15%);
+
+$slideshow-button-col: white;
