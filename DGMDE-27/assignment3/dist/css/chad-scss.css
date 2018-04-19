@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=PT+Serif|Roboto");
-/* line 37, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+/* line 40, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
 :root {
   --base-font-size: 1em;
   --base-line-height: 1.125;
@@ -9,7 +9,7 @@
 }
 
 @media (min-width: 750px) {
-  /* line 37, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+  /* line 40, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
   :root {
     --base-font-size: 1em;
     --base-line-height: 1;
@@ -19,7 +19,7 @@
 }
 
 @media (min-width: 1000px) {
-  /* line 37, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+  /* line 40, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
   :root {
     --base-font-size: 1.5em;
     --base-line-height: 1;
@@ -3954,7 +3954,7 @@ select.uk-form-width-xsmall {
   border-radius: 500px;
   vertical-align: middle;
   /* 1 */
-  background: #1e87f0;
+  background: #4299d7;
   color: #fff;
   font-size: 0.875rem;
   /* 2 */
@@ -3981,7 +3981,7 @@ select.uk-form-width-xsmall {
 .uk-label {
   display: inline-block;
   padding: 0 10px;
-  background: #1e87f0;
+  background: #1f9350;
   line-height: 1.5;
   font-size: 0.875rem;
   color: #fff;
@@ -12337,20 +12337,20 @@ iframe.uk-cover {
   }
 }
 
-/* line 75, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+/* line 78, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
 header.uk-card-default {
   background: url("../images/Samosachutney.jpg") no-repeat;
   background-size: cover;
 }
 
-/* line 80, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+/* line 83, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
 .main-item,
 .menu-item {
   border: 0.1em solid #6c937c;
   border-radius: 1em;
 }
 
-/* line 86, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+/* line 89, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
 h1 {
   color: #ff0015;
   font-size: calc(var(--base-font-size) * 3);
@@ -12358,38 +12358,43 @@ h1 {
 }
 
 @media (min-width: 750px) {
-  /* line 86, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+  /* line 89, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
   h1 {
     line-height: calc(var(--base-line-height) * 1.2);
   }
 }
 
 @media (min-width: 1000px) {
-  /* line 86, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+  /* line 89, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
   h1 {
     line-height: calc(var(--base-line-height) * 1.2);
   }
 }
 
-/* line 98, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+/* line 101, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
 h2 {
   font-size: var(--h2-font-size);
   line-height: var(--base-line-height);
   margin-bottom: 0em;
 }
 
-/* line 104, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+/* line 107, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
 .uk-h3 {
   color: #b3000f;
 }
 
-/* line 108, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+/* line 111, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
 .uk-h4 {
   color: #80000b;
 }
 
+/* line 115, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+.uk-checkbox {
+  border-color: black;
+}
+
 /* Mobile dimensions (default) */
-/* line 114, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+/* line 121, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
 header h1 {
   width: min-content;
   margin: 0 auto 5% auto;
@@ -12401,7 +12406,7 @@ header h1 {
 
 /* Tablet dimensions */
 @media (min-width: 750px) {
-  /* line 127, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
+  /* line 134, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment3/src/chad-sass/chad-scss.scss */
   header h1 {
     width: min-content;
     margin: 0 auto 5% auto;

@@ -25,6 +25,9 @@ $yell-col: darken($split-comp2, 35%);
 $width-small-width: 750px;
 $width-medium-width: 1000px;
 
+$badge-background: lighten(desaturate($split-comp2, 35%), 5%);
+$label-background: darken(desaturate($split-comp1, 35%), 15%);
+
 @mixin breakpoint($point) {
   @if $point == desktop {
     @media (min-width: $width-medium-width) { @content ; }
@@ -107,6 +110,10 @@ h2 {
 
 .uk-h4 {
   color: darken($primary-color, 25%);
+}
+
+.uk-checkbox {
+  border-color: black;
 }
 
 /* Mobile dimensions (default) */

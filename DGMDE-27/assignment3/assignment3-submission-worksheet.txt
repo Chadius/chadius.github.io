@@ -30,32 +30,36 @@ Widgets used: (example: nav, navbar, width, visibility, etc)
 
 5. Second navigational element
 The widget you used is: accordion, breadcrumb, dropdown, scroll, switcher, tab
-URL:
-HTML line numbers:
+scroll
+URL: index.html
+HTML line numbers: 19, 54, 61, 75, 97, 108
 
 6. Styling: 3 instances
 Choose from: alert, animation, background, badge, button, column, description list, icon, label, overlay, table, thumbnav.
 
 a. Choice 1: (name)
-URL:
-HTML line numbers:
+icon
+URL: index.html
+HTML line numbers: 115-117
 
 b. Choice 2: (name)
-URL:
-HTML line numbers:
+badge
+URL: menu.html
+HTML line numbers: 42
 
 c. Choice 3: (name)
-URL:
-HTML line numbers:
+URL: index.html
+HTML line numbers: 19, 54, 61, 75, 97, 108
 
 7. Form
-URL:
-HTML line numbers:
+URL: index.html
+HTML line numbers: 97-122
 
 The 4 form fields should be obvious in the HTML, but if they are not, describe. Submit button does not count as a form field!
 
 1 example of form styling you chose: size modifiers, width modifiers, blank modifier, form layout, form and icons, form and grid
-HTML line numbers:
+width modifiers
+HTML line numbers: menu.html, line 40
 
 8. JavaScripty Widgets
 URL:
