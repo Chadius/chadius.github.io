@@ -1,4 +1,4 @@
-UI Kit versus custom
+I am comparing UI Kit to a custom framework using JavaScript, CSS and SASS.
 
 Columns
 -----
