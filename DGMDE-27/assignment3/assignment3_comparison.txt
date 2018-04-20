@@ -24,3 +24,15 @@ Custom: Basic CSS can identify and style elements without trouble.
 
 Which is better: Custom styling works better when you have a handful of
 elements to change.
+
+Smooth Scrolling and Navigation
+-----
+Problem: Smooth transitions on large pages helps users keep track of where
+they moved.
+
+UI Kit: uk-scroll lets the page scroll between over time.
+
+Custom: You'll need to add custom scrolling, usually with JavaScript.
+
+Which is better: UI Kit's is very easy to set up and use, but the custom
+Javascript implementation is pretty simple.
