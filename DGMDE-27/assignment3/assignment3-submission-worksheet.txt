@@ -106,4 +106,4 @@ I wrote a JavaScript-based slideshow. Every 2 seconds it will advance to the nex
 
 I used CSS3 variables in scss/_chad_styles.scss lines 4-22.
 
-With tese efforts, I am aiming for 98 points.
+With these efforts, I am aiming for 98 points.
