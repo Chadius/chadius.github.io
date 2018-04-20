@@ -13,6 +13,9 @@ content. Usually JavaScript is used to ensure columns have the same height.
 
 Which is better: UI Kit is much easier to understand.
 
+
+
+
 Styling HTML elements
 -----
 Problem: Change the styling of elements like h1, span and li.
@@ -25,6 +28,9 @@ Custom: Basic CSS can identify and style elements without trouble.
 Which is better: Custom styling works better when you have a handful of
 elements to change.
 
+
+
+
 Smooth Scrolling and Navigation
 -----
 Problem: Smooth transitions on large pages helps users keep track of where
@@ -36,3 +42,35 @@ Custom: You'll need to add custom scrolling, usually with JavaScript.
 
 Which is better: UI Kit's is very easy to set up and use, but the custom
 Javascript implementation is pretty simple.
+
+
+
+
+Browser Compatibility
+-----
+Problem: People will visit web pages with different brands and versions
+of web browsers. IE7 is still used in important government institutions,
+for example.
+
+UI Kit: As UI Kit releases new versions, older browsers will be incompatible.
+UI Kit only supports IE11 and later, which limits its audience.
+
+Custom: Polyfills and CSS2 are still available.
+
+Which is better: Depends on your audience. If you can guarantee your
+audience will use the latest browsers, UI Kit will guarantee a good looking
+webpage.
+
+
+
+Resource requirements
+-----
+Problem: The more JavaScript packages required to use the page features,
+the longer the page gets to load.
+
+UI Kit: At around 125 kb, UI Kit is relatively small for what you have.
+
+Custom: You can include exactly what you need.
+
+Which is better: If you utilize most of UI Kit's features the file size
+is reasonable.
