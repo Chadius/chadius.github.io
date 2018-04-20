@@ -1,0 +1,26 @@
+UI Kit versus custom
+
+Columns
+-----
+Problem: For large displays, content takes advantage of horizontal
+space by using columns.
+
+UI Kit: Using the uk-grid and uk-card classes, you can separate content
+cleanly. There is an additional class that equalizes heights.
+
+Custom: Displays like grid, flexbox or floats are used to horizontally split
+content. Usually JavaScript is used to ensure columns have the same height.
+
+Which is better: UI Kit is much easier to understand.
+
+Styling HTML elements
+-----
+Problem: Change the styling of elements like h1, span and li.
+
+UI Kit: Has a lot of default stylings you need to override to get the
+desired effect.
+
+Custom: Basic CSS can identify and style elements without trouble.
+
+Which is better: Custom styling works better when you have a handful of
+elements to change.
