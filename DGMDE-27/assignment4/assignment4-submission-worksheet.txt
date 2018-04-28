@@ -1,0 +1,92 @@
+Your name:
+
+1. Provide a link to the first page of your documentation website:
+
+My site looks the way I want on (choose one): Mac  PC
+
+With this browser (choose one): Firefox Chrome 
+
+CODE (45 points)
+
+2. 6 column grid system
+Using: floats   Flexbox    Grid   (something else?)
+Breakpoint values: 
+
+Default grid Sass partial file name:
+Starting line numbers:
+
+Breakpoint #1 grid Sass partial file name:
+Starting line numbers:
+
+Breakpoint #2 grid Sass partial file name:
+Starting line numbers:
+
+
+3. Color scheme
+Sass partial file name:
+Sass line numbers:
+
+
+4. Responsive typography
+Sass partial file name:
+Sass line numbers example 1:
+
+Sass partial file name:
+Sass line numbers example 2:
+
+
+5. Responsive navigation bar
+Sass partial file name:
+Sass line numbers:
+
+
+6. Two elements
+Choose from: breadcrumb, button, card, form styling, hero unit/jumbotron, image styling, list styling, table styling, text styling elements, visibility classes. 
+
+a. Choice 1: (name)
+Sass partial file name: 
+Sass line numbers:
+
+b. Choice 2: (name)
+Sass partial file name: 
+Sass line numbers:
+
+
+Part 2: Documentation and examples
+
+7. Framework name:
+
+For each of the below items, provide a URL where the requested information is located.
+
+8. Download button:
+
+9. Installation:
+
+10. Grid system install/examples:
+
+11. Nav bar install/examples: 
+
+12: Styled element #1 install/examples: 
+
+13: Styled element #2 install/examples:
+
+14: Sass docs for colors:
+
+15: Sass docs for fonts:
+
+16: Sass docs for media query breakpoints:
+
+17: Docs for anything else (list as many URLs as desired and describe what is located there):
+
+
+18: Example starter page:
+
+
+
+ABOVE AND BEYOND (10 POINTS)
+Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why? You can do more than one thing if you want.
+
+If you add code features, consider adding matching docs for full credit.
+
+
+

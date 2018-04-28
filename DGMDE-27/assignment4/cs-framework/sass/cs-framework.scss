@@ -1,0 +1,100 @@
+$breakpoint-small-width: 450px;
+$breakpoint-medium-width: 800px;
+$breakpoint-large-width: 1000px;
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: $breakpoint-large-width) { @content ; }
+ }
+ @else if $point == tablet {
+    @media (min-width: $breakpoint-medium-width) { @content ; }
+ }
+ @else if $point == phone {
+    @media (min-width: $breakpoint-small-width) { @content ; }
+ }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  width: 97%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+[class^="col"] {
+  margin: 0 3% 0 0;
+}
+
+@include breakpoint(phone) {
+  .col1s {
+    flex: 0 0 15%;
+    margin: 0 auto;
+  }
+  .col2s {
+    flex: 0 0 30%;
+  }
+  .col3s {
+    flex: 0 0 45%;
+  }
+  .col4s {
+    flex: 0 0 60%;
+  }
+  .col5s {
+    flex: 0 0 75%;
+  }
+  .col6s {
+    flex: 0 0 90%;
+  }
+}
+
+@include breakpoint(tablet) {
+  .col1m {
+    flex: 0 0 15%;
+    margin: 0 auto;
+  }
+  .col2m {
+    flex: 0 0 30%;
+  }
+  .col3m {
+    flex: 0 0 45%;
+  }
+  .col4m {
+    flex: 0 0 60%;
+  }
+  .col5m {
+    flex: 0 0 75%;
+  }
+  .col6m {
+    flex: 0 0 90%;
+  }
+}
+
+@include breakpoint(desktop) {
+  .col1l {
+    flex: 0 0 15%;
+  }
+  .col2l {
+    flex: 0 0 30%;
+  }
+  .col3l {
+    flex: 0 0 45%;
+  }
+  .col4l {
+    flex: 0 0 60%;
+  }
+  .col5l {
+    flex: 0 0 75%;
+  }
+  .col6l {
+    flex: 0 0 90%;
+  }
+}

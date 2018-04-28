@@ -1,0 +1,108 @@
+/* line 17, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 21, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+body {
+  width: 97%;
+  margin: 0 auto;
+}
+
+/* line 26, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* line 33, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+[class^="col"] {
+  margin: 0 3% 0 0;
+}
+
+@media (min-width: 450px) {
+  /* line 38, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col1s {
+    flex: 0 0 15%;
+    margin: 0 auto;
+  }
+  /* line 42, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col2s {
+    flex: 0 0 30%;
+  }
+  /* line 45, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col3s {
+    flex: 0 0 45%;
+  }
+  /* line 48, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col4s {
+    flex: 0 0 60%;
+  }
+  /* line 51, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col5s {
+    flex: 0 0 75%;
+  }
+  /* line 54, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col6s {
+    flex: 0 0 90%;
+  }
+}
+
+@media (min-width: 800px) {
+  /* line 60, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col1m {
+    flex: 0 0 15%;
+    margin: 0 auto;
+  }
+  /* line 64, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col2m {
+    flex: 0 0 30%;
+  }
+  /* line 67, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col3m {
+    flex: 0 0 45%;
+  }
+  /* line 70, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col4m {
+    flex: 0 0 60%;
+  }
+  /* line 73, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col5m {
+    flex: 0 0 75%;
+  }
+  /* line 76, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col6m {
+    flex: 0 0 90%;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* line 82, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col1l {
+    flex: 0 0 15%;
+  }
+  /* line 85, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col2l {
+    flex: 0 0 30%;
+  }
+  /* line 88, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col3l {
+    flex: 0 0 45%;
+  }
+  /* line 91, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col4l {
+    flex: 0 0 60%;
+  }
+  /* line 94, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col5l {
+    flex: 0 0 75%;
+  }
+  /* line 97, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  .col6l {
+    flex: 0 0 90%;
+  }
+}
+
+/*# sourceMappingURL=../../dist/css/cs-framework.map */
