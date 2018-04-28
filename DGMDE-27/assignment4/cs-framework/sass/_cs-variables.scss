@@ -1,21 +1,28 @@
+// breakpoint widths.
+$breakpoint-medium-width: 700px;
+$breakpoint-large-width: 1000px;
+
+// Primary color your website is based on.
 $primary-hue: 355;
 
+// Primary and Split complimentary colors.
 $primary-color: hsl($primary-hue, 100%, 50%);
 $split-comp1: adjust-hue($primary-color, 150deg);
 $split-comp2: adjust-hue($primary-color, 210deg);
 
+// Main background color.
 $background-col: lighten(desaturate($primary-color, 95%), 30%);
 
+// Background color for Card/Panel/Tile elements.
 $content-primary-bkg-color: lighten(desaturate($primary-color, 85%), 30%);
 $content-color1-bkg-color: lighten(desaturate($split-comp1, 85%), 30%);
 $content-color2-bkg-color: lighten(desaturate($split-comp2, 85%), 30%);
 
-$breakpoint-medium-width: 700px;
-$breakpoint-large-width: 1000px;
-
+// Button Styling options.
 $button-color: desaturate($primary-color, 80%);
 $button-text-color: white;
 
+// Nav element options.
 $nav-background-color: darken(desaturate($primary-color, 15%), 30%);
 $nav-element-background-color: darken(desaturate($primary-color, 15%), 10%);
 $nav-text-color: white;

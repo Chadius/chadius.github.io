@@ -1,5 +1,6 @@
-@import "cs-variables";
-@import "cs-mixins";
+/* TODO: Include Sass documentation, so users know how to make common changes to
+ the framework, like changing breakpoints, colors, font sizing, etc.
+*/
 
 html {
   box-sizing: border-box;
@@ -11,6 +12,11 @@ body {
   background-color: $background-col;
 }
 
+/* A 6-column grid system with 2 media query breakpoints.
+Media Query breakpoints are:
+  $breakpoint-medium-width
+  $breakpoint-large-width
+*/
 .row {
   display: flex;
   flex-direction: row;
@@ -18,11 +24,13 @@ body {
   flex-wrap: wrap;
 }
 
-/* Column system */
 [class^="col"] {
   margin: 0 3% 0 0;
 }
 
+/* col1 to col6 will use 1 to 6 column widths, respectively. */
+/* Add an s to the class name if you only want that column width at small
+breakpoints. */
 .col1,
 .col1s {
   flex: 0 0 15%;
@@ -48,6 +56,8 @@ body {
   flex: 0 0 90%;
 }
 
+/* Add an m to the class name if you only want that column width at medium
+breakpoints. col2m for example will be 2 columns wide at medium breakpoints. */
 @include breakpoint(tablet) {
   .col1m {
     flex: 0 0 15%;
@@ -69,6 +79,8 @@ body {
   }
 }
 
+/* Add an l to the class name if you only want that column width at large
+breakpoints. col5l for example will be 5 columns wide at medium breakpoints. */
 @include breakpoint(desktop) {
   .col1l {
     flex: 0 0 15%;
@@ -90,7 +102,8 @@ body {
   }
 }
 
-/* Element visibility */
+/* Visibility classes: Reveal elements at certain breakpoints. display-s will
+reveal the element at small breakpoints. */
 .display-m,
 .display-l {
   display: none;
@@ -100,6 +113,7 @@ body {
   display: initial;
 }
 
+/* display-m will reveal the element only at medium breakpoints. */
 @include breakpoint(tablet) {
   .display-s,
   .display-l {
@@ -111,6 +125,7 @@ body {
   }
 }
 
+/* display-l will reveal the element only at large breakpoints. */
 @include breakpoint(desktop) {
   .display-s,
   .display-m {
@@ -122,9 +137,8 @@ body {
   }
 }
 
-/* TODO: Display when hover over? */
-
-/* Responsive Typography */
+/* Responsive Typography: Font size and line height changes at
+different breakpoints. */
 :root {
   --base-font-size: 1em;
   --base-line-height: 1.125;
@@ -174,7 +188,8 @@ p {
   line-height: var(--base-line-height);
 }
 
-/* Button styling */
+/* Button styling: links with the button class and button elements
+are stylized. */
 button,
 a.button {
   background-color: $button-color;
@@ -194,7 +209,7 @@ a.button {
   margin: 0.1rem 0.5rem 0.5rem 0.1rem;
 }
 
-/* Styling for primary content */
+/* Card/Panel/Tile content adds a box shadow and a color. */
 .content-primary,
 .content-color1,
 .content-color2 {
@@ -234,7 +249,7 @@ nav ul {
     }
   }
 }
-/* In mediam breakpoints this will display 2 per row. */
+/* In mediam breakpoints nav elements will display 2 per row. */
 @include breakpoint(tablet) {
   nav ul {
     display: flex;
@@ -249,7 +264,7 @@ nav ul {
     }
   }
 }
-/* In large breakpoints this will be displayed as one horizontal list. */
+/* In large breakpoints nav elements will be displayed as one horizontal list. */
 @include breakpoint(desktop) {
   nav ul {
     display: flex;
