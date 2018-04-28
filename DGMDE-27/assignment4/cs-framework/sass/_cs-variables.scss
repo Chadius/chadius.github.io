@@ -26,3 +26,4 @@ $button-text-color: white;
 $nav-background-color: darken(desaturate($primary-color, 15%), 30%);
 $nav-element-background-color: darken(desaturate($primary-color, 15%), 10%);
 $nav-text-color: white;
+$nav-current-page-color: darken($nav-text-color, 30%);

@@ -303,15 +303,20 @@ nav ul li a {
   color: white;
 }
 
+/* line 252, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+nav ul li.current_page {
+  color: #b3b3b3;
+}
+
 /* In mediam breakpoints nav elements will display 2 per row. */
 @media (min-width: 700px) {
-  /* line 254, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 258, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  /* line 259, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 263, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul li {
     flex: 1 1 40%;
     margin: 1px 3% 1px 0;
@@ -322,14 +327,14 @@ nav ul li a {
 
 /* In large breakpoints nav elements will be displayed as one horizontal list. */
 @media (min-width: 1000px) {
-  /* line 269, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 273, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
   }
-  /* line 275, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 279, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul li {
     flex: 1 1 90%;
     margin: 1px 3% 1px 0;

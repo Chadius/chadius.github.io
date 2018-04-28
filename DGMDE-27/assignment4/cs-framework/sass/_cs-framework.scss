@@ -248,6 +248,10 @@ nav ul {
       color: $nav-text-color;
     }
   }
+
+  li.current_page {
+    color: $nav-current-page-color;
+  }
 }
 /* In mediam breakpoints nav elements will display 2 per row. */
 @include breakpoint(tablet) {
