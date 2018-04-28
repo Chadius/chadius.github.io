@@ -6,8 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>CS Framework Demo</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/cs-framework.js"></script>
   <link rel="stylesheet" href="css/custom_style.css">
+
+  <script>
+	  $(document).ready(function() {
+	    cs_framework_js.document_ready();
+	  });
+	</script>
 </head>
 <body>
   <header>
@@ -20,6 +27,10 @@
       </ul>
     </nav>
   </header>
+  <button class="click-to-reveal">Click Me!</button>
+  <div hidden>
+    Hidden Content!
+  </div>
   <div class="row">
     <div class="col2 content-primary">
     div 1
