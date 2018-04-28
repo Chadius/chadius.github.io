@@ -12,3 +12,10 @@ $content-color2-bkg-color: lighten(desaturate($split-comp2, 85%), 30%);
 
 $breakpoint-medium-width: 700px;
 $breakpoint-large-width: 1000px;
+
+$button-color: desaturate($primary-color, 80%);
+$button-text-color: white;
+
+$nav-background-color: darken(desaturate($primary-color, 15%), 30%);
+$nav-element-background-color: darken(desaturate($primary-color, 15%), 10%);
+$nav-text-color: white;

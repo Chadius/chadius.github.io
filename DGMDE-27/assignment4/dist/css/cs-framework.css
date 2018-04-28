@@ -18,169 +18,148 @@ body {
   flex-wrap: wrap;
 }
 
-/* line 21, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* Column system */
+/* line 22, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 [class^="col"] {
   margin: 0 3% 0 0;
 }
 
-/* line 25, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 26, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 .col1,
 .col1s {
   flex: 0 0 15%;
 }
 
-/* line 29, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 30, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 .col2,
 .col2s {
   flex: 0 0 30%;
 }
 
-/* line 33, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 34, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 .col3,
 .col3s {
   flex: 0 0 45%;
 }
 
-/* line 37, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 38, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 .col4,
 .col4s {
   flex: 0 0 60%;
 }
 
-/* line 41, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 42, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 .col5,
 .col5s {
   flex: 0 0 75%;
 }
 
-/* line 45, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 46, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 .col6,
 .col6s {
   flex: 0 0 90%;
 }
 
 @media (min-width: 700px) {
-  /* line 51, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 52, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col1m {
     flex: 0 0 15%;
   }
-  /* line 54, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 55, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col2m {
     flex: 0 0 30%;
   }
-  /* line 57, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 58, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col3m {
     flex: 0 0 45%;
   }
-  /* line 60, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 61, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col4m {
     flex: 0 0 60%;
   }
-  /* line 63, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 64, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col5m {
     flex: 0 0 75%;
   }
-  /* line 66, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 67, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col6m {
     flex: 0 0 90%;
   }
 }
 
 @media (min-width: 1000px) {
-  /* line 72, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 73, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col1l {
     flex: 0 0 15%;
   }
-  /* line 75, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 76, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col2l {
     flex: 0 0 30%;
   }
-  /* line 78, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 79, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col3l {
     flex: 0 0 45%;
   }
-  /* line 81, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 82, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col4l {
     flex: 0 0 60%;
   }
-  /* line 84, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 85, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col5l {
     flex: 0 0 75%;
   }
-  /* line 87, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 88, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .col6l {
     flex: 0 0 90%;
   }
 }
 
-/* Display elements */
-/* line 93, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* Element visibility */
+/* line 94, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 .display-m,
 .display-l {
   display: none;
 }
 
-/* line 98, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 99, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 .display-s {
   display: initial;
 }
 
 @media (min-width: 700px) {
-  /* line 103, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 104, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .display-s,
   .display-l {
     display: none;
   }
-  /* line 108, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 109, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .display-m {
     display: initial;
   }
 }
 
 @media (min-width: 1000px) {
-  /* line 114, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 115, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .display-s,
   .display-m {
     display: none;
   }
-  /* line 119, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 120, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   .display-l {
     display: initial;
   }
 }
 
-/* Styling for primary content */
-/* line 125, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
-.content-primary,
-.content-color1,
-.content-color2 {
-  box-shadow: 0.1rem 0.1rem 5rem;
-}
-
-/* line 131, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
-.content-primary {
-  background-color: #d4c4c6;
-}
-
-/* line 135, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
-.content-color1 {
-  background-color: #c4d4cb;
-}
-
-/* line 139, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
-.content-color2 {
-  background-color: #c4cdd4;
-}
-
+/* TODO: Display when hover over? */
 /* Responsive Typography */
-/* line 144, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 128, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 :root {
   --base-font-size: 1em;
   --base-line-height: 1.125;
 }
 
 @media (min-width: 700px) {
-  /* line 144, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 128, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   :root {
     --base-font-size: 1.1em;
     --base-line-height: 1;
@@ -188,53 +167,157 @@ body {
 }
 
 @media (min-width: 1000px) {
-  /* line 144, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  /* line 128, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
   :root {
     --base-font-size: 1.2em;
     --base-line-height: 1;
   }
 }
 
-/* line 158, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 142, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 h1 {
   font-size: calc(var(--base-font-size) * 3);
   line-height: calc(var(--base-line-height) * 1.1);
 }
 
-/* line 163, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 147, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 h2 {
   font-size: calc(var(--base-font-size) * 2.5);
   line-height: calc(var(--base-line-height) * 1.1);
 }
 
-/* line 168, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 152, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 h3 {
   font-size: calc(var(--base-font-size) * 2.2);
   line-height: calc(var(--base-line-height) * 1.1);
 }
 
-/* line 173, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 157, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 h4 {
   font-size: calc(var(--base-font-size) * 1.9);
   line-height: var(--base-line-height);
 }
 
-/* line 178, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 162, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 h5 {
   font-size: calc(var(--base-font-size) * 1.5);
   line-height: var(--base-line-height);
 }
 
-/* line 183, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 167, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 h6 {
   font-size: calc(var(--base-font-size) * 1.2);
   line-height: var(--base-line-height);
 }
 
-/* line 188, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+/* line 172, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
 p {
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
+}
+
+/* Button styling */
+/* line 178, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+button,
+a.button {
+  background-color: #99666a;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.1rem 1rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: none;
+  text-indent: 0;
+  text-transform: none;
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-rendering: auto;
+  margin: 0.1rem 0.5rem 0.5rem 0.1rem;
+}
+
+/* Styling for primary content */
+/* line 198, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+.content-primary,
+.content-color1,
+.content-color2 {
+  box-shadow: 0.1rem 0.1rem 5rem;
+}
+
+/* line 204, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+.content-primary {
+  background-color: #d4c4c6;
+}
+
+/* line 208, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+.content-color1 {
+  background-color: #c4d4cb;
+}
+
+/* line 212, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+.content-color2 {
+  background-color: #c4cdd4;
+}
+
+/* Navbar: Use the list element (one ul with multiple li tags inside.) */
+/* In small breakpoints this will be displayed as one vertical list. */
+/* line 218, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  background-color: #5e080f;
+}
+
+/* line 223, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+nav ul li {
+  list-style-type: none;
+  background-color: #bd0f1e;
+  color: white;
+  font-size: calc(var(--base-font-size) * 1);
+  padding: 0 1rem;
+  margin: 1px 3% 1px 0;
+}
+
+/* line 231, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* In mediam breakpoints this will display 2 per row. */
+@media (min-width: 700px) {
+  /* line 239, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  /* line 244, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  nav ul li {
+    flex: 1 1 40%;
+    margin: 1px 3% 1px 0;
+    padding: 0 1rem;
+    font-size: calc(var(--base-font-size) * 1.1);
+  }
+}
+
+/* In large breakpoints this will be displayed as one horizontal list. */
+@media (min-width: 1000px) {
+  /* line 254, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  /* line 260, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/cs-framework.scss */
+  nav ul li {
+    flex: 1 1 90%;
+    margin: 1px 3% 1px 0;
+    padding: 0 1rem;
+    font-size: calc(var(--base-font-size) * 1.2);
+  }
 }
 
 /*# sourceMappingURL=../../dist/css/cs-framework.map */

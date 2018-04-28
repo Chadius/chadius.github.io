@@ -18,6 +18,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Column system */
 [class^="col"] {
   margin: 0 3% 0 0;
 }
@@ -89,7 +90,7 @@ body {
   }
 }
 
-/* Display elements */
+/* Element visibility */
 .display-m,
 .display-l {
   display: none;
@@ -121,24 +122,7 @@ body {
   }
 }
 
-/* Styling for primary content */
-.content-primary,
-.content-color1,
-.content-color2 {
-  box-shadow: 0.1rem 0.1rem 5rem;
-}
-
-.content-primary {
-  background-color: $content-primary-bkg-color;
-}
-
-.content-color1 {
-  background-color: $content-color1-bkg-color;
-}
-
-.content-color2 {
-  background-color: $content-color2-bkg-color;
-}
+/* TODO: Display when hover over? */
 
 /* Responsive Typography */
 :root {
@@ -188,4 +172,96 @@ h6 {
 p {
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
+}
+
+/* Button styling */
+button,
+a.button {
+  background-color: $button-color;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.1rem 1rem;
+  color: $button-text-color;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: none;
+  text-indent: 0;
+  text-transform: none;
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-rendering: auto;
+  margin: 0.1rem 0.5rem 0.5rem 0.1rem;
+}
+
+/* Styling for primary content */
+.content-primary,
+.content-color1,
+.content-color2 {
+  box-shadow: 0.1rem 0.1rem 5rem;
+}
+
+.content-primary {
+  background-color: $content-primary-bkg-color;
+}
+
+.content-color1 {
+  background-color: $content-color1-bkg-color;
+}
+
+.content-color2 {
+  background-color: $content-color2-bkg-color;
+}
+
+/* Navbar: Use the list element (one ul with multiple li tags inside.) */
+/* In small breakpoints this will be displayed as one vertical list. */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  background-color: $nav-background-color;
+
+  li {
+    list-style-type: none;
+    background-color: $nav-element-background-color;
+    color: $nav-text-color;
+    font-size: calc(var(--base-font-size) * 1);
+    padding: 0 1rem;
+    margin: 1px 3% 1px 0;
+
+    a {
+      text-decoration: none;
+      color: $nav-text-color;
+    }
+  }
+}
+/* In mediam breakpoints this will display 2 per row. */
+@include breakpoint(tablet) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    li {
+      flex: 1 1 40%;
+      margin: 1px 3% 1px 0;
+      padding: 0 1rem;
+      font-size: calc(var(--base-font-size) * 1.1);
+    }
+  }
+}
+/* In large breakpoints this will be displayed as one horizontal list. */
+@include breakpoint(desktop) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    li {
+      flex: 1 1 90%;
+      margin: 1px 3% 1px 0;
+      padding: 0 1rem;
+      font-size: calc(var(--base-font-size) * 1.2);
+    }
+  }
 }
