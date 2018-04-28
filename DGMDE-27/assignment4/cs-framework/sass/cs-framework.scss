@@ -1,18 +1,5 @@
-$breakpoint-small-width: 450px;
-$breakpoint-medium-width: 800px;
-$breakpoint-large-width: 1000px;
-
-@mixin breakpoint($point) {
-  @if $point == desktop {
-    @media (min-width: $breakpoint-large-width) { @content ; }
- }
- @else if $point == tablet {
-    @media (min-width: $breakpoint-medium-width) { @content ; }
- }
- @else if $point == phone {
-    @media (min-width: $breakpoint-small-width) { @content ; }
- }
-}
+@import "cs-variables";
+@import "cs-mixins";
 
 html {
   box-sizing: border-box;
@@ -21,6 +8,7 @@ html {
 body {
   width: 97%;
   margin: 0 auto;
+  background-color: $background-col;
 }
 
 .row {
@@ -34,32 +22,34 @@ body {
   margin: 0 3% 0 0;
 }
 
-@include breakpoint(phone) {
-  .col1s {
-    flex: 0 0 15%;
-    margin: 0 auto;
-  }
-  .col2s {
-    flex: 0 0 30%;
-  }
-  .col3s {
-    flex: 0 0 45%;
-  }
-  .col4s {
-    flex: 0 0 60%;
-  }
-  .col5s {
-    flex: 0 0 75%;
-  }
-  .col6s {
-    flex: 0 0 90%;
-  }
+.col1,
+.col1s {
+  flex: 0 0 15%;
+}
+.col2,
+.col2s {
+  flex: 0 0 30%;
+}
+.col3,
+.col3s {
+  flex: 0 0 45%;
+}
+.col4,
+.col4s {
+  flex: 0 0 60%;
+}
+.col5,
+.col5s {
+  flex: 0 0 75%;
+}
+.col6,
+.col6s {
+  flex: 0 0 90%;
 }
 
 @include breakpoint(tablet) {
   .col1m {
     flex: 0 0 15%;
-    margin: 0 auto;
   }
   .col2m {
     flex: 0 0 30%;
@@ -97,4 +87,105 @@ body {
   .col6l {
     flex: 0 0 90%;
   }
+}
+
+/* Display elements */
+.display-m,
+.display-l {
+  display: none;
+}
+
+.display-s {
+  display: initial;
+}
+
+@include breakpoint(tablet) {
+  .display-s,
+  .display-l {
+    display: none;
+  }
+
+  .display-m {
+    display: initial;
+  }
+}
+
+@include breakpoint(desktop) {
+  .display-s,
+  .display-m {
+    display: none;
+  }
+
+  .display-l {
+    display: initial;
+  }
+}
+
+/* Styling for primary content */
+.content-primary,
+.content-color1,
+.content-color2 {
+  box-shadow: 0.1rem 0.1rem 5rem;
+}
+
+.content-primary {
+  background-color: $content-primary-bkg-color;
+}
+
+.content-color1 {
+  background-color: $content-color1-bkg-color;
+}
+
+.content-color2 {
+  background-color: $content-color2-bkg-color;
+}
+
+/* Responsive Typography */
+:root {
+  --base-font-size: 1em;
+  --base-line-height: 1.125;
+
+  @include breakpoint(tablet) {
+      --base-font-size: 1.1em;
+      --base-line-height: 1;
+  }
+  @include breakpoint(desktop) {
+      --base-font-size: 1.2em;
+      --base-line-height: 1;
+  }
+}
+
+h1 {
+  font-size: calc(var(--base-font-size) * 3);
+  line-height: calc(var(--base-line-height) * 1.1);
+}
+
+h2 {
+  font-size: calc(var(--base-font-size) * 2.5);
+  line-height: calc(var(--base-line-height) * 1.1);
+}
+
+h3 {
+  font-size: calc(var(--base-font-size) * 2.2);
+  line-height: calc(var(--base-line-height) * 1.1);
+}
+
+h4 {
+  font-size: calc(var(--base-font-size) * 1.9);
+  line-height: var(--base-line-height);
+}
+
+h5 {
+  font-size: calc(var(--base-font-size) * 1.5);
+  line-height: var(--base-line-height);
+}
+
+h6 {
+  font-size: calc(var(--base-font-size) * 1.2);
+  line-height: var(--base-line-height);
+}
+
+p {
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
 }

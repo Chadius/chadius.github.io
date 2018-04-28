@@ -1,0 +1,14 @@
+$primary-hue: 355;
+
+$primary-color: hsl($primary-hue, 100%, 50%);
+$split-comp1: adjust-hue($primary-color, 150deg);
+$split-comp2: adjust-hue($primary-color, 210deg);
+
+$background-col: lighten(desaturate($primary-color, 95%), 30%);
+
+$content-primary-bkg-color: lighten(desaturate($primary-color, 85%), 30%);
+$content-color1-bkg-color: lighten(desaturate($split-comp1, 85%), 30%);
+$content-color2-bkg-color: lighten(desaturate($split-comp2, 85%), 30%);
+
+$breakpoint-medium-width: 700px;
+$breakpoint-large-width: 1000px;
