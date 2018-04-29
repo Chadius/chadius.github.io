@@ -15,12 +15,16 @@ $tertiary-color: adjust-hue($primary-color, 210deg);
 // Main site.
 $background-col: lighten(desaturate($primary-color, 95%), 30%);
 $body-width: 97%;
+
+// Font and text styling.
 $small-breakpoint-font-size: 1em;
 $small-breakpoint-line-height: 1.125;
 $medium-breakpoint-font-size: 1.1em;
 $medium-breakpoint-line-height: 1;
 $large-breakpoint-font-size: 1.2em;
 $large-breakpoint-line-height: 1;
+$content-font: serif;
+$header-font: sans-serif;
 
 // Column widths
 $column1width: 15%;

@@ -10,6 +10,7 @@ body {
   width: $body-width;
   margin: 0 auto;
   background-color: $background-col;
+  font-family: $content-font;
 }
 
 /* A 6-column grid system with 2 media query breakpoints.
@@ -156,36 +157,43 @@ different breakpoints. */
 h1 {
   font-size: calc(var(--base-font-size) * 3);
   line-height: calc(var(--base-line-height) * 1.1);
+  font-family: $header-font;
 }
 
 h2 {
   font-size: calc(var(--base-font-size) * 2.5);
   line-height: calc(var(--base-line-height) * 1.1);
+  font-family: $header-font;
 }
 
 h3 {
   font-size: calc(var(--base-font-size) * 2.2);
   line-height: calc(var(--base-line-height) * 1.1);
+  font-family: $header-font;
 }
 
 h4 {
   font-size: calc(var(--base-font-size) * 1.9);
   line-height: var(--base-line-height);
+  font-family: $header-font;
 }
 
 h5 {
   font-size: calc(var(--base-font-size) * 1.5);
   line-height: var(--base-line-height);
+  font-family: $header-font;
 }
 
 h6 {
   font-size: calc(var(--base-font-size) * 1.2);
   line-height: var(--base-line-height);
+  font-family: $header-font;
 }
 
 p {
   font-size: var(--base-font-size);
-  line-height: var(--base-line-height);
+  line-height: calc(var(--base-line-height) * 1.6);
+  font-family: $content-font;
 }
 
 /* Button styling: links with the button class and button elements
