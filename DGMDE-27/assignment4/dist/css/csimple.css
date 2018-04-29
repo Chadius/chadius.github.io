@@ -301,30 +301,31 @@ nav ul li {
   background-color: #bd0f1e;
   color: white;
   font-size: calc(var(--base-font-size) * 1);
+  font-family: Arial, sans-serif;
   padding: 0 1rem;
   margin: 1px 3% 1px 0;
 }
 
-/* line 254, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 255, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 nav ul li a {
   text-decoration: none;
   color: white;
 }
 
-/* line 260, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 261, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 nav ul li.current_page {
   color: #b3b3b3;
 }
 
 /* In mediam breakpoints nav elements will display 2 per row. */
 @media (min-width: 700px) {
-  /* line 266, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 267, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  /* line 271, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 272, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul li {
     flex: 1 1 40%;
     margin: 1px 3% 1px 0;
@@ -335,14 +336,14 @@ nav ul li.current_page {
 
 /* In large breakpoints nav elements will be displayed as one horizontal list. */
 @media (min-width: 1000px) {
-  /* line 281, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 282, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
   }
-  /* line 287, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 288, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul li {
     flex: 1 1 90%;
     margin: 1px 3% 1px 0;
@@ -352,24 +353,24 @@ nav ul li.current_page {
 }
 
 /* Slideshow styling */
-/* line 297, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 298, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .slideshow-container {
   background-color: transparent;
 }
 
-/* line 301, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 302, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .slide {
   display: none;
   width: 100%;
   padding-top: 1rem;
 }
 
-/* line 307, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 308, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .slide img {
   height: 10rem;
 }
 
-/* line 311, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 312, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .previous-slide, .next-slide {
   cursor: pointer;
   width: auto;
@@ -380,23 +381,23 @@ nav ul li.current_page {
 }
 
 /* Position the "next button" to the right */
-/* line 321, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 322, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .previous-slide {
   border-radius: 3px 0 0 3px;
 }
 
-/* line 325, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 326, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .next-slide {
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-/* line 330, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 331, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .previous-slide:hover, .next-slide:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 334, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 335, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .slideshow-caption {
   color: #f2f2f2;
   font-size: 15px;
@@ -408,7 +409,7 @@ nav ul li.current_page {
 }
 
 /* Fading animation */
-/* line 345, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 346, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -424,7 +425,7 @@ nav ul li.current_page {
 }
 
 /* Codeblock styling */
-/* line 356, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 357, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 pre code {
   background-color: #e2e6e9;
   border: 1px solid black;
@@ -432,7 +433,7 @@ pre code {
   padding: 20px;
 }
 
-/* line 362, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 363, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 code {
   font-family: "Courier New", Courier, monospace;
   font-size: calc(var(--base-font-size) * 1.2);
