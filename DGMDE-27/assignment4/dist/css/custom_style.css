@@ -159,11 +159,11 @@ reveal the element at small breakpoints. */
   /* line 130, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   .display-s,
   .display-m {
-    display: none;
+    hidden: hidden;
   }
   /* line 135, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   .display-l {
-    display: initial;
+    hidden: none;
   }
 }
 
@@ -313,7 +313,7 @@ nav ul li.current_page {
   /* line 258, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
   /* line 263, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */

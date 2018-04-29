@@ -3,24 +3,43 @@ $breakpoint-medium-width: 700px;
 $breakpoint-large-width: 1000px;
 
 // Primary color your website is based on.
+// Note: Content taken from Assignment 3
 $primary-hue: 355;
 
 // Primary and Split complimentary colors.
+// Note: Content taken from Assignment 3
 $primary-color: hsl($primary-hue, 100%, 50%);
-$split-comp1: adjust-hue($primary-color, 150deg);
-$split-comp2: adjust-hue($primary-color, 210deg);
+$secondary-color: adjust-hue($primary-color, 150deg);
+$tertiary-color: adjust-hue($primary-color, 210deg);
 
-// Main background color.
+// Main site.
 $background-col: lighten(desaturate($primary-color, 95%), 30%);
+$body-width: 97%;
+$small-breakpoint-font-size: 1em;
+$small-breakpoint-line-height: 1.125;
+$medium-breakpoint-font-size: 1.1em;
+$medium-breakpoint-line-height: 1;
+$large-breakpoint-font-size: 1.2em;
+$large-breakpoint-line-height: 1;
+
+// Column widths
+$column1width: 15%;
+$column2width: 30%;
+$column3width: 45%;
+$column4width: 60%;
+$column5width: 75%;
+$column6width: 90%;
+$column-margin: 3%;
 
 // Background color for Card/Panel/Tile elements.
 $content-primary-bkg-color: lighten(desaturate($primary-color, 85%), 30%);
-$content-color1-bkg-color: lighten(desaturate($split-comp1, 85%), 30%);
-$content-color2-bkg-color: lighten(desaturate($split-comp2, 85%), 30%);
+$content-color1-bkg-color: lighten(desaturate($secondary-color, 85%), 30%);
+$content-color2-bkg-color: lighten(desaturate($tertiary-color, 85%), 30%);
 
 // Button Styling options.
 $button-color: desaturate($primary-color, 80%);
 $button-text-color: white;
+$button-corner-radius: 1rem;
 
 // Nav element options.
 $nav-background-color: darken(desaturate($primary-color, 15%), 30%);
@@ -30,5 +49,3 @@ $nav-current-page-color: darken($nav-text-color, 30%);
 
 //Slideshow variables
 $slideshow-button-col: white;
-
-// TODO: More variables!
