@@ -219,8 +219,8 @@ a.button {
 
 /* Card/Panel/Tile content adds a box shadow and a color. */
 .content-primary,
-.content-color1,
-.content-color2 {
+.content-secondary,
+.content-tertiary {
   box-shadow: 0.1rem 0.1rem 5rem;
 }
 
@@ -228,12 +228,12 @@ a.button {
   background-color: $content-primary-bkg-color;
 }
 
-.content-color1 {
-  background-color: $content-color1-bkg-color;
+.content-secondary {
+  background-color: $content-secondary-bkg-color;
 }
 
-.content-color2 {
-  background-color: $content-color2-bkg-color;
+.content-tertiary {
+  background-color: $content-tertiary-bkg-color;
 }
 
 /* Navbar: Use the list element (one ul with multiple li tags inside.) */

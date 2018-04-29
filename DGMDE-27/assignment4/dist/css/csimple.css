@@ -266,8 +266,8 @@ a.button {
 /* Card/Panel/Tile content adds a box shadow and a color. */
 /* line 221, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .content-primary,
-.content-color1,
-.content-color2 {
+.content-secondary,
+.content-tertiary {
   box-shadow: 0.1rem 0.1rem 5rem;
 }
 
@@ -277,12 +277,12 @@ a.button {
 }
 
 /* line 231, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
-.content-color1 {
+.content-secondary {
   background-color: #c4d4cb;
 }
 
 /* line 235, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
-.content-color2 {
+.content-tertiary {
   background-color: #c4cdd4;
 }
 
