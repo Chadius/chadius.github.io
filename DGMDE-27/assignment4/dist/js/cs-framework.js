@@ -21,6 +21,18 @@ var cs_framework_js = {
         cs_framework_js.setup_slideshow(index);
       }
     );
+
+    // For scrollable links, add click events.
+    $(".smoothscroll").each(
+      function(index) {
+        // Scroll the page to that element when the user clicks on it.
+        $( this ).click(
+          function(e) {
+            cs_framework_js.scrollPageTo(this);
+          }
+        )
+      }
+    )
   },
 
   toggle_reveal_element: function(element_to_toggle) {
@@ -123,6 +135,40 @@ var cs_framework_js = {
 
     // Record the current slide.
     cs_framework_js.slideshow_state[slideshow_index]['current_slide_index'] = slide_index_to_show;
-  }
+  },
 
+  scrollPageTo: function(link) {
+    /* Scroll the page to the link's target. */
+
+    // Get the target's hash.
+    target_hash = $(link.hash);
+
+    console.log(link);
+    console.log(target_hash);
+    if (target_hash.length) {
+      // Prevent propegation of events
+      event.preventDefault();
+
+      // Animate scrolling the page to the hash.
+      $('html, body').animate({
+          scrollTop: target_hash.offset().top
+      }, 1000, function() {
+        // When the animation completes you must change the focus to the target.
+        var $target = $(target_hash);
+        $target.focus();
+        // If the target is focused, we're done.
+        if ($target.is(":focus")) {
+          return false;
+        } else {
+          // If the element isn't focusable, add a tabindex to the element and focus again.
+          $target.attr('tabindex','-1');
+          $target.focus();
+        };
+      });
+    }
+    else {
+      // If the hash is invalid, exit
+      return true;
+    }
+  }
 };
