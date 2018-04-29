@@ -351,3 +351,15 @@ nav ul {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* Codeblock styling */
+pre code {
+  background-color: $codeblock-background-color;
+  border: 1px solid black;
+  display: block;
+  padding: 20px;
+}
+code {
+  font-family: $code-font;
+  font-size: calc(var(--base-font-size) * 1.2);
+}

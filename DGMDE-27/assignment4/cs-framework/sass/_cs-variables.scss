@@ -23,8 +23,9 @@ $medium-breakpoint-font-size: 1.1em;
 $medium-breakpoint-line-height: 1;
 $large-breakpoint-font-size: 1.2em;
 $large-breakpoint-line-height: 1;
-$content-font: serif;
-$header-font: sans-serif;
+$content-font: Georgia, serif;
+$header-font: Arial, sans-serif;
+$code-font: "Courier New", Courier, monospace;
 
 // Column widths
 $column1width: 15%;
@@ -53,3 +54,6 @@ $nav-current-page-color: darken($nav-text-color, 30%);
 
 //Slideshow variables
 $slideshow-button-col: white;
+
+//Codeblock variables
+$codeblock-background-color: lighten(desaturate($tertiary-color, 85%), 40%);

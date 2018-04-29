@@ -11,7 +11,7 @@ body {
   width: 97%;
   margin: 0 auto;
   background-color: #cfc9ca;
-  font-family: serif;
+  font-family: Georgia, serif;
 }
 
 /* A 6-column grid system with 2 media query breakpoints.
@@ -196,49 +196,49 @@ different breakpoints. */
 h1 {
   font-size: calc(var(--base-font-size) * 3);
   line-height: calc(var(--base-line-height) * 1.1);
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /* line 163, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 h2 {
   font-size: calc(var(--base-font-size) * 2.5);
   line-height: calc(var(--base-line-height) * 1.1);
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /* line 169, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 h3 {
   font-size: calc(var(--base-font-size) * 2.2);
   line-height: calc(var(--base-line-height) * 1.1);
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /* line 175, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 h4 {
   font-size: calc(var(--base-font-size) * 1.9);
   line-height: var(--base-line-height);
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /* line 181, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 h5 {
   font-size: calc(var(--base-font-size) * 1.5);
   line-height: var(--base-line-height);
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /* line 187, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 h6 {
   font-size: calc(var(--base-font-size) * 1.2);
   line-height: var(--base-line-height);
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /* line 193, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 p {
   font-size: var(--base-font-size);
   line-height: calc(var(--base-line-height) * 1.6);
-  font-family: serif;
+  font-family: Georgia, serif;
 }
 
 /* Button styling: links with the button class and button elements
@@ -421,6 +421,21 @@ nav ul li.current_page {
   to {
     opacity: 1;
   }
+}
+
+/* Codeblock styling */
+/* line 356, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+pre code {
+  background-color: #e2e6e9;
+  border: 1px solid black;
+  display: block;
+  padding: 20px;
+}
+
+/* line 362, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: calc(var(--base-font-size) * 1.2);
 }
 
 /*# sourceMappingURL=../../dist/css/csimple.map */
