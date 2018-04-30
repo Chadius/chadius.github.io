@@ -269,33 +269,34 @@ a.button {
 .content-secondary,
 .content-tertiary {
   box-shadow: 0.1rem 0.1rem 5rem;
+  padding: 0.1rem 1rem 1rem 1rem;
 }
 
-/* line 227, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 228, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .content-primary {
   background-color: #d4c4c6;
 }
 
-/* line 231, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 232, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .content-secondary {
   background-color: #c4d4cb;
 }
 
-/* line 235, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 236, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .content-tertiary {
   background-color: #c4cdd4;
 }
 
 /* Navbar: Use the list element (one ul with multiple li tags inside.) */
 /* In small breakpoints this will be displayed as one vertical list. */
-/* line 241, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 242, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 nav ul {
   display: flex;
   flex-direction: column;
   background-color: #5e080f;
 }
 
-/* line 246, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 247, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 nav ul li {
   list-style-type: none;
   background-color: #bd0f1e;
@@ -306,26 +307,26 @@ nav ul li {
   margin: 1px 3% 1px 0;
 }
 
-/* line 255, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 256, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 nav ul li a {
   text-decoration: none;
   color: white;
 }
 
-/* line 261, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 262, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 nav ul li.current_page {
   color: #b3b3b3;
 }
 
 /* In mediam breakpoints nav elements will display 2 per row. */
 @media (min-width: 700px) {
-  /* line 267, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 268, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  /* line 272, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 273, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul li {
     flex: 1 1 40%;
     margin: 1px 3% 1px 0;
@@ -336,14 +337,14 @@ nav ul li.current_page {
 
 /* In large breakpoints nav elements will be displayed as one horizontal list. */
 @media (min-width: 1000px) {
-  /* line 282, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 283, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
   }
-  /* line 288, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+  /* line 289, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
   nav ul li {
     flex: 1 1 90%;
     margin: 1px 3% 1px 0;
@@ -353,24 +354,24 @@ nav ul li.current_page {
 }
 
 /* Slideshow styling */
-/* line 298, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 299, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .slideshow-container {
   background-color: transparent;
 }
 
-/* line 302, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 303, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .slide {
   display: none;
   width: 100%;
   padding-top: 1rem;
 }
 
-/* line 308, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 309, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .slide img {
   height: 10rem;
 }
 
-/* line 312, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 313, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .previous-slide, .next-slide {
   cursor: pointer;
   width: auto;
@@ -381,23 +382,23 @@ nav ul li.current_page {
 }
 
 /* Position the "next button" to the right */
-/* line 322, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 323, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .previous-slide {
   border-radius: 3px 0 0 3px;
 }
 
-/* line 326, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 327, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .next-slide {
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-/* line 331, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 332, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .previous-slide:hover, .next-slide:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 335, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 336, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .slideshow-caption {
   color: #f2f2f2;
   font-size: 15px;
@@ -409,7 +410,7 @@ nav ul li.current_page {
 }
 
 /* Fading animation */
-/* line 346, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 347, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -425,7 +426,7 @@ nav ul li.current_page {
 }
 
 /* Codeblock styling */
-/* line 357, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 358, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 pre code {
   background-color: #e2e6e9;
   border: 1px solid black;
@@ -433,7 +434,7 @@ pre code {
   padding: 20px;
 }
 
-/* line 363, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
+/* line 364, /Users/chadserrant/Documents/chadius.github.io/DGMDE-27/assignment4/cs-framework/sass/_cs-framework.scss */
 code {
   font-family: "Courier New", Courier, monospace;
   font-size: calc(var(--base-font-size) * 1.2);
