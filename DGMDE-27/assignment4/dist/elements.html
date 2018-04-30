@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSimple: A simple way to make websites look good.</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/cs-framework.js"></script>
+  <link rel="stylesheet" href="css/csimple.css">
+
+  <script>
+	  $(document).ready(function() {
+	    cs_framework_js.document_ready();
+	  });
+	</script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="current_page">Home</li>
+      </ul>
+    </nav>
+  </header>
+	<h1>Common HTML Elements</h1>
+
+	<h2>Navbar</h2>
+	<p>To create a navbar, use the nav element and put your links within a list element. Some example code below:</p>
+
+	(Insert basic navbar code here)
+
+	<p>This will style the navbar based on the width of the browser:</p>
+	<ul>
+		<li>In small browsers, one list item will be displayed per row.</li>
+		<li>In medium browsers, two list items will be displayed per row.</li>
+		<li>In large browsers, all list items will be displayed on a single row.</li>
+	</ul>
+
+	<p>Add the current_page class to note which page the user has currently selected. This will use the $nav-current-page-color to color that text. Otherwise, the framework uses $nav-text-color to color the text.</p>
+
+	<p>Here are all of the variables associated with navbar:</p>
+
+	(Put in block)
+	$nav-background-color:
+	$nav-element-background-color:
+	$nav-text-color:
+	$nav-current-page-color:
+	$nav-font-family:
+
+	<h2>Content (aka Card/Panel/Tile)</h2>
+	<p>Whatever you want to call it, these add a style onto the element that lets it pop out, as if you put the content on a card and placed it on the page. You can use the content-primary, content-secondary, or content-tertiary class to set the background color to the primary, secondary or tertiary color.</p>
+
+	(insert code here)
+
+	<p>You can modify some of the Sass variables to control the look and feel of these elements.</p>
+
+	(insert codeblock here)
+	$content-primary-bkg-color
+	$content-secondary-bkg-color
+	$content-tertiary-bkg-color
+
+	<h2>Buttons</h2>
+	<p>Any button elements or anchor tags with the button class will be stylized. In this code example, we have a button and an anchor tag.</p>
+
+	(insert code)
+
+	(show results)
+
+	<p>Here are the variables you can edit to change the look of the buttons:</p>
+	$button-color
+	$button-corner-radius
+	$button-text-color
+
+	<h2>Codeblock</h2>
+	<p>Preformated code blocks are useful when you don’t want any formatting or whitespace is important. For example:</p>
+
+	(insert code)
+
+	(show result)
+
+	<p>These work off the pre and code elements, so you don’t need to add a class to style them.</p>
+
+	<p>These Sass variables affect code blocks, if you want to customize further.</p>
+	$code-font
+	$codeblock-background-color
+
+</body>
+</html>

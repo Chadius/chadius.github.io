@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSimple: A simple way to make websites look good.</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/cs-framework.js"></script>
+  <link rel="stylesheet" href="css/csimple.css">
+
+  <script>
+	  $(document).ready(function() {
+	    cs_framework_js.document_ready();
+	  });
+	</script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="current_page">Home</li>
+      </ul>
+    </nav>
+  </header>
+	<h2>Color Scheme</h2>
+	<p>The website uses a 3 color scheme. By default the primary color is red, with two more colors based on the split complimentary (it’s color theory.) You can of course change them to whatever you wish. Most of the colors are based on one of these three, like the background.</p>
+
+
+	(put in code block)
+	$primary-hue: 355;
+	$primary-color: hsl($primary-hue, 100%, 50%);
+	$secondary-color: adjust-hue($primary-color, 150deg);
+	$tertiary-color: adjust-hue($primary-color, 210deg);
+	$background-col: lighten(desaturate($primary-color, 95%), 30%);
+
+<h2>Body Width</h2>
+<p>By default the body is 97% wide and has a margin to center it.</p>
+
+(Insert code block)
+$body-width: 97%;
+
+<h2>Column Widths</h2>
+<p>CSimple uses  a six column layout. To note the width of different columns, you can include classes from col1 (this is one column wide) to col6 (this spans the entire width of the page.)  These elements must be contained within  a parent element that has the row class.</p>
+
+(Insert example code here)
+
+<p>Here are the variables controlling the width of the columns,  as well as the size of the margin.</p>
+
+(Insert codeblock here)
+$column1width: 15%;
+$column2width: 30%;
+$column3width: 45%;
+$column4width: 60%;
+$column5width: 75%;
+$column6width: 90%;
+$column-margin: 3%;
+
+<h2>Fonts</h2>
+<p>To help readability, three types of fonts are used on page. One is reserved for headers, one is used for code, and there is the main font used for most of the content on the page. The default fonts are generic web safe fonts, so feel free to replace them with your own.</p>
+
+(Code block)
+$content-font: Georgia, serif;
+$header-font: Arial, sans-serif;
+$code-font: "Courier New", Courier, monospace;
+
+</body>
+</html>
