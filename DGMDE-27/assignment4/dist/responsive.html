@@ -27,30 +27,39 @@
 	<h1>Responsive options</h1>
 
 	<h2>Intro to Responsive Widths</h2>
-	<p>The page layout can change based on the width of the web browser.  There are three major widths  Based on a small device like a phone, a medium device like a tablet, and large devices like your desktop.  The variables file defines the breakpoint width for medium and large breakpoints. Any browser less wide than the medium breakpoint is small, and any browser wider than the large breakpoint is considered large.  By default, medium breakpoint 700 pixels wide, and the large breakpoint is 1000 pixels wide.</p>
+	<section class="content-primary col6">
+		<p>The page layout can change based on the width of the web browser.  There are three major widths  Based on a small device like a phone, a medium device like a tablet, and large devices like your desktop.  The variables file defines the breakpoint width for medium and large breakpoints. Any browser less wide than the medium breakpoint is small, and any browser wider than the large breakpoint is considered large.  By default, medium breakpoint 700 pixels wide, and the large breakpoint is 1000 pixels wide.</p>
 
-	(Put in code block)
-	$breakpoint-medium-width: 700px;
-	$breakpoint-large-width: 1000px;
+		(Put in code block)
+		$breakpoint-medium-width: 700px;
+		$breakpoint-large-width: 1000px;
+	</section>
 
 	<h2>Responsive Typography</h2>
-	<p>As the viewpoint shrinks, the text will get smaller and the line height will increase. This makes the text easier to read on smaller devices.  Here the default values:</p>
+	<section class="content-primary col6">
+		<p>As the viewpoint shrinks, the text will get smaller and the line height will increase. This makes the text easier to read on smaller devices.  Here the default values:</p>
 
-	(Put in code block)
-	$small-breakpoint-font-size: 1em;
-	$small-breakpoint-line-height: 1.125;
-	$medium-breakpoint-font-size: 1.1em;
-	$medium-breakpoint-line-height: 1;
-	$large-breakpoint-font-size: 1.2em;
-	$large-breakpoint-line-height: 1;
+		(Put in code block)
+		$small-breakpoint-font-size: 1em;
+		$small-breakpoint-line-height: 1.125;
+		$medium-breakpoint-font-size: 1.1em;
+		$medium-breakpoint-line-height: 1;
+		$large-breakpoint-font-size: 1.2em;
+		$large-breakpoint-line-height: 1;
+	</section>
 
 	<h2>Columns</h2>
-	<p>The elements on a row can change their width depending on the width of the browser. Include a column width class  with the s, m, or l suffix. This means the column will be that wide at that breakpoint. For example, the code snippet shows a element that will always be three columns wide, except at the small breakpoint where it will be six columns wide.</p>
+	<section class="content-primary col6">
+		<p>The elements on a row can change their width depending on the width of the browser. Include a column width class  with the s, m, or l suffix. This means the column will be that wide at that breakpoint. For example, the code snippet shows a element that will always be three columns wide, except at the small breakpoint where it will be six columns wide.</p>
 
-	(Insert code here)
+		(Insert code here)
+	</section>
+
 	<h2>Element Visibility</h2>
-	<p>You can specify when elements are visible at certain breakpoint widths. For example, add the display-m class to specify the element is only visible at medium breakpoints. You can combine the display-s, display-m, and display-l classes to specify an element is only visible at certain breakpoints.</p>
+	<section class="content-primary col6">
+		<p>You can specify when elements are visible at certain breakpoint widths. For example, add the display-m class to specify the element is only visible at medium breakpoints. You can combine the display-s, display-m, and display-l classes to specify an element is only visible at certain breakpoints.</p>
 
-	<p>In this example code, we have a long description used in medium and large displays while small browsers get a succinct summary.</p>
+		<p>In this example code, we have a long description used in medium and large displays while small browsers get a succinct summary.</p>
+	</section>
 </body>
 </html>
