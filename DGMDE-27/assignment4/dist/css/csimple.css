@@ -268,7 +268,7 @@ a.button {
 .content-primary,
 .content-secondary,
 .content-tertiary {
-  box-shadow: 0.1rem 0.1rem 5rem;
+  box-shadow: 0.1rem 0.1rem 1rem;
   padding: 0.1rem 1rem 1rem 1rem;
 }
 
