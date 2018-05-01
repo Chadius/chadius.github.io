@@ -41,16 +41,58 @@
 	</section>
 
 	<h2>How to edit Sass files</h2>
-	<section class="content-primary col6">
+	<div class="row">
+		<div class="col1l col1m"></div>
+	<section class="content-primary col4l col5m col6s">
 		<p>With some knowledge of sass, you can gain fine control over the look and feel of the CSimple  framework. To do this, open the csimple.scss file.</p>
 
-		(Insert file here)
+		<div class="row">
+			<div class="col1">
+				<br><br><br>
+				<h6>csimple.scss</h6>
+			</div>
+			<aside class="col4">
+		<pre>
+			<code>
+// Import variables and mixins.
+@import "cs-variables";
+@import "cs-mixins";
 
+// Override variables and mixins here.
+
+// Import framework.
+@import "cs-framework"
+
+// Add your own styles here.
+			</code>
+		</pre>
+	</div>
 		<p>You can look through the variables and mixins files to override most of the colors and functions. If you want to override the definitions of any of them, do so after the  variables and mixins import but before the framework is imported.  Once all of the files are imported, you can add your own personal styles onto the website. Compile this file and you will have the CSS files for your website.</p>
 
 		<p>For example, if you want to change the body width to 90%, override the variable like this:</p>
 
-		(Insert code here)
+		<div class="row">
+			<div class="col1">
+				<br><br><br>
+				<h6>csimple.scss with a new body-width</h6>
+			</div>
+			<aside class="col4">
+		<pre>
+			<code>
+// Import variables and mixins.
+@import "cs-variables";
+@import "cs-mixins";
+
+// Override variables and mixins here.
+$body-width: 90%;
+
+// Import framework.
+@import "cs-framework"
+
+// Add your own styles here.
+			</code>
+		</pre>
+	</div>
 	</section>
 </body>
 </html>
