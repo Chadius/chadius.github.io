@@ -69,9 +69,8 @@
 
 			<p>The fade class is an animation, so feel free to ignore or replace it with your own. If the slideshow-container element also has the automatic class, the slideshow will advance to the next picture every 2 seconds until the user clicks on a button.</p>
 
-			<p>You can change the color of the slideshow buttons here:</p>
+			<p>You can change the color of the slideshow buttons by changing this variable:</p>
 			<div class="row">
-				<div class="col1"><br><h6>Slideshow HTML</h6></div>
 				<aside class="col3">
 					<pre>
 						<code>
@@ -81,19 +80,54 @@ $slideshow-button-col
 				</aside>
 			</div>
 
-			<p>Here is an example of the slideshow in action:</p>
+			<p>Here is an example of the slideshow in action (replace &\ with &):</p>
 
 			<div class="row">
 				<div class="col1"><br><h6>Slideshow HTML</h6></div>
 				<aside class="col3">
 					<pre>
 						<code>
-(insert code here)
+&lt;div class="slideshow-container automatic"&gt;
+  &lt;div class="slide fade"&gt;
+    &lt;img src="images/Vegetable_Samosa400x300.jpg"
+		 alt="Vegetable Samosas"&gt;
+    &lt;div class="slide-caption"&gt;Vegetable Samosas&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="slide fade"&gt;
+    &lt;img src="images/pasta-food-small.jpg"
+		 alt="Vegan Alfredo with Penne and Broccoli"&gt;
+    &lt;div class="slide-caption"&gt;Vegan Alfredo&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="slide fade"&gt;
+    &lt;img src="images/cake-table-small.jpg"
+		 alt="Carrot Cake"&gt;
+    &lt;div class="slide-caption"&gt;Carrot Cake&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;a class="previous-slide"&gt;&\#10094;&lt;/a&gt;
+  &lt;a class="next-slide"&gt;&\#10095;&lt;/a&gt;
+&lt;/div&gt;
 						</code>
 					</pre>
 				</aside>
 			</div>
 		</section>
+	</div>
+
+	<div class="slideshow-container automatic">
+		<div class="slide fade">
+			<img src="images/Vegetable_Samosa400x300.jpg" alt="Vegetable Samosas">
+			<div class="slide-caption">Vegetable Samosas</div>
+		</div>
+		<div class="slide fade">
+			<img src="images/pasta-food-small.jpg" alt="Vegan Alfredo with Penne and Broccoli">
+			<div class="slide-caption">Vegan Alfredo</div>
+		</div>
+		<div class="slide fade">
+			<img src="images/cake-table-small.jpg" alt="Carrot Cake">
+			<div class="slide-caption">Carrot Cake</div>
+		</div>
+		<a class="previous-slide">&#10094;</a>
+		<a class="next-slide">&#10095;</a>
 	</div>
 
 	<h2>Smooth scrolling</h2>
