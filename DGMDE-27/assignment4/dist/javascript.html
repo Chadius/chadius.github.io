@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>CSimple: A simple way to make websites look good.</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/cs-framework.js"></script>
   <link rel="stylesheet" href="css/csimple.css">
 
@@ -31,7 +30,7 @@
 			</ul>
 		</nav>
   </header>
-	<h1>JavaScript featues</h1>
+	<h1 id="top">JavaScript featues</h1>
 	<div class="row">
 		<section class="content-secondary col6">
 			<p>Every feature on this page requires JavaScript and jQuery to use. This allows you to add some extra features that would not be possible otherwise.</p>
@@ -67,7 +66,22 @@
 				<li><p>Each div has an image to display and a div with the slide-caption class.</p></li>
 				<li><p>Two anchor tags, with the previous-slide and next-slide classes.</p></li>
 			</ul>
-			<p>Here is an example of it in action:</p>
+
+			<p>The fade class is an animation, so feel free to ignore or replace it with your own. If the slideshow-container element also has the automatic class, the slideshow will advance to the next picture every 2 seconds until the user clicks on a button.</p>
+
+			<p>You can change the color of the slideshow buttons here:</p>
+			<div class="row">
+				<div class="col1"><br><h6>Slideshow HTML</h6></div>
+				<aside class="col3">
+					<pre>
+						<code>
+$slideshow-button-col
+						</code>
+					</pre>
+				</aside>
+			</div>
+
+			<p>Here is an example of the slideshow in action:</p>
 
 			<div class="row">
 				<div class="col1"><br><h6>Slideshow HTML</h6></div>
@@ -79,11 +93,6 @@
 					</pre>
 				</aside>
 			</div>
-
-			<p>The fade class is an animation, so feel free to ignore or replace it with your own. If the slideshow-container element also has the automatic class, the slideshow will advance to the next picture every 2 seconds until the user clicks on a button.</p>
-
-			<p>You can change the color of the slideshow buttons here:</p>
-			$slideshow-button-col
 		</section>
 	</div>
 
@@ -98,11 +107,13 @@
 				<aside class="col2">
 					<pre>
 						<code>
-(insert codeblock here)
+&lt;a href="#top" class="smoothscroll"&gt;
+Scroll to the top of the page&lt;/a&gt;
 						</code>
 					</pre>
 				</aside>
 			</div>
+			<a href="#top" class="smoothscroll">Scroll to the top of the page</a>
 		</section>
 	</div>
 </body>

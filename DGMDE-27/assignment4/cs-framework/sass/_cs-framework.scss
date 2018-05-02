@@ -130,11 +130,11 @@ reveal the element at small breakpoints. */
 @include breakpoint(desktop) {
   .display-s,
   .display-m {
-    hidden: hidden;
+    display: none;
   }
 
   .display-l {
-    hidden: none;
+    display: initial;
   }
 }
 

@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>CSimple: A simple way to make websites look good.</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/cs-framework.js"></script>
   <link rel="stylesheet" href="css/csimple.css">
 
@@ -34,7 +33,7 @@
 	<h1>General Page Settings</h1>
 	<div class="row">
 		<section class="content-secondary col6">
-		<p>(Insert description here)</p>
+		<p>This page covers basic page settings needed for any webpage.</p>
 		</section>
 	</div>
 
@@ -59,6 +58,12 @@ $background-col: lighten(desaturate($primary-color, 95%), 30%);
 				</aside>
 			</div>
 		</section>
+	</div>
+	<br>
+	<div class="row">
+		<div class="content-primary col2l col6m col6s">content-primary</div>
+		<div class="content-secondary col2l col6m col6s">content-secondary</div>
+		<div class="content-tertiary col2l col6m col6s">content-tertiary</div>
 	</div>
 
 	<h2>Body Width</h2>
@@ -86,35 +91,59 @@ $body-width
 		<section class="content-primary col4l col5m col6s">
 		<p>CSimple uses a six column layout. To note the width of different columns, you can include classes from col1 (this is one column wide) to col6 (this spans the entire width of the page.)  These elements must be contained within a parent element that has the row class.</p>
 
-		<div class="row">
-			<div class="col1"><br><h6>Examples of column widths</h6></div>
-			<aside class="col3">
-				<pre>
-					<code>
-(Insert example code here)
-					</code>
-				</pre>
-			</aside>
-		</div>
-		<p>Here are the variables controlling the width of the columns,  as well as the size of the margin.</p>
+		<p>Here are the variables controlling the width of the columns, as well as the size of the margin.</p>
 
 		<div class="row">
 			<div class="col1"><br><h6>Column Widths</h6></div>
 			<aside class="col3">
 				<pre>
 					<code>
-$column1width: 15%;
-$column2width: 30%;
-$column3width: 45%;
-$column4width: 60%;
-$column5width: 75%;
-$column6width: 90%;
-$column-margin: 3%;
+$column1width
+$column2width
+$column3width
+$column4width
+$column5width
+$column6width
+$column-margin
+					</code>
+				</pre>
+			</aside>
+		</div>
+
+		<p>Here's the HTML used to create the column display below.</p>
+		<div class="row">
+			<div class="col1"><br><h6>Examples of column widths</h6></div>
+			<aside class="col3">
+				<pre>
+					<code>
+&lt;div class="row"&gt;
+  &lt;div class="content-secondary col1"&gt;1 column wide&lt;/div&gt;
+  &lt;div class="content-secondary col5"&gt;5 columns wide&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="content-tertiary col2"&gt;2 columns wide&lt;/div&gt;
+  &lt;div class="content-tertiary col4"&gt;4 columns wide&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="content-secondary col3"&gt;3 columns wide&lt;/div&gt;
+&lt;/div&gt;
 					</code>
 				</pre>
 			</aside>
 		</div>
 		</section>
+	</div>
+	<br>
+	<div class="row">
+		<div class="content-secondary col1">1 column wide</div>
+		<div class="content-secondary col5">5 columns wide</div>
+	</div>
+	<div class="row">
+		<div class="content-tertiary col2">2 columns wide</div>
+		<div class="content-tertiary col4">4 columns wide</div>
+	</div>
+	<div class="row">
+		<div class="content-secondary col3">3 columns wide</div>
 	</div>
 
 	<h2>Fonts</h2>
@@ -135,6 +164,10 @@ $code-font: "Courier New", Courier, monospace;
 					</pre>
 				</aside>
 			</div>
+
+			<p>Use the &lt;p&gt; tag to use the $content-font.</p>
+			<p>Use any &lt;h&gt; tag to use the $header-font.</p>
+			<p>Use the &lt;pre&gt; &lt;code&gt; tag to use the $code-font. <a href="./elements.html#codeblock_syntax">CLICK HERE to read more about Codeblocks.</a></p>
 		</section>
 	</div>
 </body>

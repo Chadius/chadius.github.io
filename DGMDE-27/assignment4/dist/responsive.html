@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>CSimple: A simple way to make websites look good.</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/cs-framework.js"></script>
   <link rel="stylesheet" href="css/csimple.css">
 
@@ -34,7 +33,8 @@
 	<h1>Responsive options</h1>
 	<div class="row">
 		<section class="content-secondary col6">
-			(Talk about responsive widths here)
+			To help readability, websites need to be readable at different widths.<br>
+			CSimple has options to help rearrange elements to make them more readable on phones, tablets, and laptops.
 		</section>
 	</div>
 
@@ -88,17 +88,31 @@ $large-breakpoint-line-height: 1;
 			<p>The elements on a row can change their width depending on the width of the browser. Include a column width class  with the s, m, or l suffix. This means the column will be that wide at that breakpoint. For example, the code snippet shows a element that will always be three columns wide, except at the small breakpoint where it will be six columns wide.</p>
 
 			<div class="row">
-				<div class="col1"><br><h6>Responsive Font Settings</h6></div>
+				<div class="col1"><br><h6>Responsive Column widths</h6></div>
 				<aside class="col2">
 				<pre>
 					<code>
-(Insert code here)
+&lt;div class="row"&gt;
+  &lt;div class="content-secondary col6l col3m col2"&gt;
+6 columns at desktop&lt;br&gt;
+3 columns at tablet&lt;br&gt;
+2 columns at phone&lt;br&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 					</code>
 				</pre>
 				</aside>
 			</div>
 		</section>
 	</div>
+<br>
+<div class="row">
+  <div class="content-secondary col6l col3m col2">
+6 columns at laptop<br>
+3 columns at tablet<br>
+2 columns at phone<br>
+	</div>
+</div>
 
 	<h2>Element Visibility</h2>
 	<div class="row">
@@ -113,12 +127,34 @@ $large-breakpoint-line-height: 1;
 				<aside class="col2">
 					<pre>
 						<code>
-Example Code!
+&lt;div class="row"&gt;
+  &lt;div class="content-tertiary display-l col6"&gt;
+You can see this element on large displays(like laptops).
+  &lt;/div&gt;
+  &lt;div class="content-tertiary display-m col6"&gt;
+You can see this element on medium displays(like tablets).
+  &lt;/div&gt;
+  &lt;div class="content-tertiary display-s col6"&gt;
+You can see this element on small displays(like phones).
+  &lt;/div&gt;
+&lt;/div&gt;
 						</code>
 					</pre>
 				</aside>
 			</div>
 		</section>
+	</div>
+	<br>
+	<div class="row">
+	  <div class="content-tertiary display-l col6">
+	You can see this element on large displays(like laptops).
+		</div>
+		<div class="content-tertiary display-m col6">
+	You can see this element on medium displays(like tablets).
+		</div>
+		<div class="content-tertiary display-s col6">
+	You can see this element on small displays(like phones).
+		</div>
 	</div>
 </body>
 </html>

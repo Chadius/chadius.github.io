@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>CSimple: A simple way to make websites look good.</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/cs-framework.js"></script>
   <link rel="stylesheet" href="css/csimple.css">
 
@@ -34,7 +33,7 @@
 	<h1>Common HTML Elements</h1>
 	<div class="row">
 		<section class="content-secondary col6">
-		<p>Describe common elements here</p>
+		<p>Here we describe commonly used HTML elements.</p>
 	</section>
 	</div>
 
@@ -42,18 +41,7 @@
 	<div class="row">
 		<div class="col1l col1m"></div>
 		<section class="content-primary col4l col5m col6s">
-			<p>To create a navbar, use the nav element and put your links within a list element. Some example code below:</p>
-
-			<div class="row">
-				<div class="col1"><br><h6>Navbar syntax</h6></div>
-				<aside class="col3">
-					<pre>
-						<code>
-(Insert basic navbar code here)
-						</code>
-					</pre>
-				</aside>
-			</div>
+			<p>To create a navbar, use the nav element and put your links within a list element.</p>
 
 			<p>This will style the navbar based on the width of the browser:</p>
 			<ul>
@@ -79,25 +67,40 @@ $nav-font-family
 				</pre>
 			</aside>
 		</div>
-		</section>
+
+		Here's the code made to make the sample nav bar below.
+		<div class="row">
+			<div class="col1"><br><h6>Navbar syntax</h6></div>
+			<aside class="col3">
+				<pre>
+					<code>
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li class="current_page"&gt;Current Page&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+					</code>
+				</pre>
+			</aside>
+		</div>
 	</div>
+</section>
+
+	<nav>
+		<ul>
+			<li class="current_page">Current Page</li>
+			<li><a href="#">Page 2</a></li>
+			<li><a href="#">Page 3</a></li>
+		</ul>
+	</nav>
 
 	<h2>Content (aka Card/Panel/Tile)</h2>
 	<div class="row">
 		<div class="col1l col1m"></div>
 		<section class="content-primary col4l col5m col6s">
 			<p>Whatever you want to call it, these add a style onto the element that lets it pop out, as if you put the content on a card and placed it on the page. You can use the content-primary, content-secondary, or content-tertiary class to set the background color to the primary, secondary or tertiary color.</p>
-
-			<div class="row">
-				<div class="col1"><br><h6>Content classes</h6></div>
-				<aside class="col3">
-					<pre>
-						<code>
-(insert code here)
-					</code>
-				</pre>
-			</aside>
-		</div>
 
 			<p>You can modify some of the Sass variables to control the look and feel of these elements.</p>
 
@@ -112,7 +115,27 @@ $content-tertiary-bkg-color
 					</pre>
 				</aside>
 			</div>
+			<div class="row">
+				<div class="col1"><br><h6>Content classes</h6></div>
+				<aside class="col3">
+					<pre>
+						<code>
+&lt;div class="row"&gt;
+  &lt;div class="content-primary col2"&gt;Primary Content&lt;/div&gt;
+  &lt;div class="content-secondary col2"&gt;Secondary Content&lt;/div&gt;
+  &lt;div class="content-tertiary col2"&gt;Tertiary Content&lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</aside>
+			</div>
 		</section>
+	</div>
+
+	<div class="row">
+		<div class="content-primary col2">Primary Content</div>
+		<div class="content-secondary col2">Secondary Content</div>
+		<div class="content-tertiary col2">Tertiary Content</div>
 	</div>
 
 	<h2>Buttons</h2>
@@ -120,17 +143,6 @@ $content-tertiary-bkg-color
 		<div class="col1l col1m"></div>
 		<section class="content-primary col4l col5m col6s">
 			<p>Any button elements or anchor tags with the button class will be stylized. In this code example, we have a button and an anchor tag.</p>
-
-			<div class="row">
-				<div class="col1"><br><h6>Button element and link</h6></div>
-				<aside class="col3">
-					<pre>
-						<code>
-(insert code)
-						</code>
-					</pre>
-				</aside>
-			</div>
 
 			<p>Here are the variables you can edit to change the look of the buttons:</p>
 			<div class="row">
@@ -144,25 +156,40 @@ $button-text-color
 				</pre>
 			</aside>
 		</div>
-		</section>
-	</div>
 
-	<h2>Codeblock</h2>
-	<div class="row">
-		<div class="col1l col1m"></div>
-		<section class="content-primary col4l col5m col6s">
-			<p>Preformated code blocks are useful when you don’t want any formatting or whitespace is important. For example:</p>
-
-			<div class="row">
-				<div class="col1"><br><h6>Codeblock HTML</h6></div>
-				<aside class="col3">
-					<pre>
-						<code>
-(insert code)
+		<div class="row">
+			<div class="col1"><br><h6>Button element and link</h6></div>
+			<aside class="col3">
+				<pre>
+					<code>
+&lt;div class="row"&gt;
+  &lt;div class="col3"&gt;
+    &lt;button&gt;This is a button.&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="col3"&gt;
+    &lt;a class="button"&gt;This link has the button class.&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 					</code>
 				</pre>
 			</aside>
 		</div>
+		</section>
+	</div>
+	<div class="row">
+		<div class="col3">
+			<button>This is a button.</button>
+		</div>
+		<div class="col3">
+			<a class="button">This link has the button class.</a>
+		</div>
+	</div>
+
+	<h2 id="codeblock_syntax">Codeblock</h2>
+	<div class="row">
+		<div class="col1l col1m"></div>
+		<section class="content-primary col4l col5m col6s">
+			<p>Preformated code blocks are useful when you don’t want any formatting or whitespace is important. You can see an example below.</p>
 
 			<p>These work off the pre and code elements, so you don’t need to add a class to style them.</p>
 
@@ -173,6 +200,27 @@ $button-text-color
 						<code>
 $code-font
 $codeblock-background-color
+						</code>
+					</pre>
+				</aside>
+			</div>
+
+		<p>Here's the code used to make the codeblock.</p>
+		<div class="row">
+			<div class="col1"><br><h6>Codeblock HTML</h6></div>
+			<aside class="col3">
+				<pre>
+					<code>
+&lt;div class="row"&gt;
+  &lt;aside class="col6"&gt;
+    &lt;pre&gt;
+      &lt;code&gt;
+$code-font
+$codeblock-background-color
+      &lt;/code&gt;
+    &lt;/pre&gt;
+  &lt;/aside&gt;
+&lt;/div&gt;
 					</code>
 				</pre>
 			</aside>
