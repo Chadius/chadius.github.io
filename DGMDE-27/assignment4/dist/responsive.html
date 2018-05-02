@@ -18,48 +18,107 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li class="current_page">Home</li>
-      </ul>
-    </nav>
+		<nav>
+			<ul>
+				<li><a href="./index.html">CSimple</a></li>
+				<li><a href="./install.html">Installation</a></li>
+				<li><a href="./general.html">Page Settings</a></li>
+				<li class="current_page">Responsive</li>
+				<li><a href="./elements.html">HTML Elements</a></li>
+				<li><a href="./visibility.html">Visibiity</a></li>
+				<li><a href="./javascript.html">JavaScript</a></li>
+				<li><a href="./examples.html">Examples</a></li>
+			</ul>
+		</nav>
   </header>
 	<h1>Responsive options</h1>
+	<div class="row">
+		<section class="content-secondary col6">
+			(Talk about responsive widths here)
+		</section>
+	</div>
 
 	<h2>Intro to Responsive Widths</h2>
-	<section class="content-primary col6">
-		<p>The page layout can change based on the width of the web browser.  There are three major widths  Based on a small device like a phone, a medium device like a tablet, and large devices like your desktop.  The variables file defines the breakpoint width for medium and large breakpoints. Any browser less wide than the medium breakpoint is small, and any browser wider than the large breakpoint is considered large.  By default, medium breakpoint 700 pixels wide, and the large breakpoint is 1000 pixels wide.</p>
+	<div class="row">
+		<div class="col1l col1m"></div>
+		<section class="content-primary col4l col5m col6s">
+			<p>The page layout can change based on the width of the web browser.  There are three major widths  Based on a small device like a phone, a medium device like a tablet, and large devices like your desktop.  The variables file defines the breakpoint width for medium and large breakpoints. Any browser less wide than the medium breakpoint is small, and any browser wider than the large breakpoint is considered large.  By default, medium breakpoint 700 pixels wide, and the large breakpoint is 1000 pixels wide.</p>
 
-		(Put in code block)
-		$breakpoint-medium-width: 700px;
-		$breakpoint-large-width: 1000px;
-	</section>
+			<div class="row">
+				<div class="col1"><br><h6>Responsive Breakpoints</h6></div>
+				<aside class="col3">
+				<pre>
+					<code>
+$breakpoint-medium-width: 700px;
+$breakpoint-large-width: 1000px;
+						</code>
+					</pre>
+				</aside>
+			</div>
+		</section>
+	</div>
 
 	<h2>Responsive Typography</h2>
-	<section class="content-primary col6">
+	<div class="row">
+		<div class="col1l col1m"></div>
+		<section class="content-primary col4l col5m col6s">
 		<p>As the viewpoint shrinks, the text will get smaller and the line height will increase. This makes the text easier to read on smaller devices.  Here the default values:</p>
 
-		(Put in code block)
-		$small-breakpoint-font-size: 1em;
-		$small-breakpoint-line-height: 1.125;
-		$medium-breakpoint-font-size: 1.1em;
-		$medium-breakpoint-line-height: 1;
-		$large-breakpoint-font-size: 1.2em;
-		$large-breakpoint-line-height: 1;
-	</section>
+		<div class="row">
+			<div class="col1"><br><h6>Responsive Font Settings</h6></div>
+			<aside class="col3">
+			<pre>
+				<code>
+$small-breakpoint-font-size: 1em;
+$small-breakpoint-line-height: 1.125;
+$medium-breakpoint-font-size: 1.1em;
+$medium-breakpoint-line-height: 1;
+$large-breakpoint-font-size: 1.2em;
+$large-breakpoint-line-height: 1;
+				</code>
+			</pre>
+		</div>
+		</section>
+	</div>
 
 	<h2>Columns</h2>
-	<section class="content-primary col6">
-		<p>The elements on a row can change their width depending on the width of the browser. Include a column width class  with the s, m, or l suffix. This means the column will be that wide at that breakpoint. For example, the code snippet shows a element that will always be three columns wide, except at the small breakpoint where it will be six columns wide.</p>
+	<div class="row">
+		<div class="col1l col1m"></div>
+		<section class="content-primary col4l col5m col6s">
+			<p>The elements on a row can change their width depending on the width of the browser. Include a column width class  with the s, m, or l suffix. This means the column will be that wide at that breakpoint. For example, the code snippet shows a element that will always be three columns wide, except at the small breakpoint where it will be six columns wide.</p>
 
-		(Insert code here)
-	</section>
+			<div class="row">
+				<div class="col1"><br><h6>Responsive Font Settings</h6></div>
+				<aside class="col2">
+				<pre>
+					<code>
+(Insert code here)
+					</code>
+				</pre>
+				</aside>
+			</div>
+		</section>
+	</div>
 
 	<h2>Element Visibility</h2>
-	<section class="content-primary col6">
-		<p>You can specify when elements are visible at certain breakpoint widths. For example, add the display-m class to specify the element is only visible at medium breakpoints. You can combine the display-s, display-m, and display-l classes to specify an element is only visible at certain breakpoints.</p>
+	<div class="row">
+		<div class="col1l col1m"></div>
+		<section class="content-primary col4l col5m col6s">
+			<p>You can specify when elements are visible at certain breakpoint widths. For example, add the display-m class to specify the element is only visible at medium breakpoints. You can combine the display-s, display-m, and display-l classes to specify an element is only visible at certain breakpoints.</p>
 
-		<p>In this example code, we have a long description used in medium and large displays while small browsers get a succinct summary.</p>
-	</section>
+			<p>In this example code, we have a long description used in medium and large displays while small browsers get a succinct summary.</p>
+
+			<div class="row">
+				<div class="col1"><br><h6>Visibiity at different widths</h6></div>
+				<aside class="col2">
+					<pre>
+						<code>
+Example Code!
+						</code>
+					</pre>
+				</aside>
+			</div>
+		</section>
+	</div>
 </body>
 </html>

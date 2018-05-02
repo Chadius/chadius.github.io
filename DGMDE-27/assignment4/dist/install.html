@@ -18,42 +18,83 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li class="current_page">Home</li>
-      </ul>
-    </nav>
+		<nav>
+			<ul>
+				<li><a href="./index.html">CSimple</a></li>
+				<li class="current_page">Installation</li>
+				<li><a href="./general.html">Page Settings</a></li>
+				<li><a href="./responsive.html">Responsive</a></li>
+				<li><a href="./elements.html">HTML Elements</a></li>
+				<li><a href="./visibility.html">Visibiity</a></li>
+				<li><a href="./javascript.html">JavaScript</a></li>
+				<li><a href="./examples.html">Examples</a></li>
+			</ul>
+		</nav>
   </header>
 	<h1>Requirements</h1>
+	<div class="row">
+		<section class="content-secondary col6">
 	(reuse requirements section)
+		</section>
+	</div>
 
 	<h2>Install Sass/CSS files</h2>
-	<section class="content-primary col6">
-		(Insert Download Button here)
-		Click on the download button to download the files necessary to use this framework.
+	<div class="row">
+		<div class="col1l col1m"></div>
+		<section class="content-primary col4l col5m col6s">
+			<a href="#" class="button">CLICK HERE to download</a>
+			<p>Click on the download button to download the files necessary to use this framework.</p>
 
-		<p>Use your Sass compiler to compile the files in the sass folder. This will create CSS files which will be used on your website. Here is a minimal file that will include the created CSS file.</p>
-	</section>
+			<p>Use your Sass compiler to compile the files in the sass folder. This will create CSS files which will be used on your website. Here is a minimal file that will include the created CSS file.</p>
+		</section>
+	</div>
 
 	<h2>Install JavaScript and jQuery (Optional)</h2>
-	<section class="content-primary col6">
-		<p>To use the optional JavaScript features, you must first install jQuery.  Then, make sure all of your HTML  files refer to the JavaScript folder, and make sure they run the cs_framework_js.document_ready() function.  Here’s a sample header file that you would use to include the JavaScript.</p>
-	</section>
+	<div class="row">
+		<div class="col1l col1m"></div>
+		<section class="content-primary col4l col5m col6s">
+			<p>To use the optional JavaScript features, you must first install jQuery.  Then, make sure all of your HTML  files refer to the JavaScript folder, and make sure they run the cs_framework_js.document_ready() function.  Here’s a sample header file that you would use to include the JavaScript.</p>
+			<div class="row">
+				<aside class="col6">
+				<pre>
+					<code>
+&lt;head&gt;
+  &lt;!-- Add metatags --&gt;
+
+  &lt;!-- Add jQuery --&gt;
+  &lt;script src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+	&lt;!-- Include CSimple's JavaScript library --&gt;
+  &lt;script src="js/cs-framework.js"&gt;&lt;/script&gt;
+	&lt;!-- Include stylesheets here --&gt;
+
+  &lt;!-- Add this JavaScript to turn on CSimple's JS features--&gt;
+	&lt;script&gt;
+	  $(document).ready(function() {
+	    cs_framework_js.document_ready();
+	  });
+	&lt;/script&gt;
+&lt;/head&gt;
+					</code>
+				</pre>
+				</aside>
+			</div>
+		</section>
+	</div>
 
 	<h2>How to edit Sass files</h2>
 	<div class="row">
 		<div class="col1l col1m"></div>
-	<section class="content-primary col4l col5m col6s">
-		<p>With some knowledge of sass, you can gain fine control over the look and feel of the CSimple  framework. To do this, open the csimple.scss file.</p>
+		<section class="content-primary col4l col5m col6s">
+			<p>With some knowledge of sass, you can gain fine control over the look and feel of the CSimple  framework. To do this, open the csimple.scss file.</p>
 
-		<div class="row">
-			<div class="col1">
-				<br><br><br>
-				<h6>csimple.scss</h6>
-			</div>
-			<aside class="col4">
-		<pre>
-			<code>
+			<div class="row">
+				<div class="col1">
+					<br><br><br>
+					<h6>csimple.scss</h6>
+				</div>
+				<aside class="col4">
+				<pre>
+					<code>
 // Import variables and mixins.
 @import "cs-variables";
 @import "cs-mixins";
@@ -64,21 +105,22 @@
 @import "cs-framework"
 
 // Add your own styles here.
-			</code>
-		</pre>
-	</div>
-		<p>You can look through the variables and mixins files to override most of the colors and functions. If you want to override the definitions of any of them, do so after the  variables and mixins import but before the framework is imported.  Once all of the files are imported, you can add your own personal styles onto the website. Compile this file and you will have the CSS files for your website.</p>
-
-		<p>For example, if you want to change the body width to 90%, override the variable like this:</p>
-
-		<div class="row">
-			<div class="col1">
-				<br><br><br>
-				<h6>csimple.scss with a new body-width</h6>
+					</code>
+				</pre>
+				</aside>
 			</div>
-			<aside class="col4">
-		<pre>
-			<code>
+			<p>You can look through the variables and mixins files to override most of the colors and functions. If you want to override the definitions of any of them, do so after the  variables and mixins import but before the framework is imported.  Once all of the files are imported, you can add your own personal styles onto the website. Compile this file and you will have the CSS files for your website.</p>
+
+			<p>For example, if you want to change the body width to 90%, override the variable like this:</p>
+
+			<div class="row">
+				<div class="col1">
+					<br><br><br>
+					<h6>csimple.scss with a new body-width</h6>
+				</div>
+				<aside class="col4">
+				<pre>
+					<code>
 // Import variables and mixins.
 @import "cs-variables";
 @import "cs-mixins";
@@ -90,9 +132,10 @@ $body-width: 90%;
 @import "cs-framework"
 
 // Add your own styles here.
-			</code>
-		</pre>
-	</div>
+				</code>
+			</pre>
+		</aside>
+		</div>
 	</section>
 </body>
 </html>
