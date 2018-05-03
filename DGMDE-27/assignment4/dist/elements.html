@@ -58,11 +58,20 @@
 				<aside class="col6">
 					<pre>
 						<code>
-$nav-background-color
-$nav-element-background-color
-$nav-text-color
-$nav-current-page-color
-$nav-font-family
+// Background color for the entire navbar is a darkened primary color.
+$nav-background-color: darken(desaturate($primary-color, 15%), 30%);
+
+// The background color for each navbar element item is brighter than the background.
+$nav-element-background-color: darken(desaturate($primary-color, 15%), 10%);
+
+// Default nav text color.
+$nav-text-color: white;
+
+// The current class wlll darken the text.
+$nav-current-page-color: darken($nav-text-color, 30%);
+
+// All navbar text uses fonts from this family.
+$nav-font-family: $header-font;
 					</code>
 				</pre>
 			</aside>
@@ -108,9 +117,10 @@ $nav-font-family
 				<aside class="col6">
 					<pre>
 						<code>
-$content-primary-bkg-color
-$content-secondary-bkg-color
-$content-tertiary-bkg-color
+//Background colors are based on the color scheme, bright and desaturated.
+$content-primary-bkg-color: lighten(desaturate($primary-color, 85%), 30%);
+$content-secondary-bkg-color: lighten(desaturate($secondary-color, 85%), 30%);
+$content-tertiary-bkg-color: lighten(desaturate($tertiary-color, 85%), 30%);
 						</code>
 					</pre>
 				</aside>
@@ -149,9 +159,11 @@ $content-tertiary-bkg-color
 				<aside class="col6">
 					<pre>
 						<code>
-$button-color
-$button-corner-radius
-$button-text-color
+//Default uses white text on top of the primary color.
+$button-color: desaturate($primary-color, 80%);
+$button-text-color: white;
+//Buttons are rounded by default.
+$button-corner-radius: 1rem;
 					</code>
 				</pre>
 			</aside>
@@ -176,6 +188,7 @@ $button-text-color
 		</div>
 		</section>
 	</div>
+	<br>
 	<div class="row">
 		<div class="col3">
 			<button>This is a button.</button>
@@ -198,8 +211,10 @@ $button-text-color
 				<aside class="col6">
 					<pre>
 						<code>
-$code-font
-$codeblock-background-color
+// All code element font will use this font.
+$code-font: "Courier New", Courier, monospace;
+// Background color, based on tertiary color
+$codeblock-background-color: lighten(desaturate($tertiary-color, 85%), 40%);
 						</code>
 					</pre>
 				</aside>

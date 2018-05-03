@@ -142,9 +142,6 @@ var cs_framework_js = {
 
     // Get the target's hash.
     target_hash = $(link.hash);
-
-    console.log(link);
-    console.log(target_hash);
     if (target_hash.length) {
       // Prevent propegation of events
       event.preventDefault();

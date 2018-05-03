@@ -48,10 +48,19 @@
 				<aside class="col3">
 				<pre>
 					<code>
+// Primary website hue.
 $primary-hue: 355;
+
+// Primary website color based on the hue.
 $primary-color: hsl($primary-hue, 100%, 50%);
+
+// Secondary color is based on one of the split complimentary colors.
 $secondary-color: adjust-hue($primary-color, 150deg);
+
+// Tertiary color is based on one of the split complimentary colors.
 $tertiary-color: adjust-hue($primary-color, 210deg);
+
+// The webpage's background color.
 $background-col: lighten(desaturate($primary-color, 95%), 30%);
 					</code>
 				</pre>
@@ -77,7 +86,8 @@ $background-col: lighten(desaturate($primary-color, 95%), 30%);
 				<aside class="col2">
 					<pre>
 						<code>
-$body-width
+// The leftover space is used as a margin.
+$body-width: 97%
 						</code>
 					</pre>
 				</aside>
@@ -98,13 +108,13 @@ $body-width
 			<aside class="col3">
 				<pre>
 					<code>
-$column1width
-$column2width
-$column3width
-$column4width
-$column5width
-$column6width
-$column-margin
+$column1width: 13%; // 1 column takes up 13% of the page width
+$column2width: 26%;
+$column3width: 39%;
+$column4width: 52%;
+$column5width: 65%;
+$column6width: 78%;
+$column-margin: 3%; // Margin to the right of the column
 					</code>
 				</pre>
 			</aside>
@@ -157,9 +167,9 @@ $column-margin
 				<aside class="col3">
 					<pre>
 						<code>
-$content-font: Georgia, serif;
-$header-font: Arial, sans-serif;
-$code-font: "Courier New", Courier, monospace;
+$content-font: Georgia, serif; // p and most fonts
+$header-font: Arial, sans-serif; // Header font
+$code-font: "Courier New", Courier, monospace; // Codeblock font
 						</code>
 					</pre>
 				</aside>
