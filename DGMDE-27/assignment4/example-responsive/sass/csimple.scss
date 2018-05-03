@@ -1,0 +1,19 @@
+// Import variables and mixins.
+@import "cs-variables";
+@import "cs-mixins";
+
+// Override variables and mixins here.
+$primary-hue: 240;
+$primary-color: hsl($primary-hue, 10%, 65%);
+$background-col: hsl($primary-hue, 5%, 85%);
+$content-primary-bkg-color: hsl(187, 11%, 98%);
+$content-secondary-bkg-color: hsl(229, 56%, 82%);
+$content-tertiary-bkg-color: hsl(13, 10%, 86%);
+$button-color: desaturate($primary-color, 80%);
+$button-text-color: black;
+$button-corner-radius: 0.2rem;
+
+// Import framework.
+@import "cs-framework"
+
+// Add your own styles here.
