@@ -1,0 +1,11 @@
+// Import variables and mixins.
+@import "cs-variables";
+@import "cs-mixins";
+
+// Override variables and mixins here.
+$slideshow-button-col: $primary-color;
+
+// Import framework.
+@import "cs-framework"
+
+// Add your own styles here.

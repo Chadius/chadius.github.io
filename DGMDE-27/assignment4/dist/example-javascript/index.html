@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSimple: JavaScript</title>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|PT+Serif|Roboto" rel="stylesheet">
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="cs-framework.js"></script>
+  <link rel="stylesheet" href="csimple.css">
+
+  <script>
+	  $(document).ready(function() {
+	    cs_framework_js.document_ready();
+	  });
+	</script>
+</head>
+<body>
+	<h1>CSimple: JavaScript</h1>
+
+	<h2 id="top">smoothscroll target</h2>
+	<div class="row">
+		<div class="content-primary">
+			<p>To demonstrate the smooth scroll, I would usually type lorem ipsum here.</p><br>
+			<p>Lots of lorem ipsum.</p>
+			<p>As much as I need to force the page to scroll down.</p>
+			<p>Even</p>
+			<p>if</p>
+			<p>I</p>
+			<p>need</p>
+			<p>one</p>
+			<p>word</p>
+			<p>per</p>
+			<p>line.</p>
+			<p>Oh, I'll add a slideshow, too!</p><br>
+			<p>Click one of the arrows to stop the automatic scrolling.</p><br>
+		</div>
+	</div>
+	<br>
+	<div class="slideshow-container automatic">
+		<div class="slide fade">
+			<img src="images/Vegetable_Samosa400x300.jpg" alt="Vegetable Samosas">
+			<div class="slide-caption">Vegetable Samosas</div>
+		</div>
+		<div class="slide fade">
+			<img src="images/pasta-food-small.jpg" alt="Vegan Alfredo with Penne and Broccoli">
+			<div class="slide-caption">Vegan Alfredo</div>
+		</div>
+		<div class="slide fade">
+			<img src="images/cake-table-small.jpg" alt="Carrot Cake">
+			<div class="slide-caption">Carrot Cake</div>
+		</div>
+		<a class="previous-slide">&#10094;</a>
+		<a class="next-slide">&#10095;</a>
+	</div>
+	<br>
+	<button class="click-to-reveal">Click this button to reveal the return button.</button>
+	<div hidden>
+		<a class="button" href="../index.html">Return to CSimple</a>
+	</div>
+	<br>
+	<p>Or...</p>
+	<a class="button smoothscroll" href="#top">smoothscroll back to the top</a>
+</body>
+</html>
