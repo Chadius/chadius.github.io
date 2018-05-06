@@ -37,20 +37,65 @@
 		</section>
 	</div>
 
-	<h2>Installing JavaScript and jQuery</h2>
+	<h2>Install JavaScript and jQuery</h2>
 	<div class="row">
 		<div class="col1l col1m"></div>
 		<section class="content-primary col4l col5m col6s">
-		(repeat)
+			<p>To use the optional JavaScript features, you must first install jQuery.  Then, make sure all of your HTML  files refer to the JavaScript folder, and make sure they run the cs_framework_js.document_ready() function.  Here’s a sample header file that you would use to include the JavaScript.</p>
+			<div class="row">
+				<aside class="col6">
+				<pre>
+					<code>
+&lt;head&gt;
+  &lt;!-- Add metatags --&gt;
+
+  &lt;!-- Add jQuery --&gt;
+  &lt;script src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+	&lt;!-- Include CSimple's JavaScript library --&gt;
+  &lt;script src="js/cs-framework.js"&gt;&lt;/script&gt;
+	&lt;!-- Include stylesheets here --&gt;
+
+  &lt;!-- Add this JavaScript to turn on CSimple's JS features--&gt;
+	&lt;script&gt;
+	  $(document).ready(function() {
+	    cs_framework_js.document_ready();
+	  });
+	&lt;/script&gt;
+&lt;/head&gt;
+					</code>
+				</pre>
+				</aside>
+			</div>
 		</section>
 	</div>
 
-	<h2>Click to Reveal</h2>
+	<h2>Click to reveal</h2>
 	<div class="row">
 		<div class="col1l col1m"></div>
 		<section class="content-primary col4l col5m col6s">
-			(repeat)
+			<p>Clickable elements can hide or reveal their immediate sibling. Just add the click-to-reveal class and the element can be hidden.</p>
+
+			<p>Here’s an example that hides and reveals a block of text when you click the button:</p>
+
+			<div class="row">
+				<div class="col1"><br><h6>Click to reveal</h6></div>
+				<aside class="col3">
+					<pre>
+						<code>
+&lt;div class="row"&gt;
+  &lt;button class="click-to-reveal col3"&gt;Click me!&lt;/button&gt;
+  &lt;div class="col3"&gt;Is this div hidden?&lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</aside>
+			</div>
 		</section>
+	</div>
+	<br>
+	<div class="row">
+		<button class="click-to-reveal col3">Click me!</button>
+		<div class="col3">Is this div hidden?</div>
 	</div>
 
 	<h2>Slideshow</h2>

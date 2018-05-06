@@ -41,8 +41,43 @@
 	<div class="row">
 		<div class="col1l col1m"></div>
 		<section class="content-primary col4l col5m col6s">
-			<p>(Repeat section in responsive section)</p>
+			<p>You can specify when elements are visible at certain breakpoint widths. For example, add the display-m class to specify the element is only visible at medium breakpoints. You can combine the display-s, display-m, and display-l classes to specify an element is only visible at certain breakpoints.</p>
+
+			<p>In this example code, we have a long description used in medium and large displays while small browsers get a succinct summary.</p>
+
+			<div class="row">
+				<div class="col1"><br><h6>Visibiity at different widths</h6></div>
+				<aside class="col2">
+					<pre>
+						<code>
+&lt;div class="row"&gt;
+  &lt;div class="content-tertiary display-l col6"&gt;
+You can see this element on large displays(like laptops).
+  &lt;/div&gt;
+  &lt;div class="content-tertiary display-m col6"&gt;
+You can see this element on medium displays(like tablets).
+  &lt;/div&gt;
+  &lt;div class="content-tertiary display-s col6"&gt;
+You can see this element on small displays(like phones).
+  &lt;/div&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</aside>
+			</div>
 		</section>
+	</div>
+	<br>
+	<div class="row">
+	  <div class="content-tertiary display-l col6">
+	You can see this element on large displays(like laptops).
+		</div>
+		<div class="content-tertiary display-m col6">
+	You can see this element on medium displays(like tablets).
+		</div>
+		<div class="content-tertiary display-s col6">
+	You can see this element on small displays(like phones).
+		</div>
 	</div>
 
 	<h2>Click to reveal</h2>
