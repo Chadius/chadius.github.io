@@ -3,6 +3,9 @@
 @import "cs-mixins";
 
 // Override variables and mixins here.
+.example-image {
+  height: 10rem;
+}
 
 // Import framework.
 @import "cs-framework"
