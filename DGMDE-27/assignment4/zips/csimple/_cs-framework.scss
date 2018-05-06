@@ -1,0 +1,367 @@
+/* TODO: Include Sass documentation, so users know how to make common changes to
+ the framework, like changing breakpoints, colors, font sizing, etc.
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  width: $body-width;
+  margin: 0 auto;
+  background-color: $background-col;
+  font-family: $content-font;
+}
+
+/* A 6-column grid system with 2 media query breakpoints.
+Media Query breakpoints are:
+  $breakpoint-medium-width
+  $breakpoint-large-width
+*/
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+[class^="col"] {
+  margin: 0 $column-margin 0 0;
+}
+
+/* col1 to col6 will use 1 to 6 column widths, respectively. */
+/* Add an s to the class name if you only want that column width at small
+breakpoints. */
+.col1,
+.col1s {
+  flex: 0 0 $column1width;
+}
+.col2,
+.col2s {
+  flex: 0 0 $column2width;
+}
+.col3,
+.col3s {
+  flex: 0 0 $column3width;
+}
+.col4,
+.col4s {
+  flex: 0 0 $column4width;
+}
+.col5,
+.col5s {
+  flex: 0 0 $column5width;
+}
+.col6,
+.col6s {
+  flex: 0 0 $column6width;
+}
+
+/* Add an m to the class name if you only want that column width at medium
+breakpoints. col2m for example will be 2 columns wide at medium breakpoints. */
+@include breakpoint(tablet) {
+  .col1m {
+    flex: 0 0 $column1width;
+  }
+  .col2m {
+    flex: 0 0 $column2width;
+  }
+  .col3m {
+    flex: 0 0 $column3width;
+  }
+  .col4m {
+    flex: 0 0 $column4width;
+  }
+  .col5m {
+    flex: 0 0 $column5width;
+  }
+  .col6m {
+    flex: 0 0 $column6width;
+  }
+}
+
+/* Add an l to the class name if you only want that column width at large
+breakpoints. col5l for example will be 5 columns wide at medium breakpoints. */
+@include breakpoint(desktop) {
+  .col1l {
+    flex: 0 0 $column1width;
+  }
+  .col2l {
+    flex: 0 0 $column2width;
+  }
+  .col3l {
+    flex: 0 0 $column3width;
+  }
+  .col4l {
+    flex: 0 0 $column4width;
+  }
+  .col5l {
+    flex: 0 0 $column5width;
+  }
+  .col6l {
+    flex: 0 0 $column6width;
+  }
+}
+
+/* Visibility classes: Reveal elements at certain breakpoints. display-s will
+reveal the element at small breakpoints. */
+.display-m,
+.display-l {
+  display: none;
+}
+
+.display-s {
+  display: initial;
+}
+
+/* display-m will reveal the element only at medium breakpoints. */
+@include breakpoint(tablet) {
+  .display-s,
+  .display-l {
+    display: none;
+  }
+
+  .display-m {
+    display: initial;
+  }
+}
+
+/* display-l will reveal the element only at large breakpoints. */
+@include breakpoint(desktop) {
+  .display-s,
+  .display-m {
+    display: none;
+  }
+
+  .display-l {
+    display: initial;
+  }
+}
+
+/* Responsive Typography: Font size and line height changes at
+different breakpoints. */
+:root {
+  --base-font-size: $small-breakpoint-font-size;
+  --base-line-height: $small-breakpoint-line-height;
+
+  @include breakpoint(tablet) {
+      --base-font-size: $medium-breakpoint-font-size;
+      --base-line-height: $medium-breakpoint-line-height;
+  }
+  @include breakpoint(desktop) {
+      --base-font-size: $large-breakpoint-font-size;
+      --base-line-height: $large-breakpoint-line-height;
+  }
+}
+
+h1 {
+  font-size: calc(var(--base-font-size) * 3);
+  line-height: calc(var(--base-line-height) * 1.1);
+  font-family: $header-font;
+}
+
+h2 {
+  font-size: calc(var(--base-font-size) * 2.5);
+  line-height: calc(var(--base-line-height) * 1.1);
+  font-family: $header-font;
+}
+
+h3 {
+  font-size: calc(var(--base-font-size) * 2.2);
+  line-height: calc(var(--base-line-height) * 1.1);
+  font-family: $header-font;
+}
+
+h4 {
+  font-size: calc(var(--base-font-size) * 1.9);
+  line-height: var(--base-line-height);
+  font-family: $header-font;
+}
+
+h5 {
+  font-size: calc(var(--base-font-size) * 1.5);
+  line-height: var(--base-line-height);
+  font-family: $header-font;
+}
+
+h6 {
+  font-size: calc(var(--base-font-size) * 1.2);
+  line-height: var(--base-line-height);
+  font-family: $header-font;
+}
+
+p {
+  font-size: var(--base-font-size);
+  line-height: calc(var(--base-line-height) * 1.6);
+  font-family: $content-font;
+}
+
+/* Button styling: links with the button class and button elements
+are stylized. */
+button,
+a.button {
+  background-color: $button-color;
+  border: 1px solid black;
+  border-radius: $button-corner-radius;
+  padding: 0.1rem 1rem;
+  color: $button-text-color;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: none;
+  text-indent: 0;
+  text-transform: none;
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-rendering: auto;
+  margin: 0.1rem 0.5rem 0.5rem 0.1rem;
+}
+
+/* Card/Panel/Tile content adds a box shadow and a color. */
+.content-primary,
+.content-secondary,
+.content-tertiary {
+  box-shadow: 0.1rem 0.1rem 1rem;
+  padding: 0.1rem 1rem 1rem 1rem;
+}
+
+.content-primary {
+  background-color: $content-primary-bkg-color;
+}
+
+.content-secondary {
+  background-color: $content-secondary-bkg-color;
+}
+
+.content-tertiary {
+  background-color: $content-tertiary-bkg-color;
+}
+
+/* Navbar: Use the list element (one ul with multiple li tags inside.) */
+/* In small breakpoints this will be displayed as one vertical list. */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  background-color: $nav-background-color;
+
+  li {
+    list-style-type: none;
+    background-color: $nav-element-background-color;
+    color: $nav-text-color;
+    font-size: calc(var(--base-font-size) * 1);
+    font-family: $nav-font-family;
+    padding: 0 1rem;
+    margin: 1px 3% 1px 0;
+
+    a {
+      text-decoration: none;
+      color: $nav-text-color;
+    }
+  }
+
+  li.current_page {
+    color: $nav-current-page-color;
+  }
+}
+/* In mediam breakpoints nav elements will display 2 per row. */
+@include breakpoint(tablet) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      flex: 1 1 40%;
+      margin: 1px 3% 1px 0;
+      padding: 0 1rem;
+      font-size: calc(var(--base-font-size) * 1.1);
+    }
+  }
+}
+/* In large breakpoints nav elements will be displayed as one horizontal list. */
+@include breakpoint(desktop) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    li {
+      flex: 1 1 90%;
+      margin: 1px 3% 1px 0;
+      padding: 0 1rem;
+      font-size: calc(var(--base-font-size) * 1.2);
+    }
+  }
+}
+
+/* Slideshow styling */
+.slideshow-container {
+  background-color: transparent;
+}
+
+.slide {
+  display: none;
+  width:100%;
+  padding-top: 1rem;
+}
+
+.slide img {
+  height: 10rem;
+}
+
+.previous-slide, .next-slide {
+  cursor: pointer;
+  width: auto;
+  font-weight: bold;
+  transition: 0.6s ease;
+  font-size: 2em;
+  color: $slideshow-button-col;
+}
+
+/* Position the "next button" to the right */
+.previous-slide {
+  border-radius: 3px 0 0 3px;
+}
+
+.next-slide {
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.previous-slide:hover, .next-slide:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow-caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Codeblock styling */
+pre code {
+  background-color: $codeblock-background-color;
+  border: 1px solid black;
+  display: block;
+  padding: 20px;
+}
+code {
+  font-family: $code-font;
+  font-size: calc(var(--base-font-size) * 1.2);
+}
