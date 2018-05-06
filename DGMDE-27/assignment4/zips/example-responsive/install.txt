@@ -1,0 +1,2 @@
+1) Compile the sass files into a folder named "css".
+2) Visit the index.html page.

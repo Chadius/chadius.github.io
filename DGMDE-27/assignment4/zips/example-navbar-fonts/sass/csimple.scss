@@ -1,0 +1,23 @@
+// Import variables and mixins.
+@import "cs-variables";
+@import "cs-mixins";
+
+// Override variables and mixins here.
+$code-font: 'Inconsolata', monospace;
+$content-font: 'PT Serif', serif;
+$header-font: 'Roboto', sans-serif;
+
+$background-col: desaturate($tertiary-color, 90%);
+
+$nav-background-color: darken(desaturate($tertiary-color, 15%), 30%);
+$nav-element-background-color: darken(desaturate($tertiary-color, 15%), 10%);
+$nav-text-color: lighten(desaturate($secondary-color, 50%), 30%);
+$nav-current-page-color: darken(desaturate($secondary-color, 50%), 80%);
+$nav-font-family: $content-font;
+
+$button-color: desaturate($tertiary-color, 50%);
+
+// Import framework.
+@import "cs-framework"
+
+// Add your own styles here.
