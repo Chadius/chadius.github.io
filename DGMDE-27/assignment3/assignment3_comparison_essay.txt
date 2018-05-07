@@ -1,0 +1,35 @@
+I'm comparing UI Kit, a responsive design framework against a custom responsive
+design that uses CSS, JavaScript and Sass.
+
+Often web content will be displayed across multiple columns. Most responsive
+frameworks simplify this task with CSS classes and built-in media queries to
+track the width. It's a lot easier to read than many custom designs. Note that
+if your content does not neatly divide into rows, a custom solution using CSS
+Grid may be better.
+
+Styling HTML elements is a lot faster when you build a custom design. When
+using frameworks like UI Kit or Bootstrap you often have to track down which
+default style needs to be overridden. It's also a bit easier to developers
+to write.
+
+Custom designs will always be more compatible than using existing frameworks.
+Most frameworks do not support older versions of Internet Explorer, for example.
+If this website is for a mass audience, you cannot guarantee what browser
+they will be using. You would have to make a legacy version of the website
+or ensure your website is usable on older browsers.
+
+Custom solutions tend to be harder to update. When a new version of UI Kit
+appears, they often have instructions on how to upgrade. They also mention
+which features will work and which need to be updated. Compate this to a custom
+design, where designers will spend time testing for compatibility issues and
+updating components.
+
+You have to consider the size of the framework, as well. Like adding too many
+web fonts, frameworks incur a little bit of overhead. If you are only using a
+few features from the framework, a custom design will be smaller. This reduces
+bandwidth costs.
+
+If you are building a simple website with lots of styling, you should use a
+custom design so you have more control and can reach a wide audience. However,
+if you want a complicated website that runs on modern browsers you are better
+off using a responsive design framework like UI Kit.
