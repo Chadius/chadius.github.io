@@ -2,9 +2,6 @@
   height: 10rem;
 }
 
-/* TODO: Include Sass documentation, so users know how to make common changes to
- the framework, like changing breakpoints, colors, font sizing, etc.
-*/
 html {
   box-sizing: border-box;
 }

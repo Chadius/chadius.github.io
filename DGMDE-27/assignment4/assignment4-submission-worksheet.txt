@@ -1,19 +1,33 @@
 Your name:
+Chad Serrant
 
 1. Provide a link to the first page of your documentation website:
+TODO
 
 My site looks the way I want on (choose one): Mac  PC
+Mac
 
-With this browser (choose one): Firefox Chrome 
+With this browser (choose one): Firefox Chrome
+Chrome
 
 CODE (45 points)
 
 2. 6 column grid system
 Using: floats   Flexbox    Grid   (something else?)
-Breakpoint values: 
+Flexbox
+
+Breakpoint values:
+1 column width = 13%
+2 column width = 26%
+3 column width = 39%
+4 column width = 52%
+5 column width = 65%
+6 column width = 78%
 
 Default grid Sass partial file name:
 Starting line numbers:
+cs-framework/sass/_cs-variables.scss, lines 31-37
+cs-framework/sass/_cs-framework.scss, lines 17-100
 
 Breakpoint #1 grid Sass partial file name:
 Starting line numbers:
@@ -41,14 +55,14 @@ Sass line numbers:
 
 
 6. Two elements
-Choose from: breadcrumb, button, card, form styling, hero unit/jumbotron, image styling, list styling, table styling, text styling elements, visibility classes. 
+Choose from: breadcrumb, button, card, form styling, hero unit/jumbotron, image styling, list styling, table styling, text styling elements, visibility classes.
 
 a. Choice 1: (name)
-Sass partial file name: 
+Sass partial file name:
 Sass line numbers:
 
 b. Choice 2: (name)
-Sass partial file name: 
+Sass partial file name:
 Sass line numbers:
 
 
@@ -64,9 +78,9 @@ For each of the below items, provide a URL where the requested information is lo
 
 10. Grid system install/examples:
 
-11. Nav bar install/examples: 
+11. Nav bar install/examples:
 
-12: Styled element #1 install/examples: 
+12: Styled element #1 install/examples:
 
 13: Styled element #2 install/examples:
 
@@ -87,6 +101,3 @@ ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why? You can do more than one thing if you want.
 
 If you add code features, consider adding matching docs for full credit.
-
-
-
