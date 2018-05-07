@@ -113,20 +113,37 @@ general.html
 responsive.html
 
 17: Docs for anything else (list as many URLs as desired and describe what is located there):
-card feature:
-TODO
+card feature (called content):
+sass/_cs-framework.scss lines 217-234
+
+codeblock formatting:
+sass/_cs-framework.scss lines 353-363
 
 18: Example starter page:
-example-responsive/index.html
-
+TODO chadius.github.io/DGMDE-27/assignment4/dist/example-responsive/index.html
 
 ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why? You can do more than one thing if you want.
-
 If you add code features, consider adding matching docs for full credit.
 
-card feature:
-TODO
+I added some extra JavaScript features, along with instructions to install them.
+TODO install.html
 
 JavaScript features:
-TODO
+Documentation can be found on
+TODO chadius.github.io/DGMDE-27/assignment4/dist/javascript.html
+
+Example page that uses features:
+TODO chadius.github.io/DGMDE-27/assignment4/dist/example-javascript/index.html
+
+click-to-reveal - Toggles visibility on click.
+js/cs-framework.js, lines 6-16, 38-50
+
+smoothscroll - The window will scroll to anchor tags on the page.
+js/cs-framework.js, lines 25-35, 140-170
+
+slideshow - Rotate through a series of images
+sass/_cs-framework.scss, lines 291-351
+js/cs-framework.js, lines 18-23, 52-138
+
+I value this at 8 points.
