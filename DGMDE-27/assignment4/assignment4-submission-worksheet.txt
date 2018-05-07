@@ -27,26 +27,34 @@ Breakpoint values:
 Default grid Sass partial file name:
 Starting line numbers:
 cs-framework/sass/_cs-variables.scss, lines 31-37
-cs-framework/sass/_cs-framework.scss, lines 17-100
+cs-framework/sass/_cs-framework.scss, lines 17-54
 
 Breakpoint #1 grid Sass partial file name:
 Starting line numbers:
+cs-framework/sass/_cs-variables.scss, lines 2
+cs-framework/sass/_cs-framework.scss, lines 17-26, 58-77
 
 Breakpoint #2 grid Sass partial file name:
 Starting line numbers:
+cs-framework/sass/_cs-variables.scss, lines 3
+cs-framework/sass/_cs-framework.scss, lines 17-26, 79-100
 
 
 3. Color scheme
 Sass partial file name:
 Sass line numbers:
-
+cs-framework/sass/_cs-variables.scss, lines 7-13
 
 4. Responsive typography
 Sass partial file name:
 Sass line numbers example 1:
+cs-framework/sass/_cs-variables.scss, lines 20-28
+cs-framework/sass/_cs-framework.scss, lines 139-146
 
 Sass partial file name:
 Sass line numbers example 2:
+cs-framework/sass/_cs-variables.scss, lines 20-28
+cs-framework/sass/_cs-framework.scss, lines 147-150
 
 
 5. Responsive navigation bar
