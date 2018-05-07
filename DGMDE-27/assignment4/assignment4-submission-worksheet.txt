@@ -60,52 +60,73 @@ cs-framework/sass/_cs-framework.scss, lines 147-150
 5. Responsive navigation bar
 Sass partial file name:
 Sass line numbers:
-
+cs-framework/sass/_cs-framework.scss, lines 238-292
 
 6. Two elements
 Choose from: breadcrumb, button, card, form styling, hero unit/jumbotron, image styling, list styling, table styling, text styling elements, visibility classes.
 
 a. Choice 1: (name)
+Visibility classes
+
 Sass partial file name:
 Sass line numbers:
+cs-framework/sass/_cs-framework.scss, lines 102-135
 
 b. Choice 2: (name)
+Button
+
 Sass partial file name:
 Sass line numbers:
-
+cs-framework/sass/_cs-framework.scss, lines 195-214
 
 Part 2: Documentation and examples
 
 7. Framework name:
+CSimple
 
 For each of the below items, provide a URL where the requested information is located.
+TODO DGMDE-27/assignment4/dist/
 
 8. Download button:
+index.html
 
 9. Installation:
+install.html
 
 10. Grid system install/examples:
+general.html
 
 11. Nav bar install/examples:
+elements.html
 
 12: Styled element #1 install/examples:
 
 13: Styled element #2 install/examples:
 
 14: Sass docs for colors:
+general.html
 
 15: Sass docs for fonts:
+general.html
 
 16: Sass docs for media query breakpoints:
+responsive.html
 
 17: Docs for anything else (list as many URLs as desired and describe what is located there):
-
+card feature:
+TODO
 
 18: Example starter page:
-
+example-responsive/index.html
 
 
 ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why? You can do more than one thing if you want.
 
 If you add code features, consider adding matching docs for full credit.
+
+card feature:
+TODO
+
+JavaScript features:
+TODO
