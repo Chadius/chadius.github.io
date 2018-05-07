@@ -2,7 +2,7 @@ Your name:
 Chad Serrant
 
 1. Provide a link to the first page of your documentation website:
-TODO
+http://chadius.github.io/DGMDE-27/assignment4/dist/index.html
 
 My site looks the way I want on (choose one): Mac  PC
 Mac
@@ -85,32 +85,39 @@ Part 2: Documentation and examples
 CSimple
 
 For each of the below items, provide a URL where the requested information is located.
-TODO DGMDE-27/assignment4/dist/
 
 8. Download button:
-index.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/index.html
+(also on http://chadius.github.io/DGMDE-27/assignment4/dist/install.html)
 
 9. Installation:
-install.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/install.html
 
 10. Grid system install/examples:
-general.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/general.html
 
 11. Nav bar install/examples:
-elements.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/elements.html
 
 12: Styled element #1 install/examples:
+Navbar
+Documentation: https://chadius.github.io/DGMDE-27/assignment4/dist/elements.html
+Example: https://chadius.github.io/DGMDE-27/assignment4/dist/example-navbar-fonts/index.html
 
 13: Styled element #2 install/examples:
+Buttons
+
+Documentation: https://chadius.github.io/DGMDE-27/assignment4/dist/elements.html
+Example: https://chadius.github.io/DGMDE-27/assignment4/dist/example-responsive/index.html
 
 14: Sass docs for colors:
-general.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/general.html
 
 15: Sass docs for fonts:
-general.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/general.html
 
 16: Sass docs for media query breakpoints:
-responsive.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/responsive.html
 
 17: Docs for anything else (list as many URLs as desired and describe what is located there):
 card feature (called content):
@@ -120,21 +127,21 @@ codeblock formatting:
 sass/_cs-framework.scss lines 353-363
 
 18: Example starter page:
-TODO chadius.github.io/DGMDE-27/assignment4/dist/example-responsive/index.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/example-responsive/index.html
 
 ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why? You can do more than one thing if you want.
 If you add code features, consider adding matching docs for full credit.
 
 I added some extra JavaScript features, along with instructions to install them.
-TODO install.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/install.html
 
 JavaScript features:
 Documentation can be found on
-TODO chadius.github.io/DGMDE-27/assignment4/dist/javascript.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/javascript.html
 
 Example page that uses features:
-TODO chadius.github.io/DGMDE-27/assignment4/dist/example-javascript/index.html
+http://chadius.github.io/DGMDE-27/assignment4/dist/example-javascript/index.html
 
 click-to-reveal - Toggles visibility on click.
 js/cs-framework.js, lines 6-16, 38-50
