@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/style.css" rel="stylesheet"/>
+    <title>Torrin's Trial</title>
+    <link rel="icon" type="image/x-icon" href="../assets/map-icon-young-torrin.png">
+</head>
+<body>
+<h1>Torrin's Trial</h1>
+<div>By Chad Serrant</div>
+
+<div class="centered">
+
+</div>
+
+<nav role="navigation" id="toc_container">
+    <p class="toc_title">Contents</p>
+    <ol class="toc_list">
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#computer-requirements">"Computer Requirements"</a></li>
+        <li><a href="#business-requirements">"Business Requirements"</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#inspirations-and-comparison">Inspirations and comparison"</a></li>
+    </ol>
+</nav>
+
+<section id="objective">
+    <div class="headshot">
+        <img
+                class="constrain-image-height"
+                src="../assets/2023-06-11-Young-Torrin.png"
+                alt="Medium shot of Torrin, a young woman made of water wearing a white robe and a green skirt. The pin holding the robe together is a holy symbol"
+        >
+        <div class="headshot-text-right">
+            <h2>Objectives</h2>
+            <ul>
+                <li>Turn Based Strategy.</li>
+                <li>On the web.</li>
+                <li>Easy to learn.</li>
+                <li>Squad based AI.</li>
+            </ul>
+
+            Torrin's Trial is a Turn Based Strategy written in Typescript and p5 and played in your browser.
+            If you're interested in my design philosophy or the considerations, this is the place to look.
+        </div>
+    </div>
+</section>
+
+<section id="computer-requirements">
+    <h2>Computer Requirements</h2>
+    <ul>
+        <li>Avoid technology requirements.</li>
+        <li>This needs to run on a variety of platforms.</li>
+        <li>I don't want to force installation processes.</li>
+        <li>Overall package size needs to be small. Big graphics and sound are great until they take too long to
+            download.
+        </li>
+    </ul>
+
+    <p>I'm aiming for a web app, with Typescript and p5. Eventually I want users to visit the webpage and start playing.
+</section>
+
+<section id="business-requirements">
+    <h2>Business Requirements</h2>
+    <p>I work full-time, so this is a hobby project.
+    <ul>
+        <li>Game is free to buy.</li>
+        <li>Game is Open Source. I'd be amazed if someone started messing with it.</li>
+        <li>I need to be conservative with art resources. I can hand draw some portraits and poses, but music and sound
+            effects are beyond my ability and will cost me. I have some royalty-free assets available from Humble
+            Bundles
+            that I can
+            reuse.
+        </li>
+        <li>If I ever try to host this game I need to be careful about the overall package size. Music and art take up a
+            lot
+            of room, especially for a web app.
+        </li>
+    </ul>
+</section>
+
+<section id="story">
+    <h2>Story</h2>
+    <p>I have the story planned out (if I ever get enough sequels) but I chose Torrin's Trial first.
+    <ul>
+        <li>A Tutorial can be worked in if the main character is a novice when it comes to combat. Torrin is a wanderer
+            first and a priest second. Her Crusader allies are veterans who can teach her about strategy.
+        </li>
+        <li>Demons invade the desert. Crusaders enter to finish them off. Torrin joins the Crusaders. Relatively simple
+            story: kill demons dead.
+        </li>
+        <li>I'm not a professional artist, so art resources are limited. Keeping the player's squad small and the enemy
+            squad mindless lets me focus on conserving resources.
+        </li>
+    </ul>
+
+    <div class="headshot">
+        <div class="headshot-text-left">
+            Torrin lives in the Fell Desert, where elemental creatures dwell and the humans of the Western Kingdom
+            rarely
+            visit. She
+            struggles as the only living water elemental as a hermit. Most are terrified of her control over the
+            waterbed.
+            Others
+            want to drain her moisture for themselves. But the demonic abominations changed everyone's priorities
+            when they
+            ravaged
+            the desert. Enter the human Crusaders, trying to finish the War of Man.
+        </div>
+        <img src="../assets/cutscene-portrait-young-torrin.png"
+             alt="The head of Torrin, a young woman wearing a white robe"/>
+    </div>
+
+    <div class="headshot">
+        <img src="../assets/cutscene-portrait-sir-camil.png"
+             alt="The head of Sir Camil Wilaahd, a peach skinned man with a long mustache"/>
+        <div class="headshot-text-right">
+            Torrin found a friend in Sir Camil Willaahd, a Crusader who convinced her to seek solace in his patron
+            deity. The fiery
+            saboteur Birnam and the stoic statuesque Petra form a squad dedicated to stopping the demons once and
+            for
+            all. They are
+            highly effective together, and yet the demons still stand.
+        </div>
+    </div>
+
+    <div>
+        One night, Torrin finishes her prayer deep within the Crusader base. Inspiration strikes: the way to destroy
+        the demon
+        remnants altogether. But her time is short: Sir Camil calls for aid! Demons have snuck past base defenses
+        and are
+        heading straight for her.
+    </div>
+</section>
+
+<section id="inspirations-and-comparison">
+    <h2>Inspirations and comparison</h2>
+    <section id="pathfinder-2">
+        <h3>Pathfinder Second Edition</h3>
+        <img src="../assets/PF2Logo.png" height="175" width="500" alt="Pathfinder Second Edition logo"/>
+        <div>
+            <p>Pathfinder is a table-top Role Playing Game that began as a spin-off of Dungeons & Dragons.
+                Most players take the role of adventurers who use diplomacy, weapons and magic to talk to kings, conquer
+                dungeons and handle greater threats. One player is the Game Master who crafts the world and narrates the
+                adventure.</p>
+            <p>The tactical system is mathematically balanced in a way that is easy to analyze. The designers have been
+                pretty open about measuring the Time to Kill and the Team Action Economy.</p>
+            <p>The team should spend their
+                actions optimizing their attacks and stealing enemy actions. This way they can speed up their kills
+                before the enemy can hurt them too much.</p>
+            <p>There is also the four degrees of success. You can critically succeed if you beat the defender by 10 or
+                more (using a 20 sided die.) You can critically fail if you miss by 10 or more. Critical success doubles
+                damage. Critical Failure against a spell is very debilitating, usually taking the target out of the
+                fight. This means minor buffs are extremely useful because they nudge you closer to that +10 or -10
+                threshold.</p>
+        </div>
+        <h4>Lessons learned</h4>
+        <ul>
+            <li><b>Set up a critical threshold and four degrees of success</b> - I can avoid "save or suck" situations by
+                adding some nuance. For example, spending resources could guarantee some kind of effect, even if it
+                fails.
+            </li>
+            <li><b>3 actions per turn</b> - keep it simple so players don't have to think about action types. Instead,
+                players focus on how to conserve and combine actions.
+            </li>
+            <li><b>Small buffs and debuffs matter</b> - a -1 may not seem like much until it nudges towards critical
+                success and failure.
+            </li>
+        </ul>
+    </section>
+    <section id="fire-emblem-2003">
+        <h3>Fire Emblem (2003)</h3>
+        <img src="../assets/FireEmblem2003TitleScreen.png" height="160" width="240"/>
+        <div>
+            <p>In 2003, Nintendo began localizing the Japan-only tactical series known as Fire Emblem. The 7th game
+                debuted in 2003 on the Game Boy Advance.</p>
+            <p>You play as a tactician, but the stars of the show are the three lords, Lyn, Eliwood and Hector. They
+                travel across the continent of Elibe, slowly discovering a plot to unleash a world of dragons across the
+                world. The lords form an army and engage in Turn Based Strategy to defeat the madman Nergal and his army
+                of not-quite-human Morphs.</p>
+        </div>
+        <h4>Lessons learned</h4>
+        <ul>
+            <li><b>Care about your teammates</b> - every unit in your army had their own personality. They had unique
+                conversations with up to 5 teammates. They had unique death quotes! Powergamers argue endlessly about
+                the strongest unit in terms of stats, utility, availability, and supports, by name. I can create a
+                stronger appeal by infusing the team with personality.
+            </li>
+            <li><b>Villains can be personal</b> - Nergal, his plot, his plan, his methods. When I first played I was so
+                entranced by the spectacle. It's only years later that I realized the many inconsistencies and tropes he
+                falls prey to,
+                but who cares? I'm already a fan.
+            </li>
+            <li><b>Desert Fantasy setting</b> - A few chapters take place in a desert covered by an endless sandstorm. The game
+                briefly touches on it to explain what happened to the dragons from a war 1000 years ago. Another
+                fascinating plot point that inspired this game's setting.
+            </li>
+            <li><b>Keep the math simple</b> - Your chance to hit, damage and critically hit can be calculated by hand. It's
+                addition and subtraction. The weapon triangle adds a rock-paper-scissors element, but you know it in
+                advance. Later in the game you can become so strong and so accurate you can mow down most foes except
+                for That One Enemy. Simple math is simply predictable.
+            </li>
+        </ul>
+    </section>
+</section>
+
+<footer>
+    <div class="footer-note">
+        Copyright 2023 by Chad Serrant. All rights reserved.
+    </div>
+
+    <div class="footer-note">
+        chadius.com uses trademarks and/or copyrights owned by Paizo Inc., used under Paizo's Community Use Policy
+        (paizo.com/communityuse). We are expressly prohibited from charging you to use or access this content. This
+        website is not published, endorsed, or specifically approved by Paizo. For
+        more information about Paizo Inc. and Paizo products, visit paizo.com.
+    </div>
+</footer>
+</body>
+</html>
