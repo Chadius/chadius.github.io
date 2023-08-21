@@ -1,6 +1,18 @@
+@font-face {
+    font-family: "aclonica";
+    src: url("../../assets/Aclonica-Regular.ttf");
+}
+
+@font-face {
+    font-family: "monsterrat";
+    src: url("../../assets/Montserrat-VariableFont_wght.ttf");
+}
+
+
 body {
-    background: #c4bb87;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #e1dcaf;
+    margin: 0 8px 0 8px;
+    font-family: "monsterrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .headshot {
@@ -43,14 +55,17 @@ h1 {
     flex-direction: row;
     justify-content: center;
     background-color: #c5e0ba;
+    font-family: "Aclonica", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h2 {
     background-color: #c0e0ba;
+    font-family: "Aclonica", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h3 {
     background-color: #bae0bf;
+    font-family: "Aclonica", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 section {
@@ -60,8 +75,11 @@ section {
     border-radius: 4px;
 }
 
-.footer-note {
-    margin-bottom: 8px;
+footer {
+    margin: 8px 0 0 0;
+    background-color: #255665;
+    color: #dfdfdf;
+    font-size: 12px;
 }
 
 .logo {
