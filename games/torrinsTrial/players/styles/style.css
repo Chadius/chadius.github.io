@@ -91,6 +91,7 @@ footer {
 }
 
 .screenshot {
+    background-color: #255665;
     display: flex;
     flex-direction: column;
 }
