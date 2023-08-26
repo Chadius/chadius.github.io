@@ -1,8 +1,19 @@
+@font-face {
+    font-family: "aclonica";
+    src: url("../../assets/Aclonica-Regular.ttf");
+}
+
+@font-face {
+    font-family: "monsterrat";
+    src: url("../../assets/Montserrat-VariableFont_wght.ttf");
+}
+
+
 body {
     background: lightblue;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     max-width: 1280px;
-    margin: auto;
+    margin: 0 8px 0 8px;
+    font-family: "monsterrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .headshot {
@@ -45,14 +56,17 @@ h1 {
     flex-direction: row;
     justify-content: center;
     background-color: #88a396;
+    font-family: "Aclonica", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h2 {
     background-color: #92b0a2;
+    font-family: "Aclonica", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h3 {
     background-color: #9dbdae;
+    font-family: "Aclonica", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 section {
