@@ -82,6 +82,16 @@ footer {
     font-size: 12px;
 }
 
+footer ul { list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+
+footer li {
+    margin: 8px;
+}
+
 .logo {
     display: flex;
     flex-direction: row;
