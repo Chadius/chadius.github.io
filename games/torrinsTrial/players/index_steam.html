@@ -43,35 +43,68 @@
         </ul>
 </section>
 
-<section aria-label="carousel">
-    <div class="carousel-container screenshot">
-        <h2>Image Gallery</h2>
-        <ul class="carousel my-carousel">
-            <input class="carousel__activator" type="radio" id="image-000" name="activator" checked="checked"/>
-            <input class="carousel__activator" type="radio" id="image-001" name="activator"/>
-            <input class="carousel__activator" type="radio" id="image-002" name="activator"/>
-            <div class="carousel__controls">
-                <label class="carousel__control carousel__control--backward" for="image-002"></label>
-                <label class="carousel__control carousel__control--forward" for="image-001"></label>
-            </div>
-            <div class="carousel__controls">
-                <label class="carousel__control carousel__control--backward" for="image-000"></label>
-                <label class="carousel__control carousel__control--forward" for="image-002"></label>
-            </div>
-            <div class="carousel__controls">
-                <label class="carousel__control carousel__control--backward" for="image-001"></label>
-                <label class="carousel__control carousel__control--forward" for="image-000"></label>
-            </div>
-            <li class="carousel__slide"></li>
-            <li class="carousel__slide"></li>
-            <li class="carousel__slide"></li>
-            <div class="carousel__indicators">
-                <label class="carousel__indicator" for="image-000"></label>
-                <label class="carousel__indicator" for="image-001"></label>
-                <label class="carousel__indicator" for="image-002"></label>
-            </div>
-        </ul>
-    </div>
+<section aria-label="carousel" class="carousel-container screenshot">
+    <h2>Image Gallery</h2>
+    <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="../assets/2023-08-19-torrins-trial-player-phase-banner.png"
+                                 alt="The player phase begins."/>
+                        </div>
+                        <figcaption>
+                            The player phase begins.
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="../assets/2023-08-19-torrins-trial-hud.png"
+                                 alt="Player selects Torrin and sees the heads-up display."/>
+                        </div>
+                        <figcaption>
+                            Player selects Torrin and sees the heads-up display.
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="../assets/2023-08-19-torrins-trial-battle.png"
+                                 alt="Torrin attacks a demon."/>
+                        </div>
+                        <figcaption>
+                            Torrin attacks a demon.
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-1">
+                        <img src="../assets/2023-08-19-torrins-trial-player-phase-banner.png"
+                             alt="The player phase begins, showing a banner to alert the player."/>
+                    </label>
+                </li>
+                <li>
+                    <label for="slide-2">
+                        <img src="../assets/2023-08-19-torrins-trial-hud.png"
+                             alt="Player selects Torrin and sees the heads up display, as well as where she can move and attack."/>
+                    </label>
+                </li>
+                <li>
+                    <label for="slide-3">
+                        <img src="../assets/2023-08-19-torrins-trial-battle.png"
+                             alt="Torrin attacks a demon. Showcase the battle info display."/>
+                    </label>
+                </li>
+            </ul>
+        </div>
 </section>
 
 <section aria-label="call-to-action">
