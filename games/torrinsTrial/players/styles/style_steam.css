@@ -22,6 +22,7 @@ body {
 
 #toc_container ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 #toc_container li {
@@ -73,15 +74,11 @@ h3 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 20px;
-}
-
-.logo img {
-    max-width: 80%;
 }
 
 ul.suggested-tags {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .suggested-tags li {
@@ -98,7 +95,8 @@ footer {
     font-size: 12px;
 }
 
-footer ul { list-style-type: none;
+footer ul {
+    list-style-type: none;
     list-style-position:inside;
     margin:0;
     padding:0;
@@ -106,4 +104,95 @@ footer ul { list-style-type: none;
 
 footer li {
     margin: 8px;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 1280px;
+        margin: 0 20px;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    #id2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #id2a {
+        display: flex;
+        flex-direction: column;
+        flex: 35% 1 1;
+    }
+
+    .carousel-container {
+        flex: 50% 0 1;
+        margin-right: 20px;
+        max-width: 70%;
+    }
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    .call-to-action {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .call-to-action div{
+        flex: 30% 1 0;
+    }
+
+    #id5 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #id5a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #id5b {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headshot {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .headshot-text-right {
+        margin-left: 20px;
+    }
+
+    .headshot-text-left {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .logo img {
+        max-width: 80%;
+    }
+
+    .headshot img {
+        margin: 0 auto;
+    }
+
+    .headshot-text-left {
+        margin: 0 auto;
+    }
 }
