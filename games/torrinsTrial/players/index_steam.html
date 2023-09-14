@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Torrin's Trial</title>
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet"/>
+    <link href="styles/style_steam.css" rel="stylesheet"/>
     <link href="styles/carousel.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="../assets/map-icon-young-torrin.png">
 </head>
 <body>
 <h1>Torrin's Trial</h1>
@@ -14,8 +15,15 @@
          alt="Torrin's Trial logo depicts a stream of water separating a sand dune from the dirt.">
 </div>
 
-<nav>
-    On mobile, Nav bar is above the fold
+<nav role="navigation" id="toc_container">
+    <ul class="toc_list">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#game-tags">Game Tags</a></li>
+        <li><a href="#image-gallery">Image Gallery</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#about-me">About Me</a></li>
+    </ul>
 </nav>
 
 <section aria-label="title">
@@ -24,16 +32,16 @@
     </div>
 </section>
 
-<section aria-label="summary">
+<section aria-label="summary" id="summary">
     <div>
         <p>The demons took her homeland. It's time to take it back.</p>
         <p>Torrin's Trial is a Turn Based Strategy game. Lead a small squad as they drive the demons from the Desert.</p>
     </div>
 </section>
 
-<section aria-label="game tags">
+<section aria-label="game tags" id="game-tags">
     <h2>Suggested Tags</h2>
-        <ul>
+        <ul class="suggested-tags">
             <li>Tactical RPG</li>
             <li>Turn Based Strategy</li>
             <li>Turn Based Tactics</li>
@@ -43,13 +51,27 @@
         </ul>
 </section>
 
-<section aria-label="carousel" class="carousel-container screenshot">
+<section aria-label="carousel" id="image-gallery" class="carousel-container screenshot">
     <h2>Image Gallery</h2>
     <div class="carousel">
             <input type="radio" name="slides" checked="checked" id="slide-1">
             <input type="radio" name="slides" id="slide-2">
             <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
             <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img
+                                    src="../assets/2023-06-11-Young-Torrin.png"
+                                    alt="Medium shot of Torrin, a young woman made of water wearing a white robe and a green skirt. The pin holding the robe together is a holy symbol"
+                            >
+                        </div>
+                        <figcaption>
+                            Torrin, a young woman made of water.
+                        </figcaption>
+                    </figure>
+                </li>
                 <li class="carousel__slide">
                     <figure>
                         <div>
@@ -87,36 +109,39 @@
             <ul class="carousel__thumbnails">
                 <li>
                     <label for="slide-1">
-                        <img src="../assets/2023-08-19-torrins-trial-player-phase-banner.png"
-                             alt="The player phase begins, showing a banner to alert the player."/>
+                        <img src="../assets/2023-06-11-Young-Torrin.png" alt="thumbnail link for slide 3"/>
                     </label>
                 </li>
                 <li>
                     <label for="slide-2">
-                        <img src="../assets/2023-08-19-torrins-trial-hud.png"
-                             alt="Player selects Torrin and sees the heads up display, as well as where she can move and attack."/>
+                        <img src="../assets/2023-08-19-torrins-trial-player-phase-banner.png" alt="thumbnail link for slide 1"/>
                     </label>
                 </li>
                 <li>
                     <label for="slide-3">
-                        <img src="../assets/2023-08-19-torrins-trial-battle.png"
-                             alt="Torrin attacks a demon. Showcase the battle info display."/>
+                        <img src="../assets/2023-08-19-torrins-trial-hud.png" alt="thumbnail link for slide 2"/>
+                    </label>
+                </li>
+                <li>
+                    <label for="slide-4">
+                        <img src="../assets/2023-08-19-torrins-trial-battle.png" alt="thumbnail link for slide 4"/>
                     </label>
                 </li>
             </ul>
         </div>
 </section>
 
-<section aria-label="call-to-action">
+<section aria-label="call-to-action" id="download">
     <div class="call-to-action">
         <div>
-            <p>Proof of Concept: October 2023</p>
-            <p>Changelog</p>
+            <h3>Release: October 2023</h3>
+            <p>Proof of Concept: Changelog</p>
         </div>
         <div id="mc_embed_shell">
             <div id="mc_embed_signup">
                 <form action="https://chadius.us21.list-manage.com/subscribe/post?u=f274baf2e93ff96213e39ab0e&amp;id=df924b8c6f&amp;f_id=002cdee6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                    <div id="mc_embed_signup_scroll"><h2>Add your email address to hear more news!</h2>
+                    <div id="mc_embed_signup_scroll">
+                        <h3>Join the Mailing List</h3>
                         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                         <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
                         <div id="mce-responses" class="clear foot">
@@ -138,8 +163,9 @@
             </div>
             <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
         </div>
-        <div>
-            <a href="https://us21.list-manage.com/contact-form?u=f274baf2e93ff96213e39ab0e&form_id=bb1b6a345eaf0bd553f9c0f56820e03d">CLICK HERE</a> to contact me.
+        <div class="contact-me">
+            <h3>Contact me</h3>
+            <a href="https://us21.list-manage.com/contact-form?u=f274baf2e93ff96213e39ab0e&form_id=bb1b6a345eaf0bd553f9c0f56820e03d">CLICK HERE</a>
         </div>
     </div>
 </section>
@@ -150,11 +176,20 @@
         <li>1280x720 screen resolution</li>
         <li>Web browser</li>
         <li>Mouse</li>
+
+
+        <li>English</li>
+    </ul>
+    <h2>Content</h2>
+    <ul>
+        <li>Single Player</li>
+        <li>English</li>
     </ul>
 </section>
 
 <section aria-label="Content Rating">
-    Content Rating: Suggested for 13 years of age and older.
+    <h2>Content Rating</h2>
+    Suggested for 13 years of age and older.
     <ul>
         <li>Fantasy Violence</li>
         <li>Comic Mischief</li>
@@ -167,16 +202,21 @@
 </section>
 
 <section aria-label="Similar Games">
-    Content/Other games
+    <h2>Inspired by</h2>
+    <ul>
+        <li>Pathfinder Second Edition</li>
+        <li>Fire Emblem</li>
+    </ul>
 </section>
 
-<section aria-label="Description">
+<section aria-label="Description" id="description">
+    <h2>Help Torrin destroy the demons.</h2>
     <p>Torrin joins the Crusaders in their mission to destroy the demons who invaded her homeland.</p>
     <p>She's a one of a kind water elemental in the Fell Desert, and her faith and powers lead to a unique salvation.</p>
     <p></p>
 </section>
 
-<section aria-label="About me">
+<section aria-label="About me" id="about-me">
 <h2>About me</h2>
 <ul class="about-me">
     <li>I'm Chad, I work as a software engineer on the East Coast of the United States.</li>
