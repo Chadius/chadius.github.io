@@ -64,6 +64,11 @@ h3 {
     font-family: "Aclonica", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.click-to-play {
+    background-color: #2c4154;
+    color: #7cc0f0;
+}
+
 .contact-me a {
     background-color: #2c4154;
     color: #7cc0f0;
